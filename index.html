@@ -122,15 +122,15 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <button type="button" class="btn-top" id="btnFavFilter" onclick="toggleFavFilter()">❤️ المفضلة (<span id="favCount">0</span>)</button>
         </div>
       </div>
-      <p class="kicker">دليل عربي إسلامي معتمد للمعنى، الحكم الشرعي، أسماء الأنبياء وأبنائهم، أسماء النبي ﷺ، والضوابط القانونية (مصلحة الأحوال المدنية - ليبيا)</p>
+      <p class="kicker">موسوعة الأنبياء الـ 25 المذكورين في القرآن مع أبنائهم، وأسماء النبي ﷺ، والضوابط القانونية (مصلحة الأحوال المدنية - ليبيا)</p>
       <h1>منصة اختيار الأسماء ومعانيها</h1>
-      <p>مرجعك الشامل لاختيار اسم المولود، معرفة معناه وأصله وحكمه الشرعي، تفصيل أسماء الأنبياء وأبنائهم وأسماء النبي محمد ﷺ، وفحص التوافق مع السجل المدني الليبي.</p>
+      <p>المرجع الإسلامي الشامل لمعرفة معاني أسماء أنبياء الله الـ 25 وأبنائهم وحكم التسمي بها، أسماء النبي محمد ﷺ، وفحص السجل المدني الليبي.</p>
     </div>
   </header>
 
   <div class="search-wrap">
     <div class="search-box">
-      <input id="q" type="search" placeholder="ابحث باسم الأنبياء، أسماء النبي ﷺ، أو أي اسم، معنى، أو (ممنوع ليبيا)…" oninput="filterCards()">
+      <input id="q" type="search" placeholder="ابحث باسم أي نبي (مثال: موسى، إبراهيم، يونس...) أو معنى أو (ممنوع ليبيا)…" oninput="filterCards()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
     </div>
   </div>
@@ -138,6 +138,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
   <main class="wrap">
 
     <div class="service-bar">
+      <!-- فاحص السجل المدني الليبي -->
       <details class="service-panel" id="detLibya" open>
         <summary style="color:#c92a2a">🇱🇾 فاحص الأسماء الممنوعة في مصلحة الأحوال المدنية بليبيا (156 اسماً)</summary>
         <div class="panel-body">
@@ -187,18 +188,30 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
         <div class="panel-body">
           <datalist id="platformNamesList">
             <option value="آدم">آدَم — أبو البشر وأول الأنبياء عليه السلام</option>
-            <option value="نوح">نُوح — الشكور الكثير البكاء وصاحب السفينة</option>
+            <option value="إدريس">إِدْرِيس — النبي الصديق أول من خطّ بالقلم</option>
+            <option value="نوح">نُوح — شيخ المرسلين صاحب السفينة</option>
+            <option value="هود">هُود — نبي الله المرسل إلى عاد</option>
+            <option value="صالح">صَالِح — نبي الله أرسل إلى ثمود</option>
             <option value="إبراهيم">إِبْرَاهِيم — أبو الأنبياء وخليل الرحمن</option>
-            <option value="إسماعيل">إِسْمَاعِيل — يسمع الله الدعاء، الذبيح</option>
-            <option value="إسحاق">إِسْحَاق — الضاحك المستبشر نبي الله</option>
+            <option value="لوط">لُوط — نبي الله ابن أخي إبراهيم</option>
+            <option value="إسماعيل">إِسْمَاعِيل — نبي الله الذبيح</option>
+            <option value="إسحاق">إِسْحَاق — نبي الله ابن إبراهيم</option>
             <option value="يعقوب">يَعْقُوب — نبي الله إسرائيل</option>
             <option value="يوسف">يُوسُف — نبي الله الصدّيق</option>
-            <option value="موسى">مُوسى — كليم الله</option>
-            <option value="عيسى">عِيسى — روح الله المسيح</option>
+            <option value="أيوب">أَيُّوب — رمز الصبر والبلاء</option>
+            <option value="شعيب">شُعَيْب — خطيب الأنبياء</option>
+            <option value="موسى">مُوسَى — كليم الله</option>
+            <option value="هارون">هَارُون — نبي الله وزير موسى</option>
+            <option value="ذو الكفل">ذُو الْكِفْلِ — نبي الله الصابر</option>
+            <option value="داود">دَاوُد — نبي الله الملك صاحب الزبور</option>
+            <option value="سليمان">سُلَيْمَان — نبي الله الحكيم</option>
+            <option value="إلياس">إِلْيَاس — نبي بني إسرائيل</option>
+            <option value="اليسع">الْيَسَع — نبي الله الكريم</option>
+            <option value="يونس">يُونُس — صاحب الحوت (ذو النون)</option>
+            <option value="زكريا">زَكَرِيَّا — كفيل مريم وأبو يحيى</option>
+            <option value="يحيى">يَحْيَى — نبي الله السيد الحصور</option>
+            <option value="عيسى">عِيسَى — روح الله المسيح</option>
             <option value="محمد">مُحَمَّد — خاتم الأنبياء والمرسلين ﷺ</option>
-            <option value="أحمد">أَحْمَد — من أسماء النبي الشريفة</option>
-            <option value="عبد الله">عَبْدُ اللَّهِ — أحب الأسماء إلى الله</option>
-            <option value="مريم">مَرْيَم — العابدة الخادمة للرب</option>
           </datalist>
           <div class="harmony-form">
             <div class="field">
@@ -247,9 +260,8 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
         <div class="filter-group" id="statusChips">
           <span class="filter-label">الحكم الشرعي:</span>
           <button type="button" class="chip active" onclick="setFilter('s','all',this)">الكل</button>
-          <button type="button" class="chip" onclick="setFilter('s','ok',this)">مستحب</button>
+          <button type="button" class="chip" onclick="setFilter('s','ok',this)">مستحب (الأنبياء)</button>
           <button type="button" class="chip" onclick="setFilter('s','mub',this)">مباح شرعاً</button>
-          <button type="button" class="chip" onclick="setFilter('s','warn',this)">مكروه</button>
         </div>
       </div>
       <div class="filter-row">
@@ -259,233 +271,207 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <button type="button" class="chip" onclick="setFilter('leg','allowed',this)">✅ مسموح للتسجيل</button>
           <button type="button" class="chip chip-libya" onclick="setFilter('leg','libya_ban',this)">🇱🇾 ممنوع في ليبيا</button>
         </div>
-        <div class="filter-group" id="genderChips">
-          <span class="filter-label">الجنس:</span>
-          <button type="button" class="chip active" onclick="setFilter('g','all',this)">الكل</button>
-          <button type="button" class="chip" onclick="setFilter('g','m',this)">👦 مذكر</button>
-          <button type="button" class="chip" onclick="setFilter('g','f',this)">👧 مؤنث</button>
-        </div>
       </div>
       <div class="filter-row">
         <div class="filter-group" id="catChips">
           <span class="filter-label">التصنيف الموضوعي:</span>
           <button type="button" class="chip active" onclick="setFilter('c','all',this)">الكل</button>
-          <button type="button" class="chip" onclick="setFilter('c','أنبياء',this)">🌟 الأنبياء وأبنائهم</button>
-          <button type="button" class="chip" onclick="setFilter('c','أسماء النبي',this)">✨ أسماء النبي ﷺ</button>
-          <button type="button" class="chip" onclick="setFilter('c','قرآني',this)">📖 قرآني</button>
-          <button type="button" class="chip" onclick="setFilter('c','صحابة',this)">⚔️ صحابة</button>
+          <button type="button" class="chip" onclick="setFilter('c','أنبياء',this)">🌟 الأنبياء الـ 25 وأبنائهم</button>
+          <button type="button" class="chip" onclick="setFilter('c','أسماء النبي',this)">✨ أسماء النبي محمد ﷺ</button>
         </div>
       </div>
     </div>
 
     <div class="count-bar">
-      <span id="countText">عرض البطاقات التفصيلية</span>
+      <span id="countText">عرض موسوعة الأنبياء والرسل (25 نبياً ورسولاً)</span>
       <button type="button" class="chip" onclick="resetFilters()">🔄 إعادة الضبط</button>
     </div>
 
     <div class="grid" id="grid">
 
-      <!-- بطاقات الأنبياء المستقلة -->
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="آدم" data-v="آدَم" data-meaning="أبو البشر وأول الأنبياء، مشتق من أديم الأرض" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="آدم آدم adam أبو البشر وأول الأنبياء أنبياء مستحب">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">آدَم</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'آدم', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Adam</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: سامي</span></div>
-          <p class="meaning">أبو البشر وأول الأنبياء، مشتق من أديم الأرض</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">التسمية باسم أبينا آدم عليه السلام مستحبة تعظيماً واقتداءً بالأنبياء.</div></div>
-          <div><h4>أبناؤه</h4><p>قابيل، هابيل، شيث.</p></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('آدم')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <!-- بطاقات الأنبياء الـ 25 المذكورين في القرآن الكريم -->
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="آدم" data-v="آدَم" data-meaning="أبو البشر وأول الأنبياء، مشتق من أديم الأرض" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="آدم adam أول الأنبياء أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">1. آدَم</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'آدم', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span><span class="tag-mini">أول الأنبياء</span></div><p class="meaning">أبو البشر وأول الأنبياء، مشتق من أديم الأرض</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه والأبناء</h4><div class="note-box">مستحب شرعاً. أبناؤه: قابيل، هابيل، شيث.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('آدم')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="نوح" data-v="نُوح" data-meaning="الشكور الكثير البكاء، صاحب السفينة وشيخ المرسلين" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="نوح نوح nuh الشكور الكثير البكاء أنبياء مستحب">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">نُوح</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'نوح', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Noah</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: سامي</span></div>
-          <p class="meaning">الشكور الكثير البكاء، صاحب السفينة وشيخ المرسلين</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">من أولى العزم من الرسل، والتسمية به مستحبة.</div></div>
-          <div><h4>أبناؤه</h4><p>سام، حام، يافث، كنعان.</p></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('نوح')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إدريس" data-v="إِدْرِيس" data-meaning="الكثير الدراسة لكتب الله، أول من خطّ بالقلم" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إدريس edris أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">2. إِدْرِيس</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إدريس', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">الكثير الدراسة لكتب الله، أول من خطّ بالقلم</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه والأبناء</h4><div class="note-box">نبي كريم مدح في القرآن بالصبر والصدق.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('إدريس')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إبراهيم" data-v="إِبْرَاهِيم" data-meaning="أب رحيم بالأمة، وخليل الرحمن" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إبراهيم إبراهيم ibrahim أبو الأنبياء أنبياء مستحب">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">إِبْرَاهِيم</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إبراهيم', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Ibrahim</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري/عربي</span></div>
-          <p class="meaning">أب رحيم بالأمة، وخليل الرحمن</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">أبو الأنبياء، والتسمية به من أفضل الأسماء لتعظيم الأنبياء.</div></div>
-          <div><h4>أبناؤه</h4><p>إسماعيل، إسحاق.</p></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('إبراهيم')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="نوح" data-v="نُوح" data-meaning="الشكور الكثير البكاء، شيخ المرسلين" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="نوح noah أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">3. نُوح</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'نوح', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span><span class="tag-mini">أولو العزم</span></div><p class="meaning">الشكور الكثير البكاء، شيخ المرسلين</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه والأبناء</h4><div class="note-box">من أولى العزم. أبناؤه: سام، حام، يافث، كنعان.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('نوح')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إسماعيل" data-v="إِسْمَاعِيل" data-meaning="يسمع الله الدعاء، اسم نبي الله الذبيح ابن إبراهيم" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إسماعيل إسماعيل ismail يسمع الله الدعاء أنبياء مستحب">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">إِسْمَاعِيل</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إسماعيل', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Ismail</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري/عربي</span></div>
-          <p class="meaning">يسمع الله الدعاء، اسم نبي الله الذبيح ابن إبراهيم</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">أبو العرب المستعربة وجد النبي محمد ﷺ، والتسمية به مستحبة.</div></div>
-          <div><h4>أبناؤه</h4><p>نابيت، قيدار.</p></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('إسماعيل')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="هود" data-v="هُود" data-meaning="الراجع إلى الله التائب، نبي عاد" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="هود hood أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">4. هُود</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'هود', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">الراجع إلى الله التائب، نبي عاد</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">نبي أرسل لقوم عاد، والتسمية به مستحبة.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('هود')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إسحاق" data-v="إِسْحَاق" data-meaning="الضاحك المستبشر، نبي الله ابن إبراهيم" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إسحاق إسحاق ishaq الضاحك المستبشر أنبياء مستحب">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">إِسْحَاق</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إسحاق', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Isaac</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري</span></div>
-          <p class="meaning">الضاحك المستبشر، نبي الله ابن إبراهيم</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">نبي كريم من أسباط الأنبياء، والتسمية به مستحبة.</div></div>
-          <div><h4>أبناؤه</h4><p>يعقوب، العيص.</p></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('إسحاق')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="صالح" data-v="صَالِح" data-meaning="المستقيم النافع البار، نبي ثمود" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="صالح saleh أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">5. صَالِح</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'صالح', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">المستقيم النافع البار، نبي ثمود</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">نبي ثمود صاحب الناقة، اسم مبارك ومستحب.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('صالح')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="يعقوب" data-v="يَعْقُوب" data-meaning="الذي يعقب غيره، نبي الله إسرائيل" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="يعقوب يعقوب yaqub نبي الله أنبياء مستحب">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">يَعْقُوب</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'يعقوب', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Jacob</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري</span></div>
-          <p class="meaning">الذي يعقب غيره، نبي الله إسرائيل</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">نبي كريم وجد الأبناء الأسباط، والتسمية به مستحبة.</div></div>
-          <div><h4>أبناؤه</h4><p>يوسف، بنيامين، يهوذا، روبين وبقية الأسباط (12 ابناً).</p></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('يعقوب')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إبراهيم" data-v="إِبْرَاهِيم" data-meaning="أب رحيم والأمة، خليل الرحمن" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إبراهيم ibrahim أبو الأنبياء أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">6. إِبْرَاهِيم</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إبراهيم', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span><span class="tag-mini">أولو العزم</span></div><p class="meaning">أب رحيم والأمة، خليل الرحمن</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه والأبناء</h4><div class="note-box">أبو الأنبياء. أبناؤه: إسماعيل، إسحاق.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('إبراهيم')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="يوسف" data-v="يُوسُف" data-meaning="الله يمنح ويزيد في الخير والجمال" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="يوسف يوسف yusuf نبي الله أنبياء مستحب">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">يُوسُف</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'يوسف', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Yusuf</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري</span></div>
-          <p class="meaning">الله يمنح ويزيد في الخير والجمال</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">اسم نبي الله الكريم، وفي القرآن سورة كاملة باسمه.</div></div>
-          <div><h4>أبناؤه</h4><p>أفرائيم، ميشا.</p></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('يوسف')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="لوط" data-v="لُوط" data-meaning="الملازم للقلب أو المحب الملتصق بالقلب" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="لوط lot أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">7. لُوط</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'لوط', this)">🤍</button></div>
+        <div class="meta-tags"><span class="latin">Lot</span><span class="tag-mini">أنبياء</span></div><p class="meaning">الملازم للقلب أو المحب الملتصق بالقلب</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">ابن أخي إبراهيم عليه السلام، والتسمية به جائزة ومستحبة لتعظيم الأنبياء.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('لوط')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="موسى" data-v="مُوسَى" data-meaning="المنقذ من الماء أو الشجر والمُصطفى" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="موسى موسى musa كليم الله أنبياء مستحب">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">مُوسَى</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'موسى', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Moses</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري قبطي</span></div>
-          <p class="meaning">المنقذ من الماء أو الشجر والمُصطفى</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">كليم الله ورسوله الكريم، والتسمية به مستحبة عظيمة.</div></div>
-          <div><h4>أبناؤه</h4><p>جروشوم، أليعازر.</p></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('موسى')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إسماعيل" data-v="إِسْمَاعِيل" data-meaning="يسمع الله الدعاء، الذبيح ابن إبراهيم" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إسماعيل ismail أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">8. إِسْمَاعِيل</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إسماعيل', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">يسمع الله الدعاء، الذبيح ابن إبراهيم</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه والأبناء</h4><div class="note-box">أبو العرب المستعربة. أبناؤه: نابت، قيدار.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('إسماعيل')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="عيسى" data-v="عِيسَى" data-meaning="المبارك، روح الله وكلمته المسيح عليه السلام" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="عيسى عيسى isa روح الله أنبياء مستحب">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">عِيسَى</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'عيسى', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Jesus</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري/عربي</span></div>
-          <p class="meaning">المبارك، روح الله وكلمته المسيح عليه السلام</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">من أولى العزم من الرسل، والتسمية به مستحبة.</div></div>
-          <div><h4>أبناؤه</h4><p>لم يتزوج ولم يُعقب بحسب العقيدة الإسلامية.</p></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('عيسى')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إسحاق" data-v="إِسْحَاق" data-meaning="الضاحك المستبشر، نبي الله" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إسحاق isaac أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">9. إِسْحَاق</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إسحاق', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">الضاحك المستبشر، نبي الله</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه والأبناء</h4><div class="note-box">ابن إبراهيم عليه السلام. أبناؤه: يعقوب، العيص.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('إسحاق')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="محمد (أسماء النبي ﷺ)" data-v="مُحَمَّد وَأَحْمَد وَالْمَاحِي وَالْحَاشِر" data-meaning="أجمل أسماء النبي ﷺ: محمد، أحمد، الماحي، الحاشر، العاقب" data-s="ok" data-g="m" data-c="أسماء النبي" data-leg="allowed" data-search="محمد أحمد الماحي الحاشر العاقب أسماء النبي صلى الله عليه وسلم مستحب">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">أسماء النبي محمد ﷺ</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'محمد (أسماء النبي ﷺ)', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Muhammad's Names</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أسماء النبي</span><span class="tag-mini">الأصل: عربي</span></div>
-          <p class="meaning">محمد، أحمد، الماحي، الحاشر، العاقب (أشرف الأسماء)</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الفقهي</h4><div class="note-box">التسمية بأسماء النبي ﷺ مستحبة، والنهي خاص بالتكني بـ (أبو القاسم).</div></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('محمد')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="يعقوب" data-v="يَعْقُوب" data-meaning="الذي يعقب غيره (إسرائيل)" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="يعقوب jacob أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">10. يَعْقُوب</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'يعقوب', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">الذي يعقب غيره (إسرائيل)</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه والأبناء</h4><div class="note-box">أبناؤه: الأسباط الـ 12 (يوسف وبنيامين وغيرهم).</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('يعقوب')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <!-- بطاقات أساسية أخرى (عبد الله، مريم، ملاك) -->
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="عبد الله" data-v="عَبْدُ اللَّهِ" data-meaning="العبودية والانتساب لله عز وجل" data-s="ok" data-g="m" data-c="قرآني" data-leg="allowed" data-search="عبد الله عَبْدُ اللَّهِ abdullah العبودية والانتساب لله عز وجل عربي مستحب قرآني ">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">عَبْدُ اللَّهِ</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'عبد الله', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Abdullah</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">قرآني</span><span class="tag-mini">الأصل: عربي</span></div>
-          <p class="meaning">العبودية والانتساب لله عز وجل</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">من أحب الأسماء إلى الله عند رسول الله ﷺ.</div></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('عبد الله')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="يوسف" data-v="يُوسُف" data-meaning="الله يمنح ويزيد في الخير والجمال" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="يوسف yusuf أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">11. يُوسُف</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'يوسف', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">الله يمنح ويزيد في الخير والجمال</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">نبي الله الصدّيق صاحب الجمال والسورة المباركة.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('يوسف')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="مريم" data-v="مَرْيَم" data-meaning="العابدة الخادمة للرب، وقيل: السيدة المعزّزة" data-s="ok" data-g="f" data-c="قرآني" data-leg="allowed" data-search="مريم مَرْيَم maryam العابدة الخادمة للرب، وقيل: السيدة المعزّزة عبري الأصل مستحب قرآني ">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">مَرْيَم</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'مريم', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Maryam</span><span class="tag-mini">👧 مؤنث</span><span class="tag-mini">قرآني</span><span class="tag-mini">الأصل: عبري</span></div>
-          <p class="meaning">العابدة الخادمة للرب، وقيل: السيدة المعزّزة</p>
-          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي</h4><div class="note-box">اسم أم عيسى عليه السلام، والمرأة الوحيدة المذكورة باسمها في القرآن.</div></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('مريم')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="أيوب" data-v="أَيُّوب" data-meaning="الراجع إلى الله التائب الصابر" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="أيوب ayoub أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">12. أَيُّوب</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'أيوب', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">الراجع إلى الله التائب الصابر</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">رمز الصبر العظيم، والتسمية به مستحبة.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('أيوب')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
-      <details class="name-card" style="--tone:#c92a2a;--b-bg:var(--dis-bg);--b-fg:var(--dis)" data-name="ملاك" data-v="مَلَاك" data-meaning="واحد الملائكة، ويدل على الصفاء والنقاء" data-s="dis" data-g="f" data-c="ممنوع قانوناً" data-leg="libya_ban" data-search="ملاك مَلَاك malak واحد الملائكة، ويدل على الصفاء والنقاء عربي محل خلاف ممنوع قانوناً ممنوع ليبيا">
-        <summary class="card-summary">
-          <div class="card-top"><p class="name">مَلَاك</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'ملاك', this)">🤍 حفظ</button></div>
-          <div class="meta-tags"><span class="latin">Malak</span><span class="tag-mini">👧 مؤنث</span><span class="tag-mini">ممنوع قانوناً</span><span class="tag-mini">الأصل: عربي</span></div>
-          <p class="meaning">واحد الملائكة، ويدل على الصفاء والنقاء</p>
-          <div class="card-footer"><span class="badge">محل خلاف</span><span class="badge" style="background:#ffe3e3;color:#c92a2a">🇱🇾 ممنوع في ليبيا</span><span class="more-hint"></span></div>
-        </summary>
-        <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">ممنوع قانوناً في السجل المدني الليبي (رقم 130).</div></div>
-          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('ملاك')">🎉 تصميم بطاقة بشارة</button></div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
-        </div>
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="شعيب" data-v="شُعَيْب" data-meaning="تصغير شعب، نبي مدين (خطيب الأنبياء)" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="شعيب shoaib أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">13. شُعَيْب</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'شعيب', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">تصغير شعب، نبي مدين (خطيب الأنبياء)</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">خطيب الأنبياء ونبي مدين، التسمية به حسنة ومستحبة.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('شعيب')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="موسى" data-v="مُوسَى" data-meaning="المنقذ من الماء والمنتشل، كليم الله" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="موسى moses أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">14. مُوسَى</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'موسى', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span><span class="tag-mini">أولو العزم</span></div><p class="meaning">المنقذ من الماء والمنتشل، كليم الله</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">كليم الله ورسوله، من أولو العزم.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('موسى')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="هارون" data-v="هَارُون" data-meaning="الجبل الرفيع أو المرتفع، وزير موسى عليه السلام" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="هارون aaron أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">15. هَارُون</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'هارون', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">الجبل الرفيع أو المرتفع، وزير موسى عليه السلام</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">نبي الله أخو موسى ووزيره، والتسمية به مستحبة.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('هارون')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="ذو الكفل" data-v="ذُو الْكِفْلِ" data-meaning="صاحب الكفل أو الضمان، النبي الصابر الصالح" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="ذو الكفل dhul kifl أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">16. ذُو الْكِفْلِ</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'ذو الكفل', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">صاحب الكفل أو الضمان، النبي الصابر الصالح</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">نبي كريم ذكر في القرآن مع الصابرين.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('ذو الكفل')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="داود" data-v="دَاوُد" data-meaning="المحبوب الحبيب، نبي الله الملك وصاحب الزبور" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="داود david أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">17. دَاوُد</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'داود', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">المحبوب الحبيب، نبي الله الملك وصاحب الزبور</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه والأبناء</h4><div class="note-box">نبي ملك، وأبرز أبنائه نبي الله سليمان عليه السلام.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('داود')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="سليمان" data-v="سُلَيْمَان" data-meaning="تصغير سَلْم، الرجل السالم من العيوب، نبي الله الملك" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="سليمان solomon أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">18. سُلَيْمَان</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'سليمان', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">تصغير سَلْم، الرجل السالم من العيوب، نبي الله الملك</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">نبي ملك وابن نبي، والتسمية به مستحبة.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('سليمان')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إلياس" data-v="إِلْيَاس" data-meaning="إلهي أو المرتفع، نبي بني إسرائيل" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إلياس elijah أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">19. إِلْيَاس</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إلياس', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">إلهي أو المرتفع، نبي بني إسرائيل</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">نبي كريم ورد ذكره في القرآن الكريم، والتسمية به مستحبة.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('إلياس')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="اليسع" data-v="الْيَسَع" data-meaning="الله واسع العطاء والفضل، نبي كريم" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="اليسع elisha أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">20. الْيَسَع</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'اليسع', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">الله واسع العطاء والفضل، نبي كريم</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">نبي من الأنبياء الممدوحين في القرآن مع الأسباط.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('اليسع')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="يونس" data-v="يُونُس" data-meaning="صاحب الحوت (ذو النون)، نبي الله" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="يونس jonah أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">21. يُونُس</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'يونس', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">صاحب الحوت (ذو النون)، نبي الله</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">نبي الله صاحب الحوت، وله سورة باسمه في القرآن.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('يونس')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="زكريا" data-v="زَكَرِيَّا" data-meaning="ذكر الله أو العبد الذاكر لله، كفيل مريم" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="زكريا zechariah أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">22. زَكَرِيَّا</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'زكريا', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">ذكر الله أو العبد الذاكر لله، كفيل مريم</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه والأبناء</h4><div class="note-box">نبي الله كفيل مريم. ابنه: نبي الله يحيى عليه السلام.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('زكريا')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="يحيى" data-v="يَحْيَى" data-meaning="الذي يعيش ويحيا طاعةً لله، سيد حصور" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="يحيى john أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">23. يَحْيَى</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'يحيى', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span></div><p class="meaning">الذي يعيش ويحيا طاعةً لله، سيد حصور</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">نبي الله ابن زكريا، سماه الله به ولم يكن له من قبل سميّا.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('يحيى')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="عيسى" data-v="عِيسَى" data-meaning="روح الله وكلمته المسيح عليه السلام" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="عيسى jesus أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">24. عِيسَى</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'عيسى', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span><span class="tag-mini">أولو العزم</span></div><p class="meaning">روح الله وكلمته المسيح عليه السلام</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه</h4><div class="note-box">من أولو العزم من الرسل، والتسمية به مستحبة عظيمة.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('عيسى')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="محمد" data-v="مُحَمَّد" data-meaning="خاتم الأنبياء والمرسلين ﷺ" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="محمد muhammad خاتم الأنبياء أنبياء مستحب">
+        <summary class="card-summary"><div class="card-top"><p class="name">25. مُحَمَّد</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'محمد', this)">🤍</button></div>
+        <div class="meta-tags"><span class="tag-mini">أنبياء</span><span class="tag-mini">خاتم الرسل</span></div><p class="meaning">خاتم الأنبياء والمرسلين ﷺ</p>
+        <div class="card-footer"><span class="badge">مستحب</span><span class="more-hint"></span></div></summary>
+        <div class="card-details"><div><h4>التوجيه والأبناء</h4><div class="note-box">أشرف الأنبياء. أبناؤه: القاسم، عبد الله، إبراهيم، وبناته: زينب، رقية، أم كلثوم، فاطمة.</div></div><div><button type="button" class="chip" onclick="selectNameInBishaara('محمد')">🎉 تصميم بطاقة بشارة</button></div><div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div></div>
       </details>
 
     </div>
 
     <h2 class="sec">مفتاح التصنيف الفقهي والقانوني</h2>
     <div class="legend">
-      <div class="lg" style="--tone:var(--ok)"><b>مستحب</b><span>ورد فيه ترغيب أو هو اسم نبي وصحابي أو فيه ثناء على الله.</span></div>
-      <div class="lg" style="--tone:var(--mub)"><b>مباح شرعاً</b><span>لا نص فيه ولا معنى مخالف، ومعناه حسن أو محايد.</span></div>
-      <div class="lg" style="--tone:var(--warn)"><b>مكروه / منهي عنه</b><span>ورد فيه نهي أو تغيير من النبي ﷺ، أو معناه يُستقبح.</span></div>
-      <div class="lg" style="--tone:#c92a2a"><b>🇱🇾 ممنوع في السجل المدني الليبي</b><span>ورد في قائمة الـ 156 اسماً الممنوعة في ليبيا.</span></div>
+      <div class="lg" style="--tone:var(--ok)"><b>مستحب (الأنبياء والرسل)</b><span>الأنبياء الـ 25 المذكورون في القرآن الكريم وأسماء النبي محمد ﷺ.</span></div>
+      <div class="lg" style="--tone:var(--mub)"><b>مباح شرعاً</b><span>لا نص فيه ولا معنى مخالف.</span></div>
+      <div class="lg" style="--tone:#c92a2a"><b>🇱🇾 ممنوع في السجل المدني الليبي</b><span>ورد في قائمة الـ 156 اسماً الممنوعة.</span></div>
     </div>
 
     <h2 class="sec">ملاحظة منهجية وقانونية</h2>
@@ -523,11 +509,11 @@ function toggleFav(ev, name, btn) {
   if (idx > -1) {
     favList.splice(idx, 1);
     btn.classList.remove('active');
-    btn.innerHTML = '🤍 حفظ';
+    btn.innerHTML = '🤍';
   } else {
     favList.push(name);
     btn.classList.add('active');
-    btn.innerHTML = '❤️ محفوظ';
+    btn.innerHTML = '❤️';
   }
   document.getElementById('favCount').textContent = favList.length;
   filterCards();
