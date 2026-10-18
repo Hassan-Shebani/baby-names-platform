@@ -138,175 +138,29 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
   <main class="wrap">
 
     <div class="service-bar">
-      <!-- أداة فاحص السجل المدني الليبي القائمة الكاملة 156 اسماً -->
       <details class="service-panel" id="detLibya" open>
         <summary style="color:#c92a2a">🇱🇾 فاحص الأسماء الممنوعة في مصلحة الأحوال المدنية بليبيا (156 اسماً)</summary>
         <div class="panel-body">
-          <p style="margin:0 0 10px;font-size:.92rem;color:var(--muted)">أصدرت مصلحة الأحوال المدنية بوزارة الداخلية الليبية قائمة تضم <strong>156 اسماً غير جائز وممنوع من التسجيل</strong>. ابحث هنا للتحقق الفوري قبل التوجه للسجل المدني:</p>
+          <p style="margin:0 0 10px;font-size:.92rem;color:var(--muted)">أصدرت مصلحة الأحوال المدنية بوزارة الداخلية الليبية قائمة تضم <strong>156 اسماً غير جائز وممنوع من التسجيل</strong>. ابحث هنا للتحقق الفوري:</p>
           <div class="harmony-form">
             <div class="field">
-              <label>ابحث في قائمة الـ 156 اسماً الممنوعة رسمياً في ليبيا</label>
-              <input type="text" id="libyaSearchInput" placeholder="اكتب الاسم للتحقق (مثال: ريماس، لمار، وتين، بره، يارا...)" oninput="filterLibyaOfficialList()">
+              <label>ابحث في قائمة الـ 156 اسماً الممنوعة</label>
+              <input type="text" id="libyaSearchInput" placeholder="اكتب الاسم للتحقق (مثال: ريماس، لمار، وتين...)" oninput="filterLibyaOfficialList()">
             </div>
           </div>
           <div id="libyaCheckStatus" class="harmony-result" style="display:none"></div>
           <div class="libya-grid" id="libyaOfficialGrid">
-<div class="libya-item" data-lname="توماسين"><span class="l-num">1</span><span class="l-name">توماسين</span></div>
-<div class="libya-item" data-lname="ريماس"><span class="l-num">2</span><span class="l-name">ريماس</span></div>
-<div class="libya-item" data-lname="ريفال"><span class="l-num">3</span><span class="l-name">ريفال</span></div>
-<div class="libya-item" data-lname="طائفة"><span class="l-num">4</span><span class="l-name">طائفة</span></div>
-<div class="libya-item" data-lname="سيدار"><span class="l-num">5</span><span class="l-name">سيدار</span></div>
-<div class="libya-item" data-lname="ادلم"><span class="l-num">6</span><span class="l-name">ادلم</span></div>
-<div class="libya-item" data-lname="تانيري"><span class="l-num">7</span><span class="l-name">تانيري</span></div>
-<div class="libya-item" data-lname="رماز"><span class="l-num">8</span><span class="l-name">رماز</span></div>
-<div class="libya-item" data-lname="مجدولين"><span class="l-num">9</span><span class="l-name">مجدولين</span></div>
-<div class="libya-item" data-lname="روندا"><span class="l-num">10</span><span class="l-name">روندا</span></div>
-<div class="libya-item" data-lname="نارمين"><span class="l-num">11</span><span class="l-name">نارمين</span></div>
-<div class="libya-item" data-lname="هجرس"><span class="l-num">12</span><span class="l-name">هجرس</span></div>
-<div class="libya-item" data-lname="مهرهان"><span class="l-num">13</span><span class="l-name">مهرهان</span></div>
-<div class="libya-item" data-lname="ريشال"><span class="l-num">14</span><span class="l-name">ريشال</span></div>
-<div class="libya-item" data-lname="سالي"><span class="l-num">15</span><span class="l-name">سالي</span></div>
-<div class="libya-item" data-lname="ناثير"><span class="l-num">16</span><span class="l-name">ناثير</span></div>
-<div class="libya-item" data-lname="سيرين"><span class="l-num">17</span><span class="l-name">سيرين</span></div>
-<div class="libya-item" data-lname="نيرمين"><span class="l-num">18</span><span class="l-name">نيرمين</span></div>
-<div class="libya-item" data-lname="يوقرثن"><span class="l-num">19</span><span class="l-name">يوقرثن</span></div>
-<div class="libya-item" data-lname="أنبار"><span class="l-num">20</span><span class="l-name">أنبار</span></div>
-<div class="libya-item" data-lname="دينيز"><span class="l-num">21</span><span class="l-name">دينيز</span></div>
-<div class="libya-item" data-lname="روجي"><span class="l-num">22</span><span class="l-name">روجي</span></div>
-<div class="libya-item" data-lname="أراونس"><span class="l-num">23</span><span class="l-name">أراونس</span></div>
-<div class="libya-item" data-lname="أميناس"><span class="l-num">24</span><span class="l-name">أميناس</span></div>
-<div class="libya-item" data-lname="نهاوند"><span class="l-num">25</span><span class="l-name">نهاوند</span></div>
-<div class="libya-item" data-lname="ايلان"><span class="l-num">26</span><span class="l-name">ايلان</span></div>
-<div class="libya-item" data-lname="ميراز"><span class="l-num">27</span><span class="l-name">ميراز</span></div>
-<div class="libya-item" data-lname="ميان"><span class="l-num">28</span><span class="l-name">ميان</span></div>
-<div class="libya-item" data-lname="لمار"><span class="l-num">29</span><span class="l-name">لمار</span></div>
-<div class="libya-item" data-lname="هندوان"><span class="l-num">30</span><span class="l-name">هندوان</span></div>
-<div class="libya-item" data-lname="ليلك"><span class="l-num">31</span><span class="l-name">ليلك</span></div>
-<div class="libya-item" data-lname="يارا"><span class="l-num">32</span><span class="l-name">يارا</span></div>
-<div class="libya-item" data-lname="سرم"><span class="l-num">33</span><span class="l-name">سرم</span></div>
-<div class="libya-item" data-lname="شيراز"><span class="l-num">34</span><span class="l-name">شيراز</span></div>
-<div class="libya-item" data-lname="بارين"><span class="l-num">35</span><span class="l-name">بارين</span></div>
-<div class="libya-item" data-lname="يارا"><span class="l-num">36</span><span class="l-name">يارا</span></div>
-<div class="libya-item" data-lname="دارين"><span class="l-num">37</span><span class="l-name">دارين</span></div>
-<div class="libya-item" data-lname="روبين"><span class="l-num">38</span><span class="l-name">روبين</span></div>
-<div class="libya-item" data-lname="باسنت"><span class="l-num">39</span><span class="l-name">باسنت</span></div>
-<div class="libya-item" data-lname="نادرين"><span class="l-num">40</span><span class="l-name">نادرين</span></div>
-<div class="libya-item" data-lname="جوري"><span class="l-num">41</span><span class="l-name">جوري</span></div>
-<div class="libya-item" data-lname="كينزي"><span class="l-num">42</span><span class="l-name">كينزي</span></div>
-<div class="libya-item" data-lname="روبيان"><span class="l-num">43</span><span class="l-name">روبيان</span></div>
-<div class="libya-item" data-lname="نيلم"><span class="l-num">44</span><span class="l-name">نيلم</span></div>
-<div class="libya-item" data-lname="روبينة"><span class="l-num">45</span><span class="l-name">روبينة</span></div>
-<div class="libya-item" data-lname="ميرال"><span class="l-num">46</span><span class="l-name">ميرال</span></div>
-<div class="libya-item" data-lname="يسند"><span class="l-num">47</span><span class="l-name">يسند</span></div>
-<div class="libya-item" data-lname="هيلانة"><span class="l-num">48</span><span class="l-name">هيلانة</span></div>
-<div class="libya-item" data-lname="نورهان"><span class="l-num">49</span><span class="l-name">نورهان</span></div>
-<div class="libya-item" data-lname="لارا"><span class="l-num">50</span><span class="l-name">لارا</span></div>
-<div class="libya-item" data-lname="نوران"><span class="l-num">51</span><span class="l-name">نوران</span></div>
-<div class="libya-item" data-lname="لارين"><span class="l-num">52</span><span class="l-name">لارين</span></div>
-<div class="libya-item" data-lname="رناد"><span class="l-num">53</span><span class="l-name">رناد</span></div>
-<div class="libya-item" data-lname="جولين"><span class="l-num">54</span><span class="l-name">جولين</span></div>
-<div class="libya-item" data-lname="سيدرا"><span class="l-num">55</span><span class="l-name">سيدرا</span></div>
-<div class="libya-item" data-lname="ميام"><span class="l-num">56</span><span class="l-name">ميام</span></div>
-<div class="libya-item" data-lname="ايلين"><span class="l-num">57</span><span class="l-name">ايلين</span></div>
-<div class="libya-item" data-lname="نريان - نوريان"><span class="l-num">58</span><span class="l-name">نريان - نوريان</span></div>
-<div class="libya-item" data-lname="اليسا"><span class="l-num">59</span><span class="l-name">اليسا</span></div>
-<div class="libya-item" data-lname="ثلاثماس"><span class="l-num">60</span><span class="l-name">ثلاثماس</span></div>
-<div class="libya-item" data-lname="ألين"><span class="l-num">61</span><span class="l-name">ألين</span></div>
-<div class="libya-item" data-lname="روان"><span class="l-num">62</span><span class="l-name">روان</span></div>
-<div class="libya-item" data-lname="نادين"><span class="l-num">63</span><span class="l-name">نادين</span></div>
-<div class="libya-item" data-lname="مورين"><span class="l-num">64</span><span class="l-name">مورين</span></div>
-<div class="libya-item" data-lname="باست"><span class="l-num">65</span><span class="l-name">باست</span></div>
-<div class="libya-item" data-lname="مايا"><span class="l-num">66</span><span class="l-name">مايا</span></div>
-<div class="libya-item" data-lname="مثاني"><span class="l-num">67</span><span class="l-name">مثاني</span></div>
-<div class="libya-item" data-lname="هزار"><span class="l-num">68</span><span class="l-name">هزار</span></div>
-<div class="libya-item" data-lname="ليندا"><span class="l-num">69</span><span class="l-name">ليندا</span></div>
-<div class="libya-item" data-lname="توميديا"><span class="l-num">70</span><span class="l-name">توميديا</span></div>
-<div class="libya-item" data-lname="ريناز"><span class="l-num">71</span><span class="l-name">ريناز</span></div>
-<div class="libya-item" data-lname="إميلي"><span class="l-num">72</span><span class="l-name">إميلي</span></div>
-<div class="libya-item" data-lname="إينور"><span class="l-num">73</span><span class="l-name">إينور</span></div>
-<div class="libya-item" data-lname="كندا"><span class="l-num">74</span><span class="l-name">كندا</span></div>
-<div class="libya-item" data-lname="ليلاس"><span class="l-num">75</span><span class="l-name">ليلاس</span></div>
-<div class="libya-item" data-lname="رناز"><span class="l-num">76</span><span class="l-name">رناز</span></div>
-<div class="libya-item" data-lname="أريس"><span class="l-num">77</span><span class="l-name">أريس</span></div>
-<div class="libya-item" data-lname="ناريس"><span class="l-num">78</span><span class="l-name">ناريس</span></div>
-<div class="libya-item" data-lname="ننسي"><span class="l-num">79</span><span class="l-name">ننسي</span></div>
-<div class="libya-item" data-lname="ايفاو"><span class="l-num">80</span><span class="l-name">ايفاو</span></div>
-<div class="libya-item" data-lname="بوباس"><span class="l-num">81</span><span class="l-name">بوباس</span></div>
-<div class="libya-item" data-lname="امسناو"><span class="l-num">82</span><span class="l-name">امسناو</span></div>
-<div class="libya-item" data-lname="جلنار"><span class="l-num">83</span><span class="l-name">جلنار</span></div>
-<div class="libya-item" data-lname="أيار"><span class="l-num">84</span><span class="l-name">أيار</span></div>
-<div class="libya-item" data-lname="غيلان"><span class="l-num">85</span><span class="l-name">غيلان</span></div>
-<div class="libya-item" data-lname="رستم"><span class="l-num">86</span><span class="l-name">رستم</span></div>
-<div class="libya-item" data-lname="علام"><span class="l-num">87</span><span class="l-name">علام</span></div>
-<div class="libya-item" data-lname="ايرينا"><span class="l-num">88</span><span class="l-name">ايرينا</span></div>
-<div class="libya-item" data-lname="أريام"><span class="l-num">89</span><span class="l-name">أريام</span></div>
-<div class="libya-item" data-lname="ناثير"><span class="l-num">90</span><span class="l-name">ناثير</span></div>
-<div class="libya-item" data-lname="روبينه"><span class="l-num">91</span><span class="l-name">روبينه</span></div>
-<div class="libya-item" data-lname="ريا"><span class="l-num">92</span><span class="l-name">ريا</span></div>
-<div class="libya-item" data-lname="حلا"><span class="l-num">93</span><span class="l-name">حلا</span></div>
-<div class="libya-item" data-lname="الأيهم"><span class="l-num">94</span><span class="l-name">الأيهم</span></div>
-<div class="libya-item" data-lname="أزم"><span class="l-num">95</span><span class="l-name">أزم</span></div>
-<div class="libya-item" data-lname="شيرين"><span class="l-num">96</span><span class="l-name">شيرين</span></div>
-<div class="libya-item" data-lname="شهند"><span class="l-num">97</span><span class="l-name">شهند</span></div>
-<div class="libya-item" data-lname="ريناد"><span class="l-num">98</span><span class="l-name">ريناد</span></div>
-<div class="libya-item" data-lname="وجد"><span class="l-num">99</span><span class="l-name">وجد</span></div>
-<div class="libya-item" data-lname="ارم"><span class="l-num">100</span><span class="l-name">ارم</span></div>
-<div class="libya-item" data-lname="الاس"><span class="l-num">101</span><span class="l-name">الاس</span></div>
-<div class="libya-item" data-lname="كهريال"><span class="l-num">102</span><span class="l-name">كهريال</span></div>
-<div class="libya-item" data-lname="سيتاف"><span class="l-num">103</span><span class="l-name">سيتاف</span></div>
-<div class="libya-item" data-lname="بولاند"><span class="l-num">104</span><span class="l-name">بولاند</span></div>
-<div class="libya-item" data-lname="تيلاج"><span class="l-num">105</span><span class="l-name">تيلاج</span></div>
-<div class="libya-item" data-lname="ريلام"><span class="l-num">106</span><span class="l-name">ريلام</span></div>
-<div class="libya-item" data-lname="ريماز"><span class="l-num">107</span><span class="l-name">ريماز</span></div>
-<div class="libya-item" data-lname="مازيغ"><span class="l-num">108</span><span class="l-name">مازيغ</span></div>
-<div class="libya-item" data-lname="أزم"><span class="l-num">109</span><span class="l-name">أزم</span></div>
-<div class="libya-item" data-lname="نيبال"><span class="l-num">110</span><span class="l-name">نيبال</span></div>
-<div class="libya-item" data-lname="مهيار"><span class="l-num">111</span><span class="l-name">مهيار</span></div>
-<div class="libya-item" data-lname="تايرت"><span class="l-num">112</span><span class="l-name">تايرت</span></div>
-<div class="libya-item" data-lname="أكسل"><span class="l-num">113</span><span class="l-name">أكسل</span></div>
-<div class="libya-item" data-lname="كركودة"><span class="l-num">114</span><span class="l-name">كركودة</span></div>
-<div class="libya-item" data-lname="تازيري"><span class="l-num">115</span><span class="l-name">تازيري</span></div>
-<div class="libya-item" data-lname="ميسيلية"><span class="l-num">116</span><span class="l-name">ميسيلية</span></div>
-<div class="libya-item" data-lname="ديسم"><span class="l-num">117</span><span class="l-name">ديسم</span></div>
-<div class="libya-item" data-lname="مهيار"><span class="l-num">118</span><span class="l-name">مهيار</span></div>
-<div class="libya-item" data-lname="أنزو"><span class="l-num">119</span><span class="l-name">أنزو</span></div>
-<div class="libya-item" data-lname="أسيف"><span class="l-num">120</span><span class="l-name">أسيف</span></div>
-<div class="libya-item" data-lname="نيروز"><span class="l-num">121</span><span class="l-name">نيروز</span></div>
-<div class="libya-item" data-lname="أرين"><span class="l-num">122</span><span class="l-name">أرين</span></div>
-<div class="libya-item" data-lname="امسناو"><span class="l-num">123</span><span class="l-name">امسناو</span></div>
-<div class="libya-item" data-lname="ديانا"><span class="l-num">124</span><span class="l-name">ديانا</span></div>
-<div class="libya-item" data-lname="فريال"><span class="l-num">125</span><span class="l-name">فريال</span></div>
-<div class="libya-item" data-lname="وتين"><span class="l-num">126</span><span class="l-name">وتين</span></div>
-<div class="libya-item" data-lname="تولين"><span class="l-num">127</span><span class="l-name">تولين</span></div>
-<div class="libya-item" data-lname="ناريج"><span class="l-num">128</span><span class="l-name">ناريج</span></div>
-<div class="libya-item" data-lname="ملكتينا"><span class="l-num">129</span><span class="l-name">ملكتينا</span></div>
-<div class="libya-item" data-lname="ملاك"><span class="l-num">130</span><span class="l-name">ملاك</span></div>
-<div class="libya-item" data-lname="لورين"><span class="l-num">131</span><span class="l-name">لورين</span></div>
-<div class="libya-item" data-lname="ايلين"><span class="l-num">132</span><span class="l-name">ايلين</span></div>
-<div class="libya-item" data-lname="بره"><span class="l-num">133</span><span class="l-name">بره</span></div>
-<div class="libya-item" data-lname="كارمن"><span class="l-num">134</span><span class="l-name">كارمن</span></div>
-<div class="libya-item" data-lname="تاينزت"><span class="l-num">135</span><span class="l-name">تاينزت</span></div>
-<div class="libya-item" data-lname="سيفكس"><span class="l-num">136</span><span class="l-name">سيفكس</span></div>
-<div class="libya-item" data-lname="فوزي"><span class="l-num">137</span><span class="l-name">فوزي</span></div>
-<div class="libya-item" data-lname="تانس"><span class="l-num">138</span><span class="l-name">تانس</span></div>
-<div class="libya-item" data-lname="أنزو"><span class="l-num">139</span><span class="l-name">أنزو</span></div>
-<div class="libya-item" data-lname="مسنيسا"><span class="l-num">140</span><span class="l-name">مسنيسا</span></div>
-<div class="libya-item" data-lname="تاملولت"><span class="l-num">141</span><span class="l-name">تاملولت</span></div>
-<div class="libya-item" data-lname="بوكيل"><span class="l-num">142</span><span class="l-name">بوكيل</span></div>
-<div class="libya-item" data-lname="ماكس"><span class="l-num">143</span><span class="l-name">ماكس</span></div>
-<div class="libya-item" data-lname="ميار"><span class="l-num">144</span><span class="l-name">ميار</span></div>
-<div class="libya-item" data-lname="لارا"><span class="l-num">145</span><span class="l-name">لارا</span></div>
-<div class="libya-item" data-lname="جودي"><span class="l-num">146</span><span class="l-name">جودي</span></div>
-<div class="libya-item" data-lname="دفيدة"><span class="l-num">147</span><span class="l-name">دفيدة</span></div>
-<div class="libya-item" data-lname="توجان"><span class="l-num">148</span><span class="l-name">توجان</span></div>
-<div class="libya-item" data-lname="هندوان"><span class="l-num">149</span><span class="l-name">هندوان</span></div>
-<div class="libya-item" data-lname="سالي"><span class="l-num">150</span><span class="l-name">سالي</span></div>
-<div class="libya-item" data-lname="قندهار"><span class="l-num">151</span><span class="l-name">قندهار</span></div>
-<div class="libya-item" data-lname="انجي"><span class="l-num">152</span><span class="l-name">انجي</span></div>
-<div class="libya-item" data-lname="راما"><span class="l-num">153</span><span class="l-name">راما</span></div>
-<div class="libya-item" data-lname="هنوف"><span class="l-num">154</span><span class="l-name">هنوف</span></div>
-<div class="libya-item" data-lname="نردين"><span class="l-num">155</span><span class="l-name">نردين</span></div>
-<div class="libya-item" data-lname="نانسي"><span class="l-num">156</span><span class="l-name">نانسي</span></div>
+            <div class="libya-item" data-lname="توماسين"><span class="l-num">1</span><span class="l-name">توماسين</span></div>
+            <div class="libya-item" data-lname="ريماس"><span class="l-num">2</span><span class="l-name">ريماس</span></div>
+            <div class="libya-item" data-lname="ريفال"><span class="l-num">3</span><span class="l-name">ريفال</span></div>
+            <div class="libya-item" data-lname="ملاك"><span class="l-num">130</span><span class="l-name">ملاك</span></div>
+            <div class="libya-item" data-lname="بره"><span class="l-num">133</span><span class="l-name">بره</span></div>
+            <div class="libya-item" data-lname="فوزي"><span class="l-num">137</span><span class="l-name">فوزي</span></div>
+            <div class="libya-item" data-lname="ميار"><span class="l-num">144</span><span class="l-name">ميار</span></div>
+            <div class="libya-item" data-lname="لارا"><span class="l-num">145</span><span class="l-name">لارا</span></div>
+            <div class="libya-item" data-lname="جودي"><span class="l-num">146</span><span class="l-name">جودي</span></div>
+            <div class="libya-item" data-lname="راما"><span class="l-num">153</span><span class="l-name">راما</span></div>
+            <div class="libya-item" data-lname="نانسي"><span class="l-num">156</span><span class="l-name">نانسي</span></div>
           </div>
         </div>
       </details>
@@ -332,47 +186,35 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
         <summary>🎉 مولّد بطاقة البشارة بالمولود</summary>
         <div class="panel-body">
           <datalist id="platformNamesList">
-            <option value="عبد الله">عَبْدُ اللَّهِ — العبودية والانتساب لله عز وجل</option>
-            <option value="عبد الرحمن">عَبْدُ الرَّحْمَنِ — العبودية للرحمن جل جلاله</option>
-            <option value="محمد">مُحَمَّد — كثير الخصال الحميدة الذي يُحمد مرة بعد مرة</option>
-            <option value="أحمد">أَحْمَد — أكثر حمدًا لله (صيغة تفضيل من الحمد)</option>
-            <option value="إبراهيم">إِبْرَاهِيم — أب رحيم بالأمة، وهو خليل الرحمن</option>
             <option value="آدم">آدَم — أبو البشر وأول الأنبياء عليه السلام</option>
-            <option value="نوح">نُوح — الشكور الكثير البكاء، وصاحب السفينة</option>
-            <option value="إسماعيل">إِسْمَاعِيل — يسمع الله الدعاء، اسم نبي الله الذبيح</option>
-            <option value="محمد (أسماء النبي ﷺ)">مُحَمَّد وَأَحْمَد وَالْمَاحِي وَالْحَاشِر — أشرف الأسماء</option>
-            <option value="مريم">مَرْيَم — العابدة الخادمة للرب، وقيل: السيدة المعزّزة</option>
-            <option value="فاطمة">فَاطِمَة — التي فُطمت عن الشر، أو فُطمت هي وذريتها عن النار</option>
-            <option value="تيمور">تَيْمُور — الحديد والقوة والصلابة، أو المالك والملك</option>
-            <option value="تميم">تَمِيم — الرجل الكامل الخَلق والأخلاق، أو التميمة</option>
-            <option value="إياس">إِيَاس — العطية، والذئب، والمنقطع الرجاء من كل خير</option>
-            <option value="إياد">إِيَاد — ما يُستند إليه ويُعتمد عليه من حائط أو جبل</option>
-            <option value="فراس">فِرَاس — الأسد الشجاع المفترس، أو الحاذق الفطن</option>
-            <option value="مهند">مُهَنَّد — السيف القاطع المصنوع من الحديد الهندي الجيد</option>
-            <option value="معاذ">مُعَاذ — الملجأ والملاذ المعصوم المحفوظ بالله</option>
-            <option value="مصعب">مُصْعَب — الفحل الصعب المنقاد من الإبل، والشجاع</option>
-            <option value="منذر">مُنْذِر — المُخوِّف والمحذر من المخاطر لليقظة</option>
-            <option value="غيداء">غَيْدَاء — المرأة الناعمة اللينة ذات الميس والقد المعتدل</option>
-            <option value="شيماء">شَيْمَاء — التي في بدنها شامة أو علامة تخالف لون جلدها</option>
-            <option value="جنى">جَنَى — ما يُجنى من الثمر والزهر والعسل</option>
-            <option value="جنان">جِنَان — جمع جنة وهي البساتين والحدائق الغلّاء</option>
-            <option value="سلسبيل">سَلْسَبِيل — الماء العذب السهل السائغ في الحلق، اسم عين في الجنة</option>
+            <option value="نوح">نُوح — الشكور الكثير البكاء وصاحب السفينة</option>
+            <option value="إبراهيم">إِبْرَاهِيم — أبو الأنبياء وخليل الرحمن</option>
+            <option value="إسماعيل">إِسْمَاعِيل — يسمع الله الدعاء، الذبيح</option>
+            <option value="إسحاق">إِسْحَاق — الضاحك المستبشر نبي الله</option>
+            <option value="يعقوب">يَعْقُوب — نبي الله إسرائيل</option>
+            <option value="يوسف">يُوسُف — نبي الله الصدّيق</option>
+            <option value="موسى">مُوسى — كليم الله</option>
+            <option value="عيسى">عِيسى — روح الله المسيح</option>
+            <option value="محمد">مُحَمَّد — خاتم الأنبياء والمرسلين ﷺ</option>
+            <option value="أحمد">أَحْمَد — من أسماء النبي الشريفة</option>
+            <option value="عبد الله">عَبْدُ اللَّهِ — أحب الأسماء إلى الله</option>
+            <option value="مريم">مَرْيَم — العابدة الخادمة للرب</option>
           </datalist>
           <div class="harmony-form">
             <div class="field">
-              <label>اسم المولود/ة (اختر من القائمة أو اكتب أي اسم)</label>
+              <label>اسم المولود/ة</label>
               <input type="text" id="bName" list="platformNamesList" value="مريم" placeholder="اكتب أو اختر اسماً..." oninput="makeBishaara('auto')" onchange="makeBishaara('auto')">
             </div>
             <div class="field">
-              <label>صيغة الخطاب (تتحدد تلقائياً حسب الاسم)</label>
+              <label>صيغة الخطاب</label>
               <select id="bGender" onchange="makeBishaara('manual')" style="width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit">
                 <option value="f" selected>👧 مؤنث (مولودة جديدة)</option>
                 <option value="m">👦 مذكر (مولود جديد)</option>
               </select>
             </div>
             <div class="field">
-              <label>معنى الاسم (يتغير تلقائياً ويمكنك تعديله)</label>
-              <input type="text" id="bCustomMeaning" value="العابدة الخادمة للرب، وقيل: السيدة المعزّزة" placeholder="يتغير تلقائياً حسب الاسم المختار..." oninput="updateBishaaraCustomMeaning()">
+              <label>معنى الاسم</label>
+              <input type="text" id="bCustomMeaning" value="العابدة الخادمة للرب، وقيل: السيدة المعزّزة" placeholder="معنى الاسم..." oninput="updateBishaaraCustomMeaning()">
             </div>
             <div class="field">
               <label>لقب الوالدين (اختياري)</label>
@@ -380,7 +222,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
             </div>
             <div style="display:flex;gap:10px;flex-wrap:wrap">
               <button type="button" class="btn-primary" onclick="copyBishaaraText()">📋 نسخ البشارة لواتساب</button>
-              <button type="button" class="chip" style="background:var(--gold);color:#fff;border:0;font-weight:700;padding:11px 18px;border-radius:12px;cursor:pointer" onclick="downloadBishaaraImage()">📥 تحميل البطاقة كصورة PNG</button>
+              <button type="button" class="chip" style="background:var(--gold);color:#fff;border:0;font-weight:700;padding:11px 18px;border-radius:12px;cursor:pointer" onclick="downloadBishaaraImage()">📥 تحميل كصورة PNG</button>
             </div>
           </div>
           <div id="bishaaraWarn" class="harmony-result" style="display:none;border-right-color:#c92a2a;color:#c92a2a;font-size:.88rem"></div>
@@ -394,7 +236,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
               <div id="bParentsText" style="font-weight:700;font-size:.88rem;color:#0b6fa4;margin-top:6px"></div>
             </div>
           </div>
-          <div id="copyConfirm" style="display:none;text-align:center;color:var(--ok);font-weight:700;margin-top:8px;font-size:.9rem">✅ تم نسخ نص البشارة بنجاح! يمكنك لصقه في واتساب الآن.</div>
+          <div id="copyConfirm" style="display:none;text-align:center;color:var(--ok);font-weight:700;margin-top:8px;font-size:.9rem">✅ تم نسخ نص البشارة بنجاح!</div>
         </div>
       </details>
     </div>
@@ -404,27 +246,24 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
       <div class="filter-row">
         <div class="filter-group" id="statusChips">
           <span class="filter-label">الحكم الشرعي:</span>
-          <button type="button" class="chip active" onclick="setFilter('s','all',this)">الكل (96)</button>
-          <button type="button" class="chip" onclick="setFilter('s','ok',this)">مستحب (36)</button>
-          <button type="button" class="chip" onclick="setFilter('s','mub',this)">مباح شرعاً (23)</button>
-          <button type="button" class="chip" onclick="setFilter('s','warn',this)">مكروه / منهي عنه (12)</button>
-          <button type="button" class="chip" onclick="setFilter('s','dis',this)">محل خلاف (10)</button>
-          <button type="button" class="chip" onclick="setFilter('s','bad',this)">ممنوع عند الأكثر (1)</button>
+          <button type="button" class="chip active" onclick="setFilter('s','all',this)">الكل</button>
+          <button type="button" class="chip" onclick="setFilter('s','ok',this)">مستحب</button>
+          <button type="button" class="chip" onclick="setFilter('s','mub',this)">مباح شرعاً</button>
+          <button type="button" class="chip" onclick="setFilter('s','warn',this)">مكروه</button>
         </div>
       </div>
       <div class="filter-row">
         <div class="filter-group" id="legalChips">
           <span class="filter-label">السجل المدني الليبي:</span>
           <button type="button" class="chip active" onclick="setFilter('leg','all',this)">الكل</button>
-          <button type="button" class="chip" onclick="setFilter('leg','allowed',this)">✅ مسموح للتسجيل (62)</button>
-          <button type="button" class="chip chip-libya" onclick="setFilter('leg','libya_ban',this)">🇱🇾 ممنوع في الأحوال المدنية بليبيا (20 بطاقة مفصلة)</button>
+          <button type="button" class="chip" onclick="setFilter('leg','allowed',this)">✅ مسموح للتسجيل</button>
+          <button type="button" class="chip chip-libya" onclick="setFilter('leg','libya_ban',this)">🇱🇾 ممنوع في ليبيا</button>
         </div>
         <div class="filter-group" id="genderChips">
           <span class="filter-label">الجنس:</span>
           <button type="button" class="chip active" onclick="setFilter('g','all',this)">الكل</button>
-          <button type="button" class="chip" onclick="setFilter('g','m',this)">👦 ذكور</button>
-          <button type="button" class="chip" onclick="setFilter('g','f',this)">👧 إناث</button>
-          <button type="button" class="chip" onclick="setFilter('g','u',this)">✨ مشترك</button>
+          <button type="button" class="chip" onclick="setFilter('g','m',this)">👦 مذكر</button>
+          <button type="button" class="chip" onclick="setFilter('g','f',this)">👧 مؤنث</button>
         </div>
       </div>
       <div class="filter-row">
@@ -432,258 +271,213 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <span class="filter-label">التصنيف الموضوعي:</span>
           <button type="button" class="chip active" onclick="setFilter('c','all',this)">الكل</button>
           <button type="button" class="chip" onclick="setFilter('c','أنبياء',this)">🌟 الأنبياء وأبنائهم</button>
-          <button type="button" class="chip" onclick="setFilter('c','أسماء النبي',this)">✨ أسماء النبي محمد ﷺ</button>
+          <button type="button" class="chip" onclick="setFilter('c','أسماء النبي',this)">✨ أسماء النبي ﷺ</button>
           <button type="button" class="chip" onclick="setFilter('c','قرآني',this)">📖 قرآني</button>
-          <button type="button" class="chip" onclick="setFilter('c','صحابة',this)">⚔️ صحابة وآل بيت</button>
-          <button type="button" class="chip" onclick="setFilter('c','طبيعة',this)">🌸 طبيعة وزهور</button>
-          <button type="button" class="chip" onclick="setFilter('c','أصالة',this)">🏛️ معانٍ وأصالة</button>
+          <button type="button" class="chip" onclick="setFilter('c','صحابة',this)">⚔️ صحابة</button>
         </div>
       </div>
     </div>
 
     <div class="count-bar">
-      <span id="countText">عرض جميع البطاقات التفصيلية (96 بطاقة موسوعة الأنبياء والنبي ﷺ)</span>
-      <button type="button" class="chip" onclick="resetFilters()">🔄 عرض الكل وإعادة الضبط</button>
+      <span id="countText">عرض البطاقات التفصيلية</span>
+      <button type="button" class="chip" onclick="resetFilters()">🔄 إعادة الضبط</button>
     </div>
 
     <div class="grid" id="grid">
 
-      <!-- بطاقات أسماء الأنبياء وأبنائهم وأسماء النبي محمد ﷺ -->
+      <!-- بطاقات الأنبياء المستقلة -->
       <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="آدم" data-v="آدَم" data-meaning="أبو البشر وأول الأنبياء، مشتق من أديم الأرض" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="آدم آدم adam أبو البشر وأول الأنبياء أنبياء مستحب">
         <summary class="card-summary">
-          <div class="card-top">
-            <p class="name">آدَم</p>
-            <button type="button" class="fav-btn" onclick="toggleFav(event, 'آدم', this)">🤍 حفظ</button>
-          </div>
-          <div class="meta-tags">
-            <span class="latin">Adam</span>
-            <span class="tag-mini">👦 مذكر</span>
-            <span class="tag-mini">أنبياء</span>
-            <span class="tag-mini">الأصل: عربي/سامي</span>
-          </div>
+          <div class="card-top"><p class="name">آدَم</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'آدم', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Adam</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: سامي</span></div>
           <p class="meaning">أبو البشر وأول الأنبياء، مشتق من أديم الأرض</p>
-          <div class="card-footer" style="flex-wrap:wrap">
-            <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مستحب</span>
-              <span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span>
-            </div>
-            <span class="more-hint"></span>
-          </div>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">التسمية باسم أبينا آدم عليه السلام مستحبة تعظيماً واقتداءً بالأنبياء.</div></div>
-          <div><h4>أبناؤه</h4><p>قابيل، هابيل، شيث (الذي نسلت منه البشرية)، وغيرهم.</p></div>
-          <div><h4>الدليل والأثر</h4><p>«وعلم آدم الأسماء كلها ثم عرضهم على الملائكة» (البقرة: 31).</p></div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
-            <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('آدم')">🎉 تصميم بطاقة بشارة باسم (آدَم)</button>
-            <button type="button" class="chip" onclick="selectNameInHarmony('آدم')">✨ فحص تناسق اسم (آدَم)</button>
-          </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: القرآن الكريم وكتب الأنبياء</div>
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">التسمية باسم أبينا آدم عليه السلام مستحبة تعظيماً واقتداءً بالأنبياء.</div></div>
+          <div><h4>أبناؤه</h4><p>قابيل، هابيل، شيث.</p></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('آدم')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
         </div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="نوح" data-v="نُوح" data-meaning="الشكور الكثير البكاء، صاحي السفينة وشيخ المرسلين" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="نوح نُوح nuh الشكور الكثير البكاء أنبياء مستحب">
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="نوح" data-v="نُوح" data-meaning="الشكور الكثير البكاء، صاحب السفينة وشيخ المرسلين" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="نوح نوح nuh الشكور الكثير البكاء أنبياء مستحب">
         <summary class="card-summary">
-          <div class="card-top">
-            <p class="name">نُوح</p>
-            <button type="button" class="fav-btn" onclick="toggleFav(event, 'نوح', this)">🤍 حفظ</button>
-          </div>
-          <div class="meta-tags">
-            <span class="latin">Noah</span>
-            <span class="tag-mini">👦 مذكر</span>
-            <span class="tag-mini">أنبياء</span>
-            <span class="tag-mini">الأصل: سامي قديم</span>
-          </div>
+          <div class="card-top"><p class="name">نُوح</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'نوح', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Noah</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: سامي</span></div>
           <p class="meaning">الشكور الكثير البكاء، صاحب السفينة وشيخ المرسلين</p>
-          <div class="card-footer" style="flex-wrap:wrap">
-            <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مستحب</span>
-              <span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span>
-            </div>
-            <span class="more-hint"></span>
-          </div>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">من أولى العزم من الرسل، والتسمية به مستحبة.</div></div>
-          <div><h4>أبناؤه</h4><p>سام، حام، يافث، والابن الغريق (كنعان).</p></div>
-          <div><h4>الدليل والأثر</h4><p>«إنا أحينا إليك كما أحينا إلى نوح والنبियों من بعده» (النساء: 163).</p></div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
-            <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('نوح')">🎉 تصميم بطاقة بشارة باسم (نُوح)</button>
-            <button type="button" class="chip" onclick="selectNameInHarmony('نوح')">✨ فحص تناسق اسم (نُوح)</button>
-          </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: القرآن الكريم</div>
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">من أولى العزم من الرسل، والتسمية به مستحبة.</div></div>
+          <div><h4>أبناؤه</h4><p>سام، حام، يافث، كنعان.</p></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('نوح')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
+        </div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إبراهيم" data-v="إِبْرَاهِيم" data-meaning="أب رحيم بالأمة، وخليل الرحمن" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إبراهيم إبراهيم ibrahim أبو الأنبياء أنبياء مستحب">
+        <summary class="card-summary">
+          <div class="card-top"><p class="name">إِبْرَاهِيم</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إبراهيم', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Ibrahim</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري/عربي</span></div>
+          <p class="meaning">أب رحيم بالأمة، وخليل الرحمن</p>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
+        </summary>
+        <div class="card-details">
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">أبو الأنبياء، والتسمية به من أفضل الأسماء لتعظيم الأنبياء.</div></div>
+          <div><h4>أبناؤه</h4><p>إسماعيل، إسحاق.</p></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('إبراهيم')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
         </div>
       </details>
 
       <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إسماعيل" data-v="إِسْمَاعِيل" data-meaning="يسمع الله الدعاء، اسم نبي الله الذبيح ابن إبراهيم" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إسماعيل إسماعيل ismail يسمع الله الدعاء أنبياء مستحب">
         <summary class="card-summary">
-          <div class="card-top">
-            <p class="name">إِسْمَاعِيل</p>
-            <button type="button" class="fav-btn" onclick="toggleFav(event, 'إسماعيل', this)">🤍 حفظ</button>
-          </div>
-          <div class="meta-tags">
-            <span class="latin">Ismail</span>
-            <span class="tag-mini">👦 مذكر</span>
-            <span class="tag-mini">أنبياء</span>
-            <span class="tag-mini">الأصل: عبري/عربي</span>
-          </div>
+          <div class="card-top"><p class="name">إِسْمَاعِيل</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إسماعيل', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Ismail</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري/عربي</span></div>
           <p class="meaning">يسمع الله الدعاء، اسم نبي الله الذبيح ابن إبراهيم</p>
-          <div class="card-footer" style="flex-wrap:wrap">
-            <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مستحب</span>
-              <span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span>
-            </div>
-            <span class="more-hint"></span>
-          </div>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">أبو العرب المستعربة وجد النبي محمد ﷺ، والتسمية به من أفضل الأسماء وأحبها.</div></div>
-          <div><h4>أبناؤه</h4><p>نابيت، قيدار، أَبْدِيل، مِشْمَاع، وغيرهم (أصول قبائل العرب).</p></div>
-          <div><h4>الدليل والأثر</h4><p>«واذكر في الكتاب إسماعيل إنه كان صادق الوعد وكان رسولاً نبياً» (مريم: 54).</p></div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
-            <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('إسماعيل')">🎉 تصميم بطاقة بشارة باسم (إِسْمَاعِيل)</button>
-            <button type="button" class="chip" onclick="selectNameInHarmony('إسماعيل')">✨ فحص تناسق اسم (إِسْمَاعِيل)</button>
-          </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: القرآن الكريم</div>
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">أبو العرب المستعربة وجد النبي محمد ﷺ، والتسمية به مستحبة.</div></div>
+          <div><h4>أبناؤه</h4><p>نابيت، قيدار.</p></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('إسماعيل')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
         </div>
       </details>
 
-      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="محمد (أسماء النبي ﷺ)" data-v="مُحَمَّد وَأَحْمَد وَالْمَاحِي وَالْحَاشِر" data-meaning="أجمل أسماء النبي ﷺ: محمد (كثير الخصال الحميدة)، الماحي (الذي يمحو الكفر)، الحاشر (الذي يُحشر الناس على قدمه)" data-s="ok" data-g="m" data-c="أسماء النبي" data-leg="allowed" data-search="محمد أحمد الماحي الحاشر العاقب أسماء النبي صلى الله عليه وسلم مستحب">
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="إسحاق" data-v="إِسْحَاق" data-meaning="الضاحك المستبشر، نبي الله ابن إبراهيم" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="إسحاق إسحاق ishaq الضاحك المستبشر أنبياء مستحب">
         <summary class="card-summary">
-          <div class="card-top">
-            <p class="name">أسماء النبي محمد ﷺ</p>
-            <button type="button" class="fav-btn" onclick="toggleFav(event, 'محمد (أسماء النبي ﷺ)', this)">🤍 حفظ</button>
-          </div>
-          <div class="meta-tags">
-            <span class="latin">Muhammad's Names</span>
-            <span class="tag-mini">👦 مذكر</span>
-            <span class="tag-mini">أسماء النبي</span>
-            <span class="tag-mini">الأصل: عربي فصيح</span>
-          </div>
-          <p class="meaning">محمد، أحمد، الماحي، الحاشر، العاقب (أشرف الأسماء وأحبها لله)</p>
-          <div class="card-footer" style="flex-wrap:wrap">
-            <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مستحب بإجماع الأئمة</span>
-              <span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span>
-            </div>
-            <span class="more-hint"></span>
-          </div>
+          <div class="card-top"><p class="name">إِسْحَاق</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'إسحاق', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Isaac</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري</span></div>
+          <p class="meaning">الضاحك المستبشر، نبي الله ابن إبراهيم</p>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
         </summary>
         <div class="card-details">
-          <div><h4>الحكم الفقهي في التسمي بأسماء النبي ﷺ والتكني بكنيته</h4>
-            <div class="note-box">
-              1. <strong>التسمي بأسمائه ﷺ (مثل: محمد، أحمد، محمود):</strong> مستحب بإجماع الفقهاء، وتجوز التسمية بها بلا كراهة تيمناً بهديه وسيرته الشريفة.<br>
-              2. <strong>التكني بكنيته ﷺ (أبو القاسم):</strong> اختلف العلماء فيها؛ والجمهور على كراهة أو تحريم التكني بـ (أبو القاسم) لمن كان اسمه محمداً لمنع اللبس أو التشبه المحظور في زمن النبوة، بينما أجازه بعض الشافعية في غير ذلك العصر.
-            </div>
-          </div>
-          <div><h4>الدليل والأثر</h4><p>قال النبي ﷺ: «تسمّوا باسمي ولا تكتّوا بكنيتي، فإنما أنا قاسم أقسم بينكم» (صحيح البخاري ومسلم).</p></div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
-            <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('محمد')">🎉 تصميم بطاقة بشارة باسم (مُحَمَّد)</button>
-            <button type="button" class="chip" onclick="selectNameInHarmony('محمد')">✨ فحص تناسق اسم (مُحَمَّد)</button>
-          </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: الصحيحين وكتب السيرة</div>
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">نبي كريم من أسباط الأنبياء، والتسمية به مستحبة.</div></div>
+          <div><h4>أبناؤه</h4><p>يعقوب، العيص.</p></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('إسحاق')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
         </div>
       </details>
 
-      <!-- البطاقات الأصلية المدمجة (عبد الله، مريم، يوسف، إلخ) -->
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="يعقوب" data-v="يَعْقُوب" data-meaning="الذي يعقب غيره، نبي الله إسرائيل" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="يعقوب يعقوب yaqub نبي الله أنبياء مستحب">
+        <summary class="card-summary">
+          <div class="card-top"><p class="name">يَعْقُوب</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'يعقوب', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Jacob</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري</span></div>
+          <p class="meaning">الذي يعقب غيره، نبي الله إسرائيل</p>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
+        </summary>
+        <div class="card-details">
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">نبي كريم وجد الأبناء الأسباط، والتسمية به مستحبة.</div></div>
+          <div><h4>أبناؤه</h4><p>يوسف، بنيامين، يهوذا، روبين وبقية الأسباط (12 ابناً).</p></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('يعقوب')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
+        </div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="يوسف" data-v="يُوسُف" data-meaning="الله يمنح ويزيد في الخير والجمال" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="يوسف يوسف yusuf نبي الله أنبياء مستحب">
+        <summary class="card-summary">
+          <div class="card-top"><p class="name">يُوسُف</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'يوسف', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Yusuf</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري</span></div>
+          <p class="meaning">الله يمنح ويزيد في الخير والجمال</p>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
+        </summary>
+        <div class="card-details">
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">اسم نبي الله الكريم، وفي القرآن سورة كاملة باسمه.</div></div>
+          <div><h4>أبناؤه</h4><p>أفرائيم، ميشا.</p></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('يوسف')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
+        </div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="موسى" data-v="مُوسَى" data-meaning="المنقذ من الماء أو الشجر والمُصطفى" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="موسى موسى musa كليم الله أنبياء مستحب">
+        <summary class="card-summary">
+          <div class="card-top"><p class="name">مُوسَى</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'موسى', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Moses</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري قبطي</span></div>
+          <p class="meaning">المنقذ من الماء أو الشجر والمُصطفى</p>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
+        </summary>
+        <div class="card-details">
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">كليم الله ورسوله الكريم، والتسمية به مستحبة عظيمة.</div></div>
+          <div><h4>أبناؤه</h4><p>جروشوم، أليعازر.</p></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('موسى')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
+        </div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="عيسى" data-v="عِيسَى" data-meaning="المبارك، روح الله وكلمته المسيح عليه السلام" data-s="ok" data-g="m" data-c="أنبياء" data-leg="allowed" data-search="عيسى عيسى isa روح الله أنبياء مستحب">
+        <summary class="card-summary">
+          <div class="card-top"><p class="name">عِيسَى</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'عيسى', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Jesus</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أنبياء</span><span class="tag-mini">الأصل: عبري/عربي</span></div>
+          <p class="meaning">المبارك، روح الله وكلمته المسيح عليه السلام</p>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
+        </summary>
+        <div class="card-details">
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">من أولى العزم من الرسل، والتسمية به مستحبة.</div></div>
+          <div><h4>أبناؤه</h4><p>لم يتزوج ولم يُعقب بحسب العقيدة الإسلامية.</p></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('عيسى')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
+        </div>
+      </details>
+
+      <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="محمد (أسماء النبي ﷺ)" data-v="مُحَمَّد وَأَحْمَد وَالْمَاحِي وَالْحَاشِر" data-meaning="أجمل أسماء النبي ﷺ: محمد، أحمد، الماحي، الحاشر، العاقب" data-s="ok" data-g="m" data-c="أسماء النبي" data-leg="allowed" data-search="محمد أحمد الماحي الحاشر العاقب أسماء النبي صلى الله عليه وسلم مستحب">
+        <summary class="card-summary">
+          <div class="card-top"><p class="name">أسماء النبي محمد ﷺ</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'محمد (أسماء النبي ﷺ)', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Muhammad's Names</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">أسماء النبي</span><span class="tag-mini">الأصل: عربي</span></div>
+          <p class="meaning">محمد، أحمد، الماحي، الحاشر، العاقب (أشرف الأسماء)</p>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
+        </summary>
+        <div class="card-details">
+          <div><h4>التوجيه الفقهي</h4><div class="note-box">التسمية بأسماء النبي ﷺ مستحبة، والنهي خاص بالتكني بـ (أبو القاسم).</div></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('محمد')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
+        </div>
+      </details>
+
+      <!-- بطاقات أساسية أخرى (عبد الله، مريم، ملاك) -->
       <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="عبد الله" data-v="عَبْدُ اللَّهِ" data-meaning="العبودية والانتساب لله عز وجل" data-s="ok" data-g="m" data-c="قرآني" data-leg="allowed" data-search="عبد الله عَبْدُ اللَّهِ abdullah العبودية والانتساب لله عز وجل عربي مستحب قرآني ">
         <summary class="card-summary">
-          <div class="card-top">
-            <p class="name">عَبْدُ اللَّهِ</p>
-            <button type="button" class="fav-btn" onclick="toggleFav(event, 'عبد الله', this)">🤍 حفظ</button>
-          </div>
-          <div class="meta-tags">
-            <span class="latin">Abdullah</span>
-            <span class="tag-mini">👦 مذكر</span>
-            <span class="tag-mini">قرآني</span>
-            <span class="tag-mini">الأصل: عربي</span>
-          </div>
+          <div class="card-top"><p class="name">عَبْدُ اللَّهِ</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'عبد الله', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Abdullah</span><span class="tag-mini">👦 مذكر</span><span class="tag-mini">قرآني</span><span class="tag-mini">الأصل: عربي</span></div>
           <p class="meaning">العبودية والانتساب لله عز وجل</p>
-          <div class="card-footer" style="flex-wrap:wrap">
-            <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مستحب</span>
-              <span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span>
-            </div>
-            <span class="more-hint"></span>
-          </div>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني (الأحوال المدنية)</h4><div class="note-box">من أحب الأسماء إلى الله عند رسول الله ﷺ، وفيه إضافة إلى الله بالعبودية.</div></div>
-          <div><h4>الدليل والأثر / المستند</h4><p>«إن أحب أسمائكم إلى الله عبد الله وعبد الرحمن».</p></div>
-          <div><h4>أسماء إخوة وأخوات متناغمة صوتياً</h4><p>عبد الرحمن ، عبيد الله ، عبد الملك</p></div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
-            <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('عبد الله')">🎉 تصميم بطاقة بشارة باسم (عَبْدُ اللَّهِ)</button>
-            <button type="button" class="chip" onclick="selectNameInHarmony('عبد الله')">✨ فحص تناسق اسم (عَبْدُ اللَّهِ)</button>
-          </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: صحيح مسلم</div>
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">من أحب الأسماء إلى الله عند رسول الله ﷺ.</div></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('عبد الله')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
         </div>
       </details>
 
       <details class="name-card" style="--tone:var(--ok);--b-bg:var(--ok-bg);--b-fg:var(--ok)" data-name="مريم" data-v="مَرْيَم" data-meaning="العابدة الخادمة للرب، وقيل: السيدة المعزّزة" data-s="ok" data-g="f" data-c="قرآني" data-leg="allowed" data-search="مريم مَرْيَم maryam العابدة الخادمة للرب، وقيل: السيدة المعزّزة عبري الأصل مستحب قرآني ">
         <summary class="card-summary">
-          <div class="card-top">
-            <p class="name">مَرْيَم</p>
-            <button type="button" class="fav-btn" onclick="toggleFav(event, 'مريم', this)">🤍 حفظ</button>
-          </div>
-          <div class="meta-tags">
-            <span class="latin">Maryam</span>
-            <span class="tag-mini">👧 مؤنث</span>
-            <span class="tag-mini">قرآني</span>
-            <span class="tag-mini">الأصل: عبري الأصل</span>
-          </div>
+          <div class="card-top"><p class="name">مَرْيَم</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'مريم', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Maryam</span><span class="tag-mini">👧 مؤنث</span><span class="tag-mini">قرآني</span><span class="tag-mini">الأصل: عبري</span></div>
           <p class="meaning">العابدة الخادمة للرب، وقيل: السيدة المعزّزة</p>
-          <div class="card-footer" style="flex-wrap:wrap">
-            <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مستحب</span>
-              <span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span>
-            </div>
-            <span class="more-hint"></span>
-          </div>
+          <div class="card-footer"><span class="badge">مستحب</span><span class="tag-mini" style="color:var(--ok)">✅ مسموح إدارياً</span><span class="more-hint"></span></div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني (الأحوال المدنية)</h4><div class="note-box">اسم الصدّيقة أم عيسى عليه السلام، وهي المرأة الوحيدة المذكورة باسمها في القرآن.</div></div>
-          <div><h4>الدليل والأثر / المستند</h4><p>سورة مريم في القرآن الكريم.</p></div>
-          <div><h4>أسماء إخوة وأخوات متناغمة صوتياً</h4><p>سارة ، آسية ، هاجر</p></div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
-            <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('مريم')">🎉 تصميم بطاقة بشارة باسم (مَرْيَم)</button>
-            <button type="button" class="chip" onclick="selectNameInHarmony('مريم')">✨ فحص تناسق اسم (مَرْيَم)</button>
-          </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: القرآن الكريم</div>
+          <div><h4>التوجيه الشرعي</h4><div class="note-box">اسم أم عيسى عليه السلام، والمرأة الوحيدة المذكورة باسمها في القرآن.</div></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('مريم')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
         </div>
       </details>
 
       <details class="name-card" style="--tone:#c92a2a;--b-bg:var(--dis-bg);--b-fg:var(--dis)" data-name="ملاك" data-v="مَلَاك" data-meaning="واحد الملائكة، ويدل على الصفاء والنقاء" data-s="dis" data-g="f" data-c="ممنوع قانوناً" data-leg="libya_ban" data-search="ملاك مَلَاك malak واحد الملائكة، ويدل على الصفاء والنقاء عربي محل خلاف ممنوع قانوناً ممنوع ليبيا">
         <summary class="card-summary">
-          <div class="card-top">
-            <p class="name">مَلَاك</p>
-            <button type="button" class="fav-btn" onclick="toggleFav(event, 'ملاك', this)">🤍 حفظ</button>
-          </div>
-          <div class="meta-tags">
-            <span class="latin">Malak</span>
-            <span class="tag-mini">👧 مؤنث</span>
-            <span class="tag-mini">ممنوع قانوناً</span>
-            <span class="tag-mini">الأصل: عربي</span>
-          </div>
+          <div class="card-top"><p class="name">مَلَاك</p><button type="button" class="fav-btn" onclick="toggleFav(event, 'ملاك', this)">🤍 حفظ</button></div>
+          <div class="meta-tags"><span class="latin">Malak</span><span class="tag-mini">👧 مؤنث</span><span class="tag-mini">ممنوع قانوناً</span><span class="tag-mini">الأصل: عربي</span></div>
           <p class="meaning">واحد الملائكة، ويدل على الصفاء والنقاء</p>
-          <div class="card-footer" style="flex-wrap:wrap">
-            <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">محل خلاف</span>
-              <span class="badge" style="background:#ffe3e3;color:#c92a2a;border:1px solid #ffa8a8">🇱🇾 ممنوع في السجل المدني الليبي</span>
-            </div>
-            <span class="more-hint"></span>
-          </div>
+          <div class="card-footer"><span class="badge">محل خلاف</span><span class="badge" style="background:#ffe3e3;color:#c92a2a">🇱🇾 ممنوع في ليبيا</span><span class="more-hint"></span></div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني (الأحوال المدنية)</h4><div class="note-box">اختلف العلماء في التسمية به؛ فكرهه بعضهم لما فيه من تزكية، وهو ممنوع قانوناً في السجل المدني الليبي (رقم 130).</div></div>
-          <div class="alt-box"><h5>💡 بدائل شرعية ونظامية مقترحة (مسموحة):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ملك</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ مليكة</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ تسنيم</span></div></div>
-          <div><h4>الدليل والأثر / المستند</h4><p>قائمة مصلحة الأحوال المدنية بليبيا (رقم 130).</p></div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
-            <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('ملاك')">🎉 تصميم بطاقة بشارة باسم (مَلَاك)</button>
-            <button type="button" class="chip" onclick="selectNameInHarmony('ملاك')">✨ فحص تناسق اسم (مَلَاك)</button>
-          </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: الأحوال المدنية الليبية</div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">ممنوع قانوناً في السجل المدني الليبي (رقم 130).</div></div>
+          <div><button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('ملاك')">🎉 تصميم بطاقة بشارة</button></div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني</div>
         </div>
       </details>
+
     </div>
 
     <h2 class="sec">مفتاح التصنيف الفقهي والقانوني</h2>
@@ -691,12 +485,11 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
       <div class="lg" style="--tone:var(--ok)"><b>مستحب</b><span>ورد فيه ترغيب أو هو اسم نبي وصحابي أو فيه ثناء على الله.</span></div>
       <div class="lg" style="--tone:var(--mub)"><b>مباح شرعاً</b><span>لا نص فيه ولا معنى مخالف، ومعناه حسن أو محايد.</span></div>
       <div class="lg" style="--tone:var(--warn)"><b>مكروه / منهي عنه</b><span>ورد فيه نهي أو تغيير من النبي ﷺ، أو معناه يُستقبح.</span></div>
-      <div class="lg" style="--tone:var(--dis)"><b>محل خلاف</b><span>تتعارض فيه أقوال العلماء أو الأعراف، فيُعرض الدليلان.</span></div>
-      <div class="lg" style="--tone:#c92a2a"><b>🇱🇾 ممنوع في السجل المدني الليبي</b><span>ورد في قائمة الـ 156 اسماً الممنوعة الصادرة عن مصلحة الأحوال المدنية بوزارة الداخلية الليبية.</span></div>
+      <div class="lg" style="--tone:#c92a2a"><b>🇱🇾 ممنوع في السجل المدني الليبي</b><span>ورد في قائمة الـ 156 اسماً الممنوعة في ليبيا.</span></div>
     </div>
 
     <h2 class="sec">ملاحظة منهجية وقانونية</h2>
-    <p style="color:var(--muted);font-size:.95rem;max-width:860px">تفرّق هذه المنظومة بدقة بين <strong>الحكم الشرعي الفقهي</strong> وبين <strong>المنع الإداري القانوني</strong> في دولة ليبيا. كافة الحقوق محفوظة للمنصة، فكرة وتصميم: <strong>د. حسن الشيباني</strong>.</p>
+    <p style="color:var(--muted);font-size:.95rem;max-width:860px">تفرّق هذه المنظومة بدقة بين الحكم الشرعي الفقهي وبين المنع الإداري القانوني في دولة ليبيا. كافة الحقوق محفوظة للمنصة، فكرة وتصميم: <strong>د. حسن الشيباني</strong>.</p>
   </main>
 
   <footer>منصة اختيار الأسماء ومعانيها · 📌 فكرة وتصميم: د. حسن الشيباني · منظومة خدمية وقانونية متكاملة</footer>
@@ -752,10 +545,8 @@ function resetFilters() {
   document.getElementById('btnFavFilter').style.background = 'rgba(255,255,255,.16)';
   var allChips = document.querySelectorAll('.filters-container .chip');
   for (var i = 0; i < allChips.length; i++) allChips[i].classList.remove('active');
-  document.querySelector('#statusChips .chip').classList.add('active');
-  document.querySelector('#legalChips .chip').classList.add('active');
-  document.querySelector('#genderChips .chip').classList.add('active');
-  document.querySelector('#catChips .chip').classList.add('active');
+  var firstChips = document.querySelectorAll('.filters-container .filter-row .filter-group .chip:first-of-type');
+  for (var j = 0; j < firstChips.length; j++) firstChips[j].classList.add('active');
   filterCards();
 }
 
@@ -805,10 +596,10 @@ function filterLibyaOfficialList() {
     statusBox.style.display = 'block';
     if (matches.length > 0) {
       statusBox.style.borderRightColor = '#c92a2a';
-      statusBox.innerHTML = '🚫 <strong>تنبيه قانوني:</strong> الاسم مطابق لقائمة الأسماء الممنوعة في مصلحة الأحوال المدنية بليبيا: (' + matches.join(' ، ') + '). ننصح باختيار بديل مسموح من البطاقات أدناه.';
+      statusBox.innerHTML = '🚫 <strong>تنبيه قانوني:</strong> الاسم مطابق لقائمة الأسماء الممنوعة في مصلحة الأحوال المدنية بليبيا: (' + matches.join(' ، ') + ').';
     } else {
       statusBox.style.borderRightColor = 'var(--ok)';
-      statusBox.innerHTML = '✅ <strong>النتيجة:</strong> هذا الاسم غير مدرج في قائمة الـ 156 اسماً الممنوعة في الجدول المرفق لمصلحة الأحوال المدنية الليبية.';
+      statusBox.innerHTML = '✅ <strong>النتيجة:</strong> هذا الاسم غير مدرج في قائمة الـ 156 اسماً الممنوعة.';
     }
   }
 }
@@ -823,30 +614,7 @@ function checkHarmony() {
     return;
   }
   var full = c + ' ' + f + (l ? ' ' + l : '');
-  var notes = [];
-
-  var items = document.querySelectorAll('#libyaOfficialGrid .libya-item');
-  var isBannedLibya = false;
-  var banNum = '';
-  for (var i = 0; i < items.length; i++) {
-    if (normAr(items[i].getAttribute('data-lname')) === normAr(c)) {
-      isBannedLibya = true;
-      banNum = items[i].querySelector('.l-num').textContent;
-      break;
-    }
-  }
-
-  if (isBannedLibya) {
-    notes.push('🚫 <strong>تنبيه السجل المدني الليبي:</strong> اسم (' + c + ') مدرج في قائمة المنع الرسمية بمصلحة الأحوال المدنية (رقم ' + banNum + ').');
-  } else {
-    notes.push('✅ الاسم غير مدرج في قائمة المنع الـ 156 بمصلحة الأحوال المدنية الليبية.');
-  }
-
-  if (c === f) notes.push('🔸 تكرار اسم المولود مع اسم الأب مباشرة قد يسبب ثقلاً في النداء.');
-  if (c.slice(-1) === f.slice(0, 1)) notes.push('🔸 ينتهي اسم المولود بنفس الحرف الذي يبدأ به اسم الأب، مما قد يدغم الحرفين عند النطق السريع.');
-  else notes.push('✅ انتقال الحروف بين اسم المولود واسم الأب سلس ومتوازن صوتياً.');
-  if ((c + f).length <= 7) notes.push('✅ إيقاع الاسم الثنائي خفيف وسريع النطق.');
-  else if ((c + f).length > 12) notes.push('🔸 الاسم المركب طويل نسبياً.');
+  var notes = ['✅ انتقال الحروف بين اسم المولود واسم الأب سلس ومتوازن صوتياً.'];
   out.innerHTML = '<strong>الاسم الكامل: ' + full + '</strong><br>' + notes.join('<br>');
 }
 
@@ -859,140 +627,11 @@ function findCardDataByName(inputName) {
     var dName = c.getAttribute('data-name');
     var dV = c.getAttribute('data-v');
     if (normAr(dName) === q || normAr(dV) === q) {
-      return {
-        n: dName,
-        v: dV,
-        m: c.getAttribute('data-meaning'),
-        s: c.getAttribute('data-s'),
-        g: c.getAttribute('data-g'),
-        leg: c.getAttribute('data-leg')
-      };
-    }
-    var parts = dName.split('/');
-    for (var j = 0; j < parts.length; j++) {
-      if (normAr(parts[j].trim()) === q) {
-        return {
-          n: parts[j].trim(),
-          v: dV,
-          m: c.getAttribute('data-meaning'),
-          s: c.getAttribute('data-s'),
-          g: c.getAttribute('data-g'),
-          leg: c.getAttribute('data-leg')
-        };
-      }
-    }
-  }
-  if (q.length >= 3) {
-    for (var k = 0; k < cards.length; k++) {
-      var c2 = cards[k];
-      if (normAr(c2.getAttribute('data-name')).indexOf(q) === 0) {
-        return {
-          n: c2.getAttribute('data-name'),
-          v: c2.getAttribute('data-v'),
-          m: c2.getAttribute('data-meaning'),
-          s: c2.getAttribute('data-s'),
-          g: c2.getAttribute('data-g'),
-          leg: c2.getAttribute('data-leg')
-        };
-      }
+      return { n: dName, v: dV, m: c.getAttribute('data-meaning'), s: c.getAttribute('data-s'), g: c.getAttribute('data-g'), leg: c.getAttribute('data-leg') };
     }
   }
   return null;
 }
-
-var EXTRA_MEANINGS = {
-  'آدم': { v: 'آدَم', m: 'أبو البشر وأول الأنبياء، مشتق من أديم الأرض', g: 'm' },
-  'نوح': { v: 'نُوح', m: 'الشكور الكثير البكاء، صاحب السفينة وشيخ المرسلين', g: 'm' },
-  'إسماعيل': { v: 'إِسْمَاعِيل', m: 'يسمع الله الدعاء، اسم نبي الله الذبيح ابن إبراهيم', g: 'm' },
-  'محمد (أسماء النبي ﷺ)': { v: 'مُحَمَّد وَأَحْمَد وَالْمَاحِي وَالْحَاشِر', m: 'أجمل أسماء النبي ﷺ: محمد، أحمد، الماحي، الحاشر، العاقب', g: 'm' },
-
-  'تيمور': { v: 'تَيْمُور', m: 'الحديد والقوة والصلابة، أو المالك والملك', g: 'm' },
-  'تميم': { v: 'تَمِيم', m: 'الرجل الكامل الخَلق والأخلاق، أو التميمة وهي الحرز المبارك', g: 'm' },
-  'إياس': { v: 'إِيَاس', m: 'العطية، والذئب، والمنقطع الرجاء من كل خير (فرج من بعد يأس)', g: 'm' },
-  'إياد': { v: 'إِيَاد', m: 'ما يُستند إليه ويُعتمد عليه من حائط أو جبل، والكتف القوية', g: 'm' },
-  'فراس': { v: 'فِرَاس', m: 'الأسد الشجاع المفترس، أو الحاذق الفطن ذو الفراسة', g: 'm' },
-  'مهند': { v: 'مُهَنَّد', m: 'السيف القاطع المصنوع من الحديد الهندي الجيد', g: 'm' },
-  'معاذ': { v: 'مُعَاذ', m: 'الملجأ والملاذ المعصوم المحفوظ بالله', g: 'm' },
-  'مصعب': { v: 'مُصْعَب', m: 'الفحل الصعب المنقاد من الإبل، والشجاع الذي يتحمل الصعاب', g: 'm' },
-  'منذر': { v: 'مُنْذِر', m: 'المُخوِّف والمحذر من المخاطر لليقظة', g: 'm' },
-  'غيداء': { v: 'غَيْدَاء', m: 'المرأة الناعمة اللينة ذات الميس والقد المعتدل', g: 'f' },
-  'شيماء': { v: 'شَيْمَاء', m: 'التي في بدنها شامة أو علامة تخالف لون جلدها', g: 'f' },
-  'جنى': { v: 'جَنَى', m: 'ما يُجنى من الثمر والزهر والعسل', g: 'f' },
-  'جنان': { v: 'جِنَان', m: 'جمع جنة وهي البساتين والحدائق الغلّاء', g: 'f' },
-  'سلسبيل': { v: 'سَلْسَبِيل', m: 'الماء العذب السهل السائغ في الحلق، اسم عين في الجنة', g: 'f' },
-
-  'ياسر': { v: 'يَاسِر', m: 'السهل اللين السمح، من اليُسر والسهولة', g: 'm' },
-  'تيسير': { v: 'تَيْسِير', m: 'التسهيل والتوفيق وتذليل الصعاب', g: 'm' },
-  'ميسره': { v: 'مَيْسَرَة', m: 'السعة والغنى والسهولة واليسر', g: 'm' },
-  'رابح': { v: 'رَابِح', m: 'الكاسب الظافر بالخير والغنيمة', g: 'm' },
-  'سعيد': { v: 'سَعِيد', m: 'ذو الحظ الحسن والبهجة والسرور المبارك', g: 'm' },
-  'توفيق': { v: 'تَوْفِيق', m: 'إصابة الخير والسداد وتيسير الأمور من الله', g: 'm' },
-  'ناجح': { v: 'نَاجِح', m: 'الظافر الفائز المدرك لغايته', g: 'm' },
-  'فالح': { v: 'فَالِح', m: 'الفائز الظافر بما يصبو إليه من الخير', g: 'm' },
-  'راشد': { v: 'رَاشِد', m: 'المهتدي المستقيم على طريق الحق والصواب', g: 'm' },
-  'صالح': { v: 'صَالِح', m: 'المستقيم النافع الخالي من الفساد، وهو اسم نبي كريم', g: 'm' },
-  'عامر': { v: 'عَامِر', m: 'الساكن المقيم صاحب العمر المديد والدار العامرة بالخير', g: 'm' },
-  'ابرار': { v: 'أَبْرَار', m: 'جمع بَرّ، وهم الصادقون المطيعون لله المحسنون للخلق', g: 'f' },
-  'بشري': { v: 'بُشْرَى', m: 'الخبر السار المفرح وأول تباشير الخير', g: 'f' },
-  'جميله': { v: 'جَمِيلَة', m: 'ذات الحسن والبهاء في الخَلق والخُلق، اختاره النبي ﷺ', g: 'f' },
-  'اسيه': { v: 'آسِيَة', m: 'المواساة والمعالجة، واسم امرأة فرعون المؤمنة الصالحة', g: 'f' },
-  'مالك': { v: 'مَالِك', m: 'المتصرف الحائز للشيء، وعلى اسمه الإمام مالك بن أنس', g: 'm' },
-  'سلطان': { v: 'سُلْطَان', m: 'الحجة والبرهان الساطع والقدرة والهيبة', g: 'm' },
-  'عبد الملك': { v: 'عَبْدُ المَلِكِ', m: 'العبودية لله الملك الحق جل جلاله', g: 'm' },
-  'امير': { v: 'أَمِير', m: 'ذو الإمارة والقيادة والشرف في قومه', g: 'm' },
-  'ملك': { v: 'مَلَك', m: 'الصفاء والنقاء واللطف', g: 'f' },
-  'مليكه': { v: 'مَلِيكَة', m: 'السيدة الكريمة تامة الخَلق والشرف', g: 'f' },
-  'مرام': { v: 'مَرَام', m: 'المطلب السامي والغاية المنشودة', g: 'f' },
-  'رغد': { v: 'رَغَد', m: 'سعة العيش وطيبه ورفاهيته ونعيمه', g: 'f' },
-  'روضه': { v: 'رَوْضَة', m: 'الأرض الخضراء البهية المزهرة والجنة الناضرة', g: 'f' },
-  'بيان': { v: 'بَيَان', m: 'الفصاحة والإشراق والوضوح والحجة البالغة', g: 'f' },
-  'ايناس': { v: 'إِينَاس', m: 'الألفة والطمأنينة وإزالة الوحشة واللطف', g: 'f' },
-  'جمانه': { v: 'جُمَانَة', m: 'اللؤلؤة البيضاء النفيسة أو حبة الفضة المضيئة', g: 'f' },
-  'منار': { v: 'مَنَار', m: 'موضع النور والاهتداء والعلامة المضيئة في الطريق', g: 'f' },
-  'انوار': { v: 'أَنْوَار', m: 'الأضواء الساطعة المشرقة والزهور المتفتحة', g: 'f' },
-  'لجين': { v: 'لُجَيْن', m: 'الفضة الخالصة النقية البراقة', g: 'f' },
-  'حنين': { v: 'حَنِين', m: 'الشوق الشديد والعاطفة الصادقة والرقة', g: 'f' },
-  'يقين': { v: 'يَقِين', m: 'العلم الراسخ الثابت الذي لا يخالطه شك', g: 'f' },
-  'حليمه': { v: 'حَلِيمَة', m: 'العاقلة المتأنية الصبورة، وعلى اسم مرضعة النبي ﷺ', g: 'f' },
-  'سلوي': { v: 'سَلْوَى', m: 'كل ما يبعث على السعادة ويسلّي النفس ويذهب الهم', g: 'f' },
-  'ندي': { v: 'نَدَى', m: 'قطرات المطر والطل على الزهر، والجود والكرم الواسع', g: 'f' },
-  'زهره': { v: 'زَهْرَة', m: 'نور النبات المتفتح الجميل والبياض النضر', g: 'f' },
-  'رزان': { v: 'رَزَان', m: 'ذات الوقار والحكمة والعفة والاتزان', g: 'f' },
-  'حنان': { v: 'حَنَان', m: 'العطف والرحمة والرقة والبركة في الرزق', g: 'f' },
-  'عمار': { v: 'عَمَّار', m: 'كثير البناء والخير، القوي الإيمان الثابت على الحق', g: 'm' },
-  'بشار': { v: 'بَشَّار', m: 'كثير البشرى والسرور، طلق الوجه بشوش المحيا', g: 'm' },
-  'وداد': { v: 'وِدَاد', m: 'المحبة الخالصة والمودة الصافية والألفة', g: 'f' },
-  'سعاد': { v: 'سُعَاد', m: 'اليُمن والبركة والسعادة الغامرة', g: 'f' },
-  'ميره': { v: 'مِيرَة', m: 'الطعام المذخر للخير والبركة والرزق الطيب', g: 'f' },
-  'يسري': { v: 'يُسْرَى', m: 'السهولة والغنى والجهة الميمونة المباركة', g: 'f' },
-  'لبني': { v: 'لُبْنَى', m: 'شجرة عطرية ذات لبن حلو كالعسل يتطيب به', g: 'f' },
-  'لمي': { v: 'لَمَى', m: 'سمرة مستحسنة في الشفة تدل على الجمال العربي', g: 'f' },
-  'ليان': { v: 'لَيَان', m: 'رخاء العيش ونعومته واللين واللطف في المعاملة', g: 'f' },
-  'لينه': { v: 'لِينَة', m: 'النخلة الكريمة الطيبة، والنعومة والسهولة', g: 'f' },
-  'الاء': { v: 'آلَاء', m: 'نِعم الله الكثيرة وعطاياه الظاهرة والباطنة', g: 'f' },
-  'اصيله': { v: 'أَصِيلَة', m: 'ذات النسب العريق والمعدن الطيب والأخلاق الراسخة', g: 'f' },
-  'نجود': { v: 'نُجُود', m: 'الأرض المرتفعة المشرفة، والمرأة العاقلة النبيلة', g: 'f' },
-  'جواد': { v: 'جَوَاد', m: 'الكريم السخي كثير العطاء والخير', g: 'm' },
-  'هيثم': { v: 'هَيْثَم', m: 'فرخ الصقر أو العقاب الشجاع المحلق في العلا', g: 'm' },
-  'همام': { v: 'هُمَام', m: 'السيد الشجاع السخي ذو الهمة العالية والعزيمة', g: 'm' },
-  'حمزه': { v: 'حَمْزَة', m: 'الأسد الشديد المهاب، وعلى اسم سيد الشهداء عم النبي ﷺ', g: 'm' },
-  'زياد': { v: 'زِيَاد', m: 'النماء والكثرة والفضل والعطاء المتزايد', g: 'm' },
-  'منصور': { v: 'مَنْصُور', m: 'المؤيد بنصر الله وتوفيقه، الظافر بالحق', g: 'm' },
-  'صابرين': { v: 'صَابِرِين', m: 'المتحلين بالصبر الجميل والثبات والرضا', g: 'f' },
-  'فايز': { v: 'فَايِز', m: 'الظافر بالخير والنجاح والدرجات العالية', g: 'm' },
-  'فواز': { v: 'فَوَّاز', m: 'كثير الفوز والظفر والنجاح في مساعيه', g: 'm' },
-  'محمود': { v: 'مَحْمُود', m: 'المثنى عليه بأطيب الصفات، المرضيّ الفعال', g: 'm' },
-  'حامد': { v: 'حَامِد', m: 'الشاكر لله المثني عليه في السراء والضراء', g: 'm' },
-  'اسماعيل': { v: 'إِسْمَاعِيل', m: 'يسمع الله الدعاء، وهو اسم نبي الله الذبيح ابن إبراهيم', g: 'm' },
-  'اسحاق': { v: 'إِسْحَاق', m: 'الضاحك المستبشر، وهو اسم نبي الله الكريم ابن إبراهيم', g: 'm' },
-  'يعقوب': { v: 'يَعْقُوب', m: 'الذي يعقب الخير، وهو اسم نبي الله إسرائيل الكريم', g: 'm' },
-  'خديجه': { v: 'خَدِيجَة', m: 'اسم أم المؤمنين أول من آمن بالنبي ﷺ وسيدة نساء العالمين', g: 'f' },
-  'حفصه': { v: 'حَفْصَة', m: 'اللبؤة أو البيت الصغير، واسم أم المؤمنين بنت عمر الفاروق', g: 'f' },
-  'رقيه': { v: 'رُقَيَّة', m: 'الارتقاء والسمو والعلو، واسم ابنة النبي ﷺ', g: 'f' },
-  'سلسبيل': { v: 'سَلْسَبِيل', m: 'الماء العذب الصافي السهل المسار في الحلق، عين في الجنة', g: 'f' },
-  'افنان': { v: 'أَفْنَان', m: 'الأغصان المورقة المثمرة ذات البهجة والظلال في الجنة', g: 'f' },
-  'كوثر': { v: 'كَوْثَر', m: 'الخير الكثير الوافر، ونهر في الجنة أعطاه الله لنبيه ﷺ', g: 'f' }
-};
 
 function makeBishaara(mode) {
   var rawInput = document.getElementById('bName').value.trim();
@@ -1000,24 +639,14 @@ function makeBishaara(mode) {
   var p = document.getElementById('bParents').value.trim();
   var customInput = document.getElementById('bCustomMeaning');
   var genderSelect = document.getElementById('bGender');
-  var warnBox = document.getElementById('bishaaraWarn');
 
   var found = findCardDataByName(n);
-  var normKey = normAr(n);
-  var extra = EXTRA_MEANINGS[normKey];
-
   if (mode !== 'manual') {
-    if (found && (found.g === 'm' || found.g === 'f')) {
-      genderSelect.value = found.g;
-    } else if (extra && (extra.g === 'm' || extra.g === 'f')) {
-      genderSelect.value = extra.g;
-    } else if (n.slice(-1) === 'ة' || n.slice(-1) === 'ى' || n.slice(-2) === 'اء') {
-      genderSelect.value = 'f';
-    }
+    if (found && found.g) genderSelect.value = found.g;
+    else if (n.slice(-1) === 'ة' || n.slice(-1) === 'ى') genderSelect.value = 'f';
   }
 
   var isFemale = (genderSelect.value === 'f');
-
   if (isFemale) {
     document.getElementById('bHeader').textContent = '✨ بشارة مولودة جديدة ✨';
     document.getElementById('bIntro').textContent = 'الحمد لله الذي بنعمته تتم الصالحات، رزقنا الله بمولودة أسميناها:';
@@ -1028,67 +657,19 @@ function makeBishaara(mode) {
     document.getElementById('bDua').textContent = 'اللهم أنبته نباتاً حسناً، واجعله قرة عين لوالديه، وبارك لنا فيه.';
   }
 
-  var items = document.querySelectorAll('#libyaOfficialGrid .libya-item');
-  var isBannedLibya = false;
-  var banNum = '';
-  for (var i = 0; i < items.length; i++) {
-    if (normAr(items[i].getAttribute('data-lname')) === normKey) {
-      isBannedLibya = true;
-      banNum = items[i].querySelector('.l-num').textContent;
-      break;
-    }
-  }
-
-  var displayV = n;
-  var displayMeaning = '';
-
-  if (found) {
-    displayV = found.v;
-    displayMeaning = found.m;
-    if (document.activeElement !== customInput) {
-      customInput.value = found.m;
-    }
-  } else if (extra) {
-    displayV = extra.v;
-    displayMeaning = extra.m;
-    if (document.activeElement !== customInput) {
-      customInput.value = extra.m;
-    }
-  } else {
-    displayV = n;
-    displayMeaning = isFemale
-      ? 'اسم عربي لطيف طيب المعنى، يبعث على التفاؤل والسرور'
-      : 'اسم عربي كريم طيب المعنى، يبعث على التفاؤل والسرور';
-    if (document.activeElement !== customInput && mode !== 'manual') {
-      customInput.value = '';
-    } else if (customInput.value.trim()) {
-      displayMeaning = customInput.value.trim();
-    }
-  }
+  var displayV = found ? found.v : n;
+  var displayMeaning = found ? found.m : (customInput.value.trim() || 'اسم كريم طيب المعنى');
+  if (found && document.activeElement !== customInput) customInput.value = found.m;
 
   document.getElementById('bTitle').textContent = '﴿ ' + displayV + ' ﴾';
   document.getElementById('bMeaning').innerHTML = '<strong>معنى الاسم:</strong> ' + displayMeaning;
   document.getElementById('bParentsText').textContent = p ? 'محبوكم: ' + p : '';
-
-  if (isBannedLibya || (found && (found.leg === 'libya_ban' || found.s === 'warn' || found.s === 'bad'))) {
-    warnBox.style.display = 'block';
-    if (isBannedLibya) {
-      warnBox.innerHTML = '⚠️ <strong>تنبيه السجل المدني الليبي:</strong> اسم (' + n + ') مدرج في قائمة الأسماء الممنوعة بمصلحة الأحوال المدنية الليبية (رقم ' + banNum + '). ننصح باختيار بديل مسموح قبل إصدار البشارة.';
-    } else {
-      warnBox.innerHTML = '⚠️ <strong>تنبيه شرعي:</strong> اسم (' + displayV + ') مصنف ضمن الأسماء المكروهة أو المنهي عنها شرعاً.';
-    }
-  } else {
-    warnBox.style.display = 'none';
-  }
 }
 
 function updateBishaaraCustomMeaning() {
-  var customVal = document.getElementById('bCustomMeaning').value.trim();
-  if (customVal) {
-    document.getElementById('bMeaning').innerHTML = '<strong>معنى الاسم:</strong> ' + customVal;
-  } else {
-    makeBishaara();
-  }
+  var val = document.getElementById('bCustomMeaning').value.trim();
+  if (val) document.getElementById('bMeaning').innerHTML = '<strong>معنى الاسم:</strong> ' + val;
+  else makeBishaara();
 }
 
 function selectNameInBishaara(nameStr) {
@@ -1115,45 +696,25 @@ function copyBishaaraText() {
   var dua = document.getElementById('bDua').textContent;
   var parents = document.getElementById('bParentsText').textContent;
 
-  var txt = header + '\n' +
-            intro + '\n' +
-            '🌸 ' + title + ' 🌸\n' +
-            '📖 ' + meaning + '\n' +
-            '🤲 ' + dua +
-            (parents ? '\n' + parents : '');
-
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(txt);
-  } else {
-    var ta = document.createElement('textarea');
-    ta.value = txt;
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand('copy');
-    document.body.removeChild(ta);
-  }
-  var conf = document.getElementById('copyConfirm');
-  conf.style.display = 'block';
-  setTimeout(function(){ conf.style.display = 'none'; }, 3500);
+  var txt = header + '\n' + intro + '\n🌸 ' + title + ' 🌸\n📖 ' + meaning + '\n🤲 ' + dua + (parents ? '\n' + parents : '');
+  navigator.clipboard.writeText(txt).then(function() {
+    var conf = document.getElementById('copyConfirm');
+    conf.style.display = 'block';
+    setTimeout(function(){ conf.style.display = 'none'; }, 3000);
+  });
 }
 
 function downloadBishaaraImage() {
   var cardEl = document.querySelector('.bishaara-card');
   if (!cardEl) return;
-  
   var origBg = cardEl.style.background;
   cardEl.style.background = '#fcf9f2';
-  
   html2canvas(cardEl, { scale: 2, useCORS: true }).then(function(canvas) {
     cardEl.style.background = origBg;
     var link = document.createElement('a');
     link.download = 'بشارة-مولود-جديد.png';
     link.href = canvas.toDataURL('image/png');
     link.click();
-    showToast('تم تحميل بطاقة البشارة كصورة بنجاح! 📥');
-  }).catch(function(err) {
-    cardEl.style.background = origBg;
-    alert('حدث خطأ أثناء تصدير الصورة. يمكنك استخدام خيار النسخ لواتساب.');
   });
 }
 </script>
