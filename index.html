@@ -131,6 +131,13 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
 .nav-fab button.is-hidden{opacity:0;pointer-events:none;transform:scale(.8)}
 @media (max-width:600px){.nav-fab{left:10px;bottom:14px}.nav-fab button{width:42px;height:42px}}
 @media print{.nav-fab{display:none}}
+.libya-item{cursor:pointer;flex-wrap:wrap}
+.libya-item .l-i{margin-inline-start:auto;color:var(--muted);font-size:.8rem}
+.libya-item .l-rem{display:none;width:100%;font-size:.82rem;line-height:1.7;color:var(--ink);font-weight:400;padding-top:6px;border-top:1px dashed var(--line)}
+.libya-item.open{grid-column:1/-1;align-items:flex-start}
+.libya-item.open .l-rem{display:block}
+.libya-item.l-new{border-style:dashed;border-color:#e8590c}
+.l-newtag{font-size:.62rem;background:#fff4e6;color:#e8590c;border-radius:6px;padding:0 5px;font-weight:700}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
@@ -219,173 +226,214 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
       </details>
       <!-- أداة فاحص السجل المدني الليبي القائمة الكاملة 156 اسماً -->
       <details class="service-panel" id="detLibya">
-        <summary style="color:#c92a2a">🇱🇾 فاحص الأسماء الممنوعة في مصلحة الأحوال المدنية بليبيا (156 اسماً)</summary>
+        <summary style="color:#c92a2a">🇱🇾 فاحص الأسماء الممنوعة في مصلحة الأحوال المدنية بليبيا (197 اسماً)</summary>
         <div class="panel-body">
-          <p style="margin:0 0 10px;font-size:.92rem;color:var(--muted)">أصدرت مصلحة الأحوال المدنية بوزارة الداخلية الليبية قائمة تضم <strong>156 اسماً غير جائز وممنوع من التسجيل</strong>. ابحث هنا للتحقق الفوري قبل التوجه للسجل المدني:</p>
+          <p style="margin:0 0 10px;font-size:.92rem;color:var(--muted)">أصدرت مصلحة الأحوال المدنية بوزارة الداخلية الليبية قائمة تضم <strong>156 اسماً</strong> غير جائز وممنوع من التسجيل، وقد حُدّثت بملف رسمي جديد (كتاب دار الإفتاء الليبية إلى المصلحة وجدول مجمع اللغة العربية) أضاف <strong>41 اسماً</strong>، فصار المجموع <strong>197 اسماً</strong> مع بيان المعنى وملاحظة المجمع لكل اسم ورد عليه تعليق (اضغط على الاسم لعرض بيانه). ابحث هنا للتحقق الفوري قبل التوجه للسجل المدني:</p>
           <div class="harmony-form">
             <div class="field">
-              <label>ابحث في قائمة الـ 156 اسماً الممنوعة رسمياً في ليبيا</label>
+              <label>ابحث في قائمة الـ 197 اسماً الممنوعة رسمياً في ليبيا</label>
               <input type="text" id="libyaSearchInput" placeholder="اكتب الاسم للتحقق (مثال: ريماس، لمار، وتين، بره، يارا...)" autocomplete="off" oninput="filterLibyaOfficialList()" onkeyup="filterLibyaOfficialList()">
             </div>
           </div>
           <div id="libyaCheckStatus" class="harmony-result" style="display:none"></div>
           <div class="libya-grid" id="libyaOfficialGrid">
-<div class="libya-item" data-lname="توماسين"><span class="l-num">1</span><span class="l-name">توماسين</span></div>
-<div class="libya-item" data-lname="ريماس"><span class="l-num">2</span><span class="l-name">ريماس</span></div>
-<div class="libya-item" data-lname="ريفال"><span class="l-num">3</span><span class="l-name">ريفال</span></div>
-<div class="libya-item" data-lname="طائفة"><span class="l-num">4</span><span class="l-name">طائفة</span></div>
-<div class="libya-item" data-lname="سيدار"><span class="l-num">5</span><span class="l-name">سيدار</span></div>
-<div class="libya-item" data-lname="ادلم"><span class="l-num">6</span><span class="l-name">ادلم</span></div>
-<div class="libya-item" data-lname="تانيري"><span class="l-num">7</span><span class="l-name">تانيري</span></div>
-<div class="libya-item" data-lname="رماز"><span class="l-num">8</span><span class="l-name">رماز</span></div>
-<div class="libya-item" data-lname="مجدولين"><span class="l-num">9</span><span class="l-name">مجدولين</span></div>
-<div class="libya-item" data-lname="روندا"><span class="l-num">10</span><span class="l-name">روندا</span></div>
-<div class="libya-item" data-lname="نارمين"><span class="l-num">11</span><span class="l-name">نارمين</span></div>
-<div class="libya-item" data-lname="هجرس"><span class="l-num">12</span><span class="l-name">هجرس</span></div>
-<div class="libya-item" data-lname="مهرهان"><span class="l-num">13</span><span class="l-name">مهرهان</span></div>
-<div class="libya-item" data-lname="ريشال"><span class="l-num">14</span><span class="l-name">ريشال</span></div>
-<div class="libya-item" data-lname="سالي"><span class="l-num">15</span><span class="l-name">سالي</span></div>
-<div class="libya-item" data-lname="ناثير"><span class="l-num">16</span><span class="l-name">ناثير</span></div>
-<div class="libya-item" data-lname="سيرين"><span class="l-num">17</span><span class="l-name">سيرين</span></div>
-<div class="libya-item" data-lname="نيرمين"><span class="l-num">18</span><span class="l-name">نيرمين</span></div>
-<div class="libya-item" data-lname="يوقرثن"><span class="l-num">19</span><span class="l-name">يوقرثن</span></div>
-<div class="libya-item" data-lname="أنبار"><span class="l-num">20</span><span class="l-name">أنبار</span></div>
-<div class="libya-item" data-lname="دينيز"><span class="l-num">21</span><span class="l-name">دينيز</span></div>
-<div class="libya-item" data-lname="روجي"><span class="l-num">22</span><span class="l-name">روجي</span></div>
-<div class="libya-item" data-lname="أراونس"><span class="l-num">23</span><span class="l-name">أراونس</span></div>
-<div class="libya-item" data-lname="أميناس"><span class="l-num">24</span><span class="l-name">أميناس</span></div>
-<div class="libya-item" data-lname="نهاوند"><span class="l-num">25</span><span class="l-name">نهاوند</span></div>
-<div class="libya-item" data-lname="ايلان"><span class="l-num">26</span><span class="l-name">ايلان</span></div>
-<div class="libya-item" data-lname="ميراز"><span class="l-num">27</span><span class="l-name">ميراز</span></div>
-<div class="libya-item" data-lname="ميان"><span class="l-num">28</span><span class="l-name">ميان</span></div>
-<div class="libya-item" data-lname="لمار"><span class="l-num">29</span><span class="l-name">لمار</span></div>
-<div class="libya-item" data-lname="هندوان"><span class="l-num">30</span><span class="l-name">هندوان</span></div>
-<div class="libya-item" data-lname="ليلك"><span class="l-num">31</span><span class="l-name">ليلك</span></div>
-<div class="libya-item" data-lname="يارا"><span class="l-num">32</span><span class="l-name">يارا</span></div>
-<div class="libya-item" data-lname="سرم"><span class="l-num">33</span><span class="l-name">سرم</span></div>
-<div class="libya-item" data-lname="شيراز"><span class="l-num">34</span><span class="l-name">شيراز</span></div>
-<div class="libya-item" data-lname="بارين"><span class="l-num">35</span><span class="l-name">بارين</span></div>
-<div class="libya-item" data-lname="يارا"><span class="l-num">36</span><span class="l-name">يارا</span></div>
-<div class="libya-item" data-lname="دارين"><span class="l-num">37</span><span class="l-name">دارين</span></div>
-<div class="libya-item" data-lname="روبين"><span class="l-num">38</span><span class="l-name">روبين</span></div>
-<div class="libya-item" data-lname="باسنت"><span class="l-num">39</span><span class="l-name">باسنت</span></div>
-<div class="libya-item" data-lname="نادرين"><span class="l-num">40</span><span class="l-name">نادرين</span></div>
-<div class="libya-item" data-lname="جوري"><span class="l-num">41</span><span class="l-name">جوري</span></div>
-<div class="libya-item" data-lname="كينزي"><span class="l-num">42</span><span class="l-name">كينزي</span></div>
-<div class="libya-item" data-lname="روبيان"><span class="l-num">43</span><span class="l-name">روبيان</span></div>
-<div class="libya-item" data-lname="نيلم"><span class="l-num">44</span><span class="l-name">نيلم</span></div>
-<div class="libya-item" data-lname="روبينة"><span class="l-num">45</span><span class="l-name">روبينة</span></div>
-<div class="libya-item" data-lname="ميرال"><span class="l-num">46</span><span class="l-name">ميرال</span></div>
-<div class="libya-item" data-lname="يسند"><span class="l-num">47</span><span class="l-name">يسند</span></div>
-<div class="libya-item" data-lname="هيلانة"><span class="l-num">48</span><span class="l-name">هيلانة</span></div>
-<div class="libya-item" data-lname="نورهان"><span class="l-num">49</span><span class="l-name">نورهان</span></div>
-<div class="libya-item" data-lname="لارا"><span class="l-num">50</span><span class="l-name">لارا</span></div>
-<div class="libya-item" data-lname="نوران"><span class="l-num">51</span><span class="l-name">نوران</span></div>
-<div class="libya-item" data-lname="لارين"><span class="l-num">52</span><span class="l-name">لارين</span></div>
-<div class="libya-item" data-lname="رناد"><span class="l-num">53</span><span class="l-name">رناد</span></div>
-<div class="libya-item" data-lname="جولين"><span class="l-num">54</span><span class="l-name">جولين</span></div>
-<div class="libya-item" data-lname="سيدرا"><span class="l-num">55</span><span class="l-name">سيدرا</span></div>
-<div class="libya-item" data-lname="ميام"><span class="l-num">56</span><span class="l-name">ميام</span></div>
-<div class="libya-item" data-lname="ايلين"><span class="l-num">57</span><span class="l-name">ايلين</span></div>
-<div class="libya-item" data-lname="نريان - نوريان"><span class="l-num">58</span><span class="l-name">نريان - نوريان</span></div>
-<div class="libya-item" data-lname="اليسا"><span class="l-num">59</span><span class="l-name">اليسا</span></div>
-<div class="libya-item" data-lname="ثلاثماس"><span class="l-num">60</span><span class="l-name">ثلاثماس</span></div>
-<div class="libya-item" data-lname="ألين"><span class="l-num">61</span><span class="l-name">ألين</span></div>
-<div class="libya-item" data-lname="روان"><span class="l-num">62</span><span class="l-name">روان</span></div>
-<div class="libya-item" data-lname="نادين"><span class="l-num">63</span><span class="l-name">نادين</span></div>
-<div class="libya-item" data-lname="مورين"><span class="l-num">64</span><span class="l-name">مورين</span></div>
-<div class="libya-item" data-lname="باست"><span class="l-num">65</span><span class="l-name">باست</span></div>
-<div class="libya-item" data-lname="مايا"><span class="l-num">66</span><span class="l-name">مايا</span></div>
-<div class="libya-item" data-lname="مثاني"><span class="l-num">67</span><span class="l-name">مثاني</span></div>
-<div class="libya-item" data-lname="هزار"><span class="l-num">68</span><span class="l-name">هزار</span></div>
-<div class="libya-item" data-lname="ليندا"><span class="l-num">69</span><span class="l-name">ليندا</span></div>
-<div class="libya-item" data-lname="توميديا"><span class="l-num">70</span><span class="l-name">توميديا</span></div>
-<div class="libya-item" data-lname="ريناز"><span class="l-num">71</span><span class="l-name">ريناز</span></div>
-<div class="libya-item" data-lname="إميلي"><span class="l-num">72</span><span class="l-name">إميلي</span></div>
-<div class="libya-item" data-lname="إينور"><span class="l-num">73</span><span class="l-name">إينور</span></div>
-<div class="libya-item" data-lname="كندا"><span class="l-num">74</span><span class="l-name">كندا</span></div>
-<div class="libya-item" data-lname="ليلاس"><span class="l-num">75</span><span class="l-name">ليلاس</span></div>
-<div class="libya-item" data-lname="رناز"><span class="l-num">76</span><span class="l-name">رناز</span></div>
-<div class="libya-item" data-lname="أريس"><span class="l-num">77</span><span class="l-name">أريس</span></div>
-<div class="libya-item" data-lname="ناريس"><span class="l-num">78</span><span class="l-name">ناريس</span></div>
-<div class="libya-item" data-lname="ننسي"><span class="l-num">79</span><span class="l-name">ننسي</span></div>
-<div class="libya-item" data-lname="ايفاو"><span class="l-num">80</span><span class="l-name">ايفاو</span></div>
-<div class="libya-item" data-lname="بوباس"><span class="l-num">81</span><span class="l-name">بوباس</span></div>
-<div class="libya-item" data-lname="امسناو"><span class="l-num">82</span><span class="l-name">امسناو</span></div>
-<div class="libya-item" data-lname="جلنار"><span class="l-num">83</span><span class="l-name">جلنار</span></div>
-<div class="libya-item" data-lname="أيار"><span class="l-num">84</span><span class="l-name">أيار</span></div>
-<div class="libya-item" data-lname="غيلان"><span class="l-num">85</span><span class="l-name">غيلان</span></div>
-<div class="libya-item" data-lname="رستم"><span class="l-num">86</span><span class="l-name">رستم</span></div>
-<div class="libya-item" data-lname="علام"><span class="l-num">87</span><span class="l-name">علام</span></div>
-<div class="libya-item" data-lname="ايرينا"><span class="l-num">88</span><span class="l-name">ايرينا</span></div>
-<div class="libya-item" data-lname="أريام"><span class="l-num">89</span><span class="l-name">أريام</span></div>
-<div class="libya-item" data-lname="ناثير"><span class="l-num">90</span><span class="l-name">ناثير</span></div>
-<div class="libya-item" data-lname="روبينه"><span class="l-num">91</span><span class="l-name">روبينه</span></div>
-<div class="libya-item" data-lname="ريا"><span class="l-num">92</span><span class="l-name">ريا</span></div>
-<div class="libya-item" data-lname="حلا"><span class="l-num">93</span><span class="l-name">حلا</span></div>
-<div class="libya-item" data-lname="الأيهم"><span class="l-num">94</span><span class="l-name">الأيهم</span></div>
-<div class="libya-item" data-lname="أزم"><span class="l-num">95</span><span class="l-name">أزم</span></div>
-<div class="libya-item" data-lname="شيرين"><span class="l-num">96</span><span class="l-name">شيرين</span></div>
-<div class="libya-item" data-lname="شهند"><span class="l-num">97</span><span class="l-name">شهند</span></div>
-<div class="libya-item" data-lname="ريناد"><span class="l-num">98</span><span class="l-name">ريناد</span></div>
-<div class="libya-item" data-lname="وجد"><span class="l-num">99</span><span class="l-name">وجد</span></div>
-<div class="libya-item" data-lname="ارم"><span class="l-num">100</span><span class="l-name">ارم</span></div>
-<div class="libya-item" data-lname="الاس"><span class="l-num">101</span><span class="l-name">الاس</span></div>
-<div class="libya-item" data-lname="كهريال"><span class="l-num">102</span><span class="l-name">كهريال</span></div>
-<div class="libya-item" data-lname="سيتاف"><span class="l-num">103</span><span class="l-name">سيتاف</span></div>
-<div class="libya-item" data-lname="بولاند"><span class="l-num">104</span><span class="l-name">بولاند</span></div>
-<div class="libya-item" data-lname="تيلاج"><span class="l-num">105</span><span class="l-name">تيلاج</span></div>
-<div class="libya-item" data-lname="ريلام"><span class="l-num">106</span><span class="l-name">ريلام</span></div>
-<div class="libya-item" data-lname="ريماز"><span class="l-num">107</span><span class="l-name">ريماز</span></div>
-<div class="libya-item" data-lname="مازيغ"><span class="l-num">108</span><span class="l-name">مازيغ</span></div>
-<div class="libya-item" data-lname="أزم"><span class="l-num">109</span><span class="l-name">أزم</span></div>
-<div class="libya-item" data-lname="نيبال"><span class="l-num">110</span><span class="l-name">نيبال</span></div>
-<div class="libya-item" data-lname="مهيار"><span class="l-num">111</span><span class="l-name">مهيار</span></div>
-<div class="libya-item" data-lname="تايرت"><span class="l-num">112</span><span class="l-name">تايرت</span></div>
-<div class="libya-item" data-lname="أكسل"><span class="l-num">113</span><span class="l-name">أكسل</span></div>
-<div class="libya-item" data-lname="كركودة"><span class="l-num">114</span><span class="l-name">كركودة</span></div>
-<div class="libya-item" data-lname="تازيري"><span class="l-num">115</span><span class="l-name">تازيري</span></div>
-<div class="libya-item" data-lname="ميسيلية"><span class="l-num">116</span><span class="l-name">ميسيلية</span></div>
-<div class="libya-item" data-lname="ديسم"><span class="l-num">117</span><span class="l-name">ديسم</span></div>
-<div class="libya-item" data-lname="مهيار"><span class="l-num">118</span><span class="l-name">مهيار</span></div>
-<div class="libya-item" data-lname="أنزو"><span class="l-num">119</span><span class="l-name">أنزو</span></div>
-<div class="libya-item" data-lname="أسيف"><span class="l-num">120</span><span class="l-name">أسيف</span></div>
-<div class="libya-item" data-lname="نيروز"><span class="l-num">121</span><span class="l-name">نيروز</span></div>
-<div class="libya-item" data-lname="أرين"><span class="l-num">122</span><span class="l-name">أرين</span></div>
-<div class="libya-item" data-lname="امسناو"><span class="l-num">123</span><span class="l-name">امسناو</span></div>
-<div class="libya-item" data-lname="ديانا"><span class="l-num">124</span><span class="l-name">ديانا</span></div>
-<div class="libya-item" data-lname="فريال"><span class="l-num">125</span><span class="l-name">فريال</span></div>
-<div class="libya-item" data-lname="وتين"><span class="l-num">126</span><span class="l-name">وتين</span></div>
-<div class="libya-item" data-lname="تولين"><span class="l-num">127</span><span class="l-name">تولين</span></div>
-<div class="libya-item" data-lname="ناريج"><span class="l-num">128</span><span class="l-name">ناريج</span></div>
-<div class="libya-item" data-lname="ملكتينا"><span class="l-num">129</span><span class="l-name">ملكتينا</span></div>
-<div class="libya-item" data-lname="ملاك"><span class="l-num">130</span><span class="l-name">ملاك</span></div>
-<div class="libya-item" data-lname="لورين"><span class="l-num">131</span><span class="l-name">لورين</span></div>
-<div class="libya-item" data-lname="ايلين"><span class="l-num">132</span><span class="l-name">ايلين</span></div>
-<div class="libya-item" data-lname="بره"><span class="l-num">133</span><span class="l-name">بره</span></div>
-<div class="libya-item" data-lname="كارمن"><span class="l-num">134</span><span class="l-name">كارمن</span></div>
-<div class="libya-item" data-lname="تاينزت"><span class="l-num">135</span><span class="l-name">تاينزت</span></div>
-<div class="libya-item" data-lname="سيفكس"><span class="l-num">136</span><span class="l-name">سيفكس</span></div>
-<div class="libya-item" data-lname="فوزي"><span class="l-num">137</span><span class="l-name">فوزي</span></div>
-<div class="libya-item" data-lname="تانس"><span class="l-num">138</span><span class="l-name">تانس</span></div>
-<div class="libya-item" data-lname="أنزو"><span class="l-num">139</span><span class="l-name">أنزو</span></div>
-<div class="libya-item" data-lname="مسنيسا"><span class="l-num">140</span><span class="l-name">مسنيسا</span></div>
-<div class="libya-item" data-lname="تاملولت"><span class="l-num">141</span><span class="l-name">تاملولت</span></div>
-<div class="libya-item" data-lname="بوكيل"><span class="l-num">142</span><span class="l-name">بوكيل</span></div>
-<div class="libya-item" data-lname="ماكس"><span class="l-num">143</span><span class="l-name">ماكس</span></div>
-<div class="libya-item" data-lname="ميار"><span class="l-num">144</span><span class="l-name">ميار</span></div>
-<div class="libya-item" data-lname="لارا"><span class="l-num">145</span><span class="l-name">لارا</span></div>
-<div class="libya-item" data-lname="جودي"><span class="l-num">146</span><span class="l-name">جودي</span></div>
-<div class="libya-item" data-lname="دفيدة"><span class="l-num">147</span><span class="l-name">دفيدة</span></div>
-<div class="libya-item" data-lname="توجان"><span class="l-num">148</span><span class="l-name">توجان</span></div>
-<div class="libya-item" data-lname="هندوان"><span class="l-num">149</span><span class="l-name">هندوان</span></div>
-<div class="libya-item" data-lname="سالي"><span class="l-num">150</span><span class="l-name">سالي</span></div>
-<div class="libya-item" data-lname="قندهار"><span class="l-num">151</span><span class="l-name">قندهار</span></div>
-<div class="libya-item" data-lname="انجي"><span class="l-num">152</span><span class="l-name">انجي</span></div>
-<div class="libya-item" data-lname="راما"><span class="l-num">153</span><span class="l-name">راما</span></div>
-<div class="libya-item" data-lname="هنوف"><span class="l-num">154</span><span class="l-name">هنوف</span></div>
-<div class="libya-item" data-lname="نردين"><span class="l-num">155</span><span class="l-name">نردين</span></div>
-<div class="libya-item" data-lname="نانسي"><span class="l-num">156</span><span class="l-name">نانسي</span></div>
+<div class="libya-item" data-lname="توماسين" data-rem="لا يتمشى مع القانون المعمول به حتى الآن (ذُكر مع «ثايريت»)." onclick="toggleLibyaRem(this)"><span class="l-num">1</span><span class="l-name">توماسين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يتمشى مع القانون المعمول به حتى الآن (ذُكر مع «ثايريت»).<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 1</small></div></div>
+<div class="libya-item" data-lname="ريماس" data-rem="مشتق من «الرَّمْس» وهو تسوية التراب على القبر بما يحويه من ظلام ووحشة." onclick="toggleLibyaRem(this)"><span class="l-num">2</span><span class="l-name">ريماس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> مشتق من «الرَّمْس» وهو تسوية التراب على القبر بما يحويه من ظلام ووحشة.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 2</small></div></div>
+<div class="libya-item" data-lname="ريفال" data-rem="لا يجوز التسمية به لأن معناه غير مستحب. — اسم «ريفال» لا يُستعمل لأسماء الأعلام ذكراً أو أنثى، وإنما هو اسم معيب في اللغة العربية لا يجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">3</span><span class="l-name">ريفال</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يجوز التسمية به لأن معناه غير مستحب. — اسم «ريفال» لا يُستعمل لأسماء الأعلام ذكراً أو أنثى، وإنما هو اسم معيب في اللغة العربية لا يجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 3</small></div></div>
+<div class="libya-item" data-lname="طائفة" data-rem="كلمة عربية لا تصلح اسماً لدلالتها غير المستحبة." onclick="toggleLibyaRem(this)"><span class="l-num">4</span><span class="l-name">طائفة</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> كلمة عربية لا تصلح اسماً لدلالتها غير المستحبة.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 4</small></div></div>
+<div class="libya-item" data-lname="سيدار" data-rem="الاسم غير مستعمل في لغة العرب بهذا المعنى ولم يشتهر في أسماء الأعلام العربية والإسلامية، ولا ينصح بالتسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">5</span><span class="l-name">سيدار</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> الاسم غير مستعمل في لغة العرب بهذا المعنى ولم يشتهر في أسماء الأعلام العربية والإسلامية، ولا ينصح بالتسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 5</small></div></div>
+<div class="libya-item" data-lname="ادلم" data-rem="اسم قبيح المعنى ولا يُسمّى به." onclick="toggleLibyaRem(this)"><span class="l-num">6</span><span class="l-name">ادلم</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم قبيح المعنى ولا يُسمّى به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 6</small></div></div>
+<div class="libya-item" data-lname="تانيري" data-lalt="تائيري" data-rem="ليست صيغة عربية؛ ويُقترح تسمية كريمته «ثائرة» وهي عربية صحيحة." onclick="toggleLibyaRem(this)"><span class="l-num">7</span><span class="l-name">تانيري</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليست صيغة عربية؛ ويُقترح تسمية كريمته «ثائرة» وهي عربية صحيحة. (كُتب في الجدول: تائيري)<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 7</small></div></div>
+<div class="libya-item" data-lname="رماز" data-rem="ليس «ريماز» من مادة (رمز) بمعنى غمز، اسم ذو دلالة غير مستحبة؛ ويمكن التسمية بـ«رميز» (على وزن فعيل) بمعنى الرزينة الثابتة." onclick="toggleLibyaRem(this)"><span class="l-num">8</span><span class="l-name">رماز</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليس «ريماز» من مادة (رمز) بمعنى غمز، اسم ذو دلالة غير مستحبة؛ ويمكن التسمية بـ«رميز» (على وزن فعيل) بمعنى الرزينة الثابتة.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 8</small></div></div>
+<div class="libya-item" data-lname="مجدولين" data-rem="صيغة رومية للقب مريم «المجدلية» نسبة إلى (المجدل) في فلسطين، لا يجوز استعمالها قانوناً." onclick="toggleLibyaRem(this)"><span class="l-num">9</span><span class="l-name">مجدولين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> صيغة رومية للقب مريم «المجدلية» نسبة إلى (المجدل) في فلسطين، لا يجوز استعمالها قانوناً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 9</small></div></div>
+<div class="libya-item" data-lname="روندا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">10</span><span class="l-name">روندا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 10</small></div></div>
+<div class="libya-item" data-lname="نارمين" data-rem="اسم أعجمي. — اسم غير عربي وغير إسلامي." onclick="toggleLibyaRem(this)"><span class="l-num">11</span><span class="l-name">نارمين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم أعجمي. — اسم غير عربي وغير إسلامي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 11</small></div></div>
+<div class="libya-item" data-lname="هجرس" data-rem="معناه «القرد»، اسم غير مناسب لأنثى." onclick="toggleLibyaRem(this)"><span class="l-num">12</span><span class="l-name">هجرس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> معناه «القرد»، اسم غير مناسب لأنثى.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 12</small></div></div>
+<div class="libya-item" data-lname="مهرهان" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">13</span><span class="l-name">مهرهان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 13</small></div></div>
+<div class="libya-item" data-lname="ريشال" data-lalt="ريثال" data-rem="لم يجد المُراجع في (لسان العرب) مادة «رثل» ولا مادة «ريثل»، ولعل هناك خطأً في كتابة الاسم؛ ولم يعثر له على أصل عربي فيما بين يديه من مراجع." onclick="toggleLibyaRem(this)"><span class="l-num">14</span><span class="l-name">ريشال</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لم يجد المُراجع في (لسان العرب) مادة «رثل» ولا مادة «ريثل»، ولعل هناك خطأً في كتابة الاسم؛ ولم يعثر له على أصل عربي فيما بين يديه من مراجع. (كُتب في الجدول: ريثال)<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 14</small></div></div>
+<div class="libya-item" data-lname="سالي" data-rem="اسم إنجليزي / أمريكي / أسترالي / كندي، ليس عربياً." onclick="toggleLibyaRem(this)"><span class="l-num">15</span><span class="l-name">سالي</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم إنجليزي / أمريكي / أسترالي / كندي، ليس عربياً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 15</small></div></div>
+<div class="libya-item" data-lname="ناثير" data-rem="ليست عربية، واسم «نثير» (ن.ث.ي.ر) عربي صحيح." onclick="toggleLibyaRem(this)"><span class="l-num">16</span><span class="l-name">ناثير</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليست عربية، واسم «نثير» (ن.ث.ي.ر) عربي صحيح.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 16</small></div></div>
+<div class="libya-item" data-lname="سيرين" data-rem="اسم فارسي لا تجوز التسمية به. — اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">17</span><span class="l-name">سيرين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم فارسي لا تجوز التسمية به. — اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 17</small></div></div>
+<div class="libya-item" data-lname="نيرمين" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">18</span><span class="l-name">نيرمين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 18</small></div></div>
+<div class="libya-item" data-lname="يوقرثن" data-rem="ليس عربياً." onclick="toggleLibyaRem(this)"><span class="l-num">19</span><span class="l-name">يوقرثن</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليس عربياً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 19</small></div></div>
+<div class="libya-item" data-lname="أنبار" data-rem="اسم مدينة قديمة في العراق، ومعناها «الأهراء» (مخازن الغلال)، لا يجوز التسمية بها." onclick="toggleLibyaRem(this)"><span class="l-num">20</span><span class="l-name">أنبار</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم مدينة قديمة في العراق، ومعناها «الأهراء» (مخازن الغلال)، لا يجوز التسمية بها.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 20</small></div></div>
+<div class="libya-item" data-lname="دينيز" data-rem="اسم أعجمي." onclick="toggleLibyaRem(this)"><span class="l-num">21</span><span class="l-name">دينيز</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم أعجمي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 21</small></div></div>
+<div class="libya-item" data-lname="روجي" data-rem="يقصد أن يسمّي وليدته «راجية» أو «رجاء»؛ أما «روجي» فليس اسماً عربياً." onclick="toggleLibyaRem(this)"><span class="l-num">22</span><span class="l-name">روجي</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> يقصد أن يسمّي وليدته «راجية» أو «رجاء»؛ أما «روجي» فليس اسماً عربياً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 22</small></div></div>
+<div class="libya-item" data-lname="أراونس" data-rem="اسم غير عربي وغير إسلامي." onclick="toggleLibyaRem(this)"><span class="l-num">23</span><span class="l-name">أراونس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي وغير إسلامي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 23</small></div></div>
+<div class="libya-item" data-lname="أميناس" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">24</span><span class="l-name">أميناس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 24</small></div></div>
+<div class="libya-item" data-lname="نهاوند" data-rem="فارسية، اسم مدينة، واسم مقام من مقامات الموسيقا، لا تجوز التسمية بها." onclick="toggleLibyaRem(this)"><span class="l-num">25</span><span class="l-name">نهاوند</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> فارسية، اسم مدينة، واسم مقام من مقامات الموسيقا، لا تجوز التسمية بها.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 25</small></div></div>
+<div class="libya-item" data-lname="ايلان" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">26</span><span class="l-name">ايلان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 26</small></div></div>
+<div class="libya-item" data-lname="ميراز" data-rem="هذا الاسم غير مطابق لما جاء في القانون." onclick="toggleLibyaRem(this)"><span class="l-num">27</span><span class="l-name">ميراز</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> هذا الاسم غير مطابق لما جاء في القانون.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 27</small></div></div>
+<div class="libya-item" data-lname="ميان" data-rem="بمعنى كذّاب، لا يجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">28</span><span class="l-name">ميان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> بمعنى كذّاب، لا يجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 28</small></div></div>
+<div class="libya-item" data-lname="لمار" data-rem="«لامار» أو «لمار» غير عربي فعلاً؛ أما «حلا» فهو عربي. — غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">29</span><span class="l-name">لمار</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> «لامار» أو «لمار» غير عربي فعلاً؛ أما «حلا» فهو عربي. — غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 29</small></div></div>
+<div class="libya-item" data-lname="هندوان" data-rem="لا يوجد في العربية «هندوان» و«هندواني» تسمية للسيف المصنوع في بلاد الهند؛ أما اسم «هند» فهو عربي صحيح، فلماذا لا يسمّي «هند» أو «هنيدة» بدلاً من «هندوان»." onclick="toggleLibyaRem(this)"><span class="l-num">30</span><span class="l-name">هندوان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يوجد في العربية «هندوان» و«هندواني» تسمية للسيف المصنوع في بلاد الهند؛ أما اسم «هند» فهو عربي صحيح، فلماذا لا يسمّي «هند» أو «هنيدة» بدلاً من «هندوان».<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 30</small></div></div>
+<div class="libya-item" data-lname="ليلك" data-rem="اسم لاتيني لا يجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">31</span><span class="l-name">ليلك</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم لاتيني لا يجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 31</small></div></div>
+<div class="libya-item" data-lname="يارا" data-rem="اسم غير عربي. — الأسماء غير عربية (يارا - يارة - ياره)." onclick="toggleLibyaRem(this)"><span class="l-num">32</span><span class="l-name">يارا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي. — الأسماء غير عربية (يارا - يارة - ياره).<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 32</small></div></div>
+<div class="libya-item" data-lname="سرم" data-rem="في العربية تؤدي إلى دلالات مستقبحة مشينة، وفي العربية لا يوجد شيء اسمه «سرام»." onclick="toggleLibyaRem(this)"><span class="l-num">33</span><span class="l-name">سرم</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> في العربية تؤدي إلى دلالات مستقبحة مشينة، وفي العربية لا يوجد شيء اسمه «سرام».<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 33</small></div></div>
+<div class="libya-item" data-lname="شيراز" data-rem="اسم مدينة فارسية (إيرانية) لا تجوز التسمية بها." onclick="toggleLibyaRem(this)"><span class="l-num">34</span><span class="l-name">شيراز</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم مدينة فارسية (إيرانية) لا تجوز التسمية بها.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 34</small></div></div>
+<div class="libya-item" data-lname="بارين" data-rem="لا وجود له في العربية - حسب علم المُفتي - وهناك: بَزنيّة، ويبرين، وتجوز يبرون." onclick="toggleLibyaRem(this)"><span class="l-num">35</span><span class="l-name">بارين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا وجود له في العربية - حسب علم المُفتي - وهناك: بَزنيّة، ويبرين، وتجوز يبرون.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 35</small></div></div>
+<div class="libya-item" data-lname="يارا" data-rem="اسم غير عربي. — الأسماء غير عربية (يارا - يارة - ياره)." onclick="toggleLibyaRem(this)"><span class="l-num">36</span><span class="l-name">يارا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي. — الأسماء غير عربية (يارا - يارة - ياره).<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 36</small></div></div>
+<div class="libya-item" data-lname="دارين" data-rem="اسم مكان في البحرين، اسم فارسي لقرب البحرين من فارس." onclick="toggleLibyaRem(this)"><span class="l-num">37</span><span class="l-name">دارين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم مكان في البحرين، اسم فارسي لقرب البحرين من فارس.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 37</small></div></div>
+<div class="libya-item" data-lname="روبين" data-rem="تعني حجراً من الأحجار الكريمة أحمر اللون؛ وفي العربية «عقيق»؛ ليس اسماً عربياً ولا إسلامياً." onclick="toggleLibyaRem(this)"><span class="l-num">38</span><span class="l-name">روبين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> تعني حجراً من الأحجار الكريمة أحمر اللون؛ وفي العربية «عقيق»؛ ليس اسماً عربياً ولا إسلامياً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 38</small></div></div>
+<div class="libya-item" data-lname="باسنت" data-rem="ليست عربية، هي كلمة مصرية قديمة (فرعونية) لا يجوز اتخاذها اسم علم." onclick="toggleLibyaRem(this)"><span class="l-num">39</span><span class="l-name">باسنت</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليست عربية، هي كلمة مصرية قديمة (فرعونية) لا يجوز اتخاذها اسم علم.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 39</small></div></div>
+<div class="libya-item" data-lname="نادرين" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">40</span><span class="l-name">نادرين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 40</small></div></div>
+<div class="libya-item" data-lname="جوري" data-rem="لم يجد المُراجع في مادة (جور) صيغة «جورى» بأي معنى؛ ومادة (جور) متعددة الاشتقاقات والدلالات المتضادة أحياناً، وليس فيها (جورى)، وقد تكون توليداً مثلما وُلدت (شورى) من مادة (شور)." onclick="toggleLibyaRem(this)"><span class="l-num">41</span><span class="l-name">جوري</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لم يجد المُراجع في مادة (جور) صيغة «جورى» بأي معنى؛ ومادة (جور) متعددة الاشتقاقات والدلالات المتضادة أحياناً، وليس فيها (جورى)، وقد تكون توليداً مثلما وُلدت (شورى) من مادة (شور).<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 41</small></div></div>
+<div class="libya-item" data-lname="كينزي" data-rem="اسم أعجمي؛ ويمكن تسمية «كنزة» أو «كنز» وهما عربيان صحيحان." onclick="toggleLibyaRem(this)"><span class="l-num">42</span><span class="l-name">كينزي</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم أعجمي؛ ويمكن تسمية «كنزة» أو «كنز» وهما عربيان صحيحان.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 42</small></div></div>
+<div class="libya-item" data-lname="روبيان" data-rem="اسم غير عربي ولا إسلامي." onclick="toggleLibyaRem(this)"><span class="l-num">43</span><span class="l-name">روبيان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي ولا إسلامي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 43</small></div></div>
+<div class="libya-item" data-lname="نيلم" data-rem="ليس في العربية." onclick="toggleLibyaRem(this)"><span class="l-num">44</span><span class="l-name">نيلم</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليس في العربية.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 44</small></div></div>
+<div class="libya-item" data-lname="روبينة" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">45</span><span class="l-name">روبينة</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 45</small></div></div>
+<div class="libya-item" data-lname="ميرال" data-rem="اسم تركي بمعنى الظبية أو الغزالة، غير عربي؛ ويمكن أن يتخذ المواطن اسم «ظبية» وهو اسم عربي جميل." onclick="toggleLibyaRem(this)"><span class="l-num">46</span><span class="l-name">ميرال</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم تركي بمعنى الظبية أو الغزالة، غير عربي؛ ويمكن أن يتخذ المواطن اسم «ظبية» وهو اسم عربي جميل.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 46</small></div></div>
+<div class="libya-item" data-lname="يسند" data-rem="اسم فرعوني وأصله (بسنت) بالتاء، غير عربي ولا إسلامي." onclick="toggleLibyaRem(this)"><span class="l-num">47</span><span class="l-name">يسند</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم فرعوني وأصله (بسنت) بالتاء، غير عربي ولا إسلامي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 47</small></div></div>
+<div class="libya-item" data-lname="هيلانة" data-rem="اسم غير عربي لاتيني." onclick="toggleLibyaRem(this)"><span class="l-num">48</span><span class="l-name">هيلانة</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي لاتيني.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 48</small></div></div>
+<div class="libya-item" data-lname="نورهان" data-rem="فارسية لا تجوز التسمية بها؛ ويمكن اتخاذ «نور» اسماً." onclick="toggleLibyaRem(this)"><span class="l-num">49</span><span class="l-name">نورهان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> فارسية لا تجوز التسمية بها؛ ويمكن اتخاذ «نور» اسماً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 49</small></div></div>
+<div class="libya-item" data-lname="لارا" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">50</span><span class="l-name">لارا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 50</small></div></div>
+<div class="libya-item" data-lname="نوران" data-rem="صيغة فارسية أعجمية لا تجوز التسمية بها." onclick="toggleLibyaRem(this)"><span class="l-num">51</span><span class="l-name">نوران</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> صيغة فارسية أعجمية لا تجوز التسمية بها.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 51</small></div></div>
+<div class="libya-item" data-lname="لارين" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">52</span><span class="l-name">لارين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 52</small></div></div>
+<div class="libya-item" data-lname="رناد" data-rem="لا وجود لهذه اللفظة في المعاجم (القواميس) العربية القديمة الموثوقة، ولا وجود حتى لما يقاربها في المعنى؛ والشيء المجهول الأصل لا يُسمّى به." onclick="toggleLibyaRem(this)"><span class="l-num">53</span><span class="l-name">رناد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا وجود لهذه اللفظة في المعاجم (القواميس) العربية القديمة الموثوقة، ولا وجود حتى لما يقاربها في المعنى؛ والشيء المجهول الأصل لا يُسمّى به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 53</small></div></div>
+<div class="libya-item" data-lname="جولين" data-rem="هذا الاسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">54</span><span class="l-name">جولين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> هذا الاسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 54</small></div></div>
+<div class="libya-item" data-lname="سيدرا" data-rem="غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">55</span><span class="l-name">سيدرا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 55</small></div></div>
+<div class="libya-item" data-lname="ميام" data-rem="لا أصل له في العربية، وقد يُقال إنه مأخوذ من «الموم» وهو الحمى أو الجدري، وقيل إنه الشمع مأخوذ من الفارسية؛ ويقترح المُراجع تسميتها «مامة» وهو اسم أم أحد الشعراء الأقدمين (كعب بن مامة الإيادي) لأنه منسوب إلى أمه." onclick="toggleLibyaRem(this)"><span class="l-num">56</span><span class="l-name">ميام</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا أصل له في العربية، وقد يُقال إنه مأخوذ من «الموم» وهو الحمى أو الجدري، وقيل إنه الشمع مأخوذ من الفارسية؛ ويقترح المُراجع تسميتها «مامة» وهو اسم أم أحد الشعراء الأقدمين (كعب بن مامة الإيادي) لأنه منسوب إلى أمه.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 56</small></div></div>
+<div class="libya-item" data-lname="ايلين" data-rem="غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">57</span><span class="l-name">ايلين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 57</small></div></div>
+<div class="libya-item" data-lname="نريان - نوريان" data-lalt="نريان نوريان" data-rem="غير عربيان (نريان - نوريان)." onclick="toggleLibyaRem(this)"><span class="l-num">58</span><span class="l-name">نريان - نوريان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> غير عربيان (نريان - نوريان). (كُتب في الجدول: نوريان)<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 58</small></div></div>
+<div class="libya-item" data-lname="اليسا" data-rem="غير عربي، وأما «عليسة» فلا بأس من التسمية بها لكونها اسماً عروبياً قديماً." onclick="toggleLibyaRem(this)"><span class="l-num">59</span><span class="l-name">اليسا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> غير عربي، وأما «عليسة» فلا بأس من التسمية بها لكونها اسماً عروبياً قديماً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 59</small></div></div>
+<div class="libya-item" data-lname="ثلاثماس" data-rem="اسم ليس عربياً وليس إسلامياً." onclick="toggleLibyaRem(this)"><span class="l-num">60</span><span class="l-name">ثلاثماس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم ليس عربياً وليس إسلامياً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 60</small></div></div>
+<div class="libya-item" data-lname="ألين" data-rem="ليس عربياً." onclick="toggleLibyaRem(this)"><span class="l-num">61</span><span class="l-name">ألين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليس عربياً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 61</small></div></div>
+<div class="libya-item" data-lname="روان" data-rem="اسم غير عربي وغير إسلامي." onclick="toggleLibyaRem(this)"><span class="l-num">62</span><span class="l-name">روان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي وغير إسلامي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 62</small></div></div>
+<div class="libya-item" data-lname="نادين" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">63</span><span class="l-name">نادين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 63</small></div></div>
+<div class="libya-item" data-lname="مورين" data-rem="اسم غير عربي، أما «مرين» فلا بأس به." onclick="toggleLibyaRem(this)"><span class="l-num">64</span><span class="l-name">مورين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي، أما «مرين» فلا بأس به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 64</small></div></div>
+<div class="libya-item" data-lname="باست" data-rem="كلمة غير عربية لعلها من المصرية القديمة (بس.ت) بمعنى: قطة، هرة؛ وعرّبتها (بسّة)." onclick="toggleLibyaRem(this)"><span class="l-num">65</span><span class="l-name">باست</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> كلمة غير عربية لعلها من المصرية القديمة (بس.ت) بمعنى: قطة، هرة؛ وعرّبتها (بسّة).<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 65</small></div></div>
+<div class="libya-item" data-lname="مايا" data-rem="اسم غير عربي ولا إسلامي." onclick="toggleLibyaRem(this)"><span class="l-num">66</span><span class="l-name">مايا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي ولا إسلامي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 66</small></div></div>
+<div class="libya-item" data-lname="مثاني" data-rem="رغم صحته لغوياً قد يُحرَّف نطقاً، وللمواطن حرية القرار." onclick="toggleLibyaRem(this)"><span class="l-num">67</span><span class="l-name">مثاني</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> رغم صحته لغوياً قد يُحرَّف نطقاً، وللمواطن حرية القرار.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 67</small></div></div>
+<div class="libya-item" data-lname="هزار" data-rem="اسم طائر باللغة الفارسية لا يجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">68</span><span class="l-name">هزار</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم طائر باللغة الفارسية لا يجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 68</small></div></div>
+<div class="libya-item" data-lname="ليندا" data-rem="اسم أعجمي." onclick="toggleLibyaRem(this)"><span class="l-num">69</span><span class="l-name">ليندا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم أعجمي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 69</small></div></div>
+<div class="libya-item" data-lname="توميديا" data-lalt="نوميديا" data-rem="اسم الجزائر عند الرومان، ليس عربياً." onclick="toggleLibyaRem(this)"><span class="l-num">70</span><span class="l-name">توميديا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم الجزائر عند الرومان، ليس عربياً. (كُتب في الجدول: نوميديا)<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 70</small></div></div>
+<div class="libya-item" data-lname="ريناز" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">71</span><span class="l-name">ريناز</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 71</small></div></div>
+<div class="libya-item" data-lname="إميلي" data-rem="أو «إملي»، اسم أعجمي إفرنجي للأنثى، لا تجوز التسمية به قانوناً." onclick="toggleLibyaRem(this)"><span class="l-num">72</span><span class="l-name">إميلي</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> أو «إملي»، اسم أعجمي إفرنجي للأنثى، لا تجوز التسمية به قانوناً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 72</small></div></div>
+<div class="libya-item" data-lname="إينور" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">73</span><span class="l-name">إينور</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 73</small></div></div>
+<div class="libya-item" data-lname="كندا" data-rem="اسم بلد في شمال القارة الأمريكية." onclick="toggleLibyaRem(this)"><span class="l-num">74</span><span class="l-name">كندا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم بلد في شمال القارة الأمريكية.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 74</small></div></div>
+<div class="libya-item" data-lname="ليلاس" data-rem="لا يوجد في العربية." onclick="toggleLibyaRem(this)"><span class="l-num">75</span><span class="l-name">ليلاس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يوجد في العربية.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 75</small></div></div>
+<div class="libya-item" data-lname="رناز" data-rem="«الرُّنز» بالضم لغة في «الأرز»، وقد يكون من باب إنجاص وإجّاص، وهي لعبد القيس؛ والأصل فيها «رُزّ» فكرهوا التشديد فأبدلوا من الزاي الأولى نوناً كما قالوا إنجاص في إجاص." onclick="toggleLibyaRem(this)"><span class="l-num">76</span><span class="l-name">رناز</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> «الرُّنز» بالضم لغة في «الأرز»، وقد يكون من باب إنجاص وإجّاص، وهي لعبد القيس؛ والأصل فيها «رُزّ» فكرهوا التشديد فأبدلوا من الزاي الأولى نوناً كما قالوا إنجاص في إجاص.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 76</small></div></div>
+<div class="libya-item" data-lname="أريس" data-rem="معناها مستهجنة، لا يجوز التسمية بها." onclick="toggleLibyaRem(this)"><span class="l-num">77</span><span class="l-name">أريس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> معناها مستهجنة، لا يجوز التسمية بها.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 77</small></div></div>
+<div class="libya-item" data-lname="ناريس" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">78</span><span class="l-name">ناريس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 78</small></div></div>
+<div class="libya-item" data-lname="ننسي" data-rem="أو «نانسي»، اسم زوجة اللعين «ريغان»، أجنبي أعجمي صريح." onclick="toggleLibyaRem(this)"><span class="l-num">79</span><span class="l-name">ننسي</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> أو «نانسي»، اسم زوجة اللعين «ريغان»، أجنبي أعجمي صريح.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 79</small></div></div>
+<div class="libya-item" data-lname="ايفاو" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">80</span><span class="l-name">ايفاو</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 80</small></div></div>
+<div class="libya-item" data-lname="بوباس" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">81</span><span class="l-name">بوباس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 81</small></div></div>
+<div class="libya-item" data-lname="امسناو" data-rem="لا يجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">82</span><span class="l-name">امسناو</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 82</small></div></div>
+<div class="libya-item" data-lname="جلنار" data-rem="اسم أعجمي." onclick="toggleLibyaRem(this)"><span class="l-num">83</span><span class="l-name">جلنار</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم أعجمي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 83</small></div></div>
+<div class="libya-item" data-lname="أيار" data-rem="اسم أعجمي وهو اسم الشهر الخامس من السنة الشمسية (مايو/الماء)، لا تجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">84</span><span class="l-name">أيار</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم أعجمي وهو اسم الشهر الخامس من السنة الشمسية (مايو/الماء)، لا تجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 84</small></div></div>
+<div class="libya-item" data-lname="غيلان" data-rem="اسم أعجمي وهو اسم قبيح لا تجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">85</span><span class="l-name">غيلان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم أعجمي وهو اسم قبيح لا تجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 85</small></div></div>
+<div class="libya-item" data-lname="رستم" data-rem="اسم فارسي." onclick="toggleLibyaRem(this)"><span class="l-num">86</span><span class="l-name">رستم</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم فارسي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 86</small></div></div>
+<div class="libya-item" data-lname="علام" data-rem="من صفات الله ولا يجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">87</span><span class="l-name">علام</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> من صفات الله ولا يجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 87</small></div></div>
+<div class="libya-item" data-lname="ايرينا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">88</span><span class="l-name">ايرينا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 88</small></div></div>
+<div class="libya-item" data-lname="أريام" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">89</span><span class="l-name">أريام</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 89</small></div></div>
+<div class="libya-item" data-lname="ناثير" data-rem="ليست عربية، واسم «نثير» (ن.ث.ي.ر) عربي صحيح." onclick="toggleLibyaRem(this)"><span class="l-num">90</span><span class="l-name">ناثير</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليست عربية، واسم «نثير» (ن.ث.ي.ر) عربي صحيح.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 90</small></div></div>
+<div class="libya-item" data-lname="روبينه" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">91</span><span class="l-name">روبينه</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 91</small></div></div>
+<div class="libya-item" data-lname="ريا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">92</span><span class="l-name">ريا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 92</small></div></div>
+<div class="libya-item" data-lname="حلا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">93</span><span class="l-name">حلا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 93</small></div></div>
+<div class="libya-item" data-lname="الأيهم" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">94</span><span class="l-name">الأيهم</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 94</small></div></div>
+<div class="libya-item" data-lname="أزم" data-rem="الشدة والضيق والكرب والألم والعض والقطع، وهي معانٍ مستكرهة، ونصّت القرارات على عدم التسمية بما يسيء إلى حاملها؛ ويقترح «أسامة» مثلاً (ومعناها الأسد)." onclick="toggleLibyaRem(this)"><span class="l-num">95</span><span class="l-name">أزم</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> الشدة والضيق والكرب والألم والعض والقطع، وهي معانٍ مستكرهة، ونصّت القرارات على عدم التسمية بما يسيء إلى حاملها؛ ويقترح «أسامة» مثلاً (ومعناها الأسد).<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 95</small></div></div>
+<div class="libya-item" data-lname="شيرين" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">96</span><span class="l-name">شيرين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 96</small></div></div>
+<div class="libya-item" data-lname="شهند" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">97</span><span class="l-name">شهند</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 97</small></div></div>
+<div class="libya-item" data-lname="ريناد" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">98</span><span class="l-name">ريناد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 98</small></div></div>
+<div class="libya-item" data-lname="وجد" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">99</span><span class="l-name">وجد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 99</small></div></div>
+<div class="libya-item" data-lname="ارم" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">100</span><span class="l-name">ارم</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 100</small></div></div>
+<div class="libya-item" data-lname="الاس" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">101</span><span class="l-name">الاس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 101</small></div></div>
+<div class="libya-item" data-lname="كهريال" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">102</span><span class="l-name">كهريال</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 102</small></div></div>
+<div class="libya-item" data-lname="سيتاف" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">103</span><span class="l-name">سيتاف</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 103</small></div></div>
+<div class="libya-item" data-lname="بولاند" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">104</span><span class="l-name">بولاند</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 104</small></div></div>
+<div class="libya-item" data-lname="تيلاج" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">105</span><span class="l-name">تيلاج</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 105</small></div></div>
+<div class="libya-item" data-lname="ريلام" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">106</span><span class="l-name">ريلام</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 106</small></div></div>
+<div class="libya-item" data-lname="ريماز" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">107</span><span class="l-name">ريماز</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 107</small></div></div>
+<div class="libya-item" data-lname="مازيغ" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">108</span><span class="l-name">مازيغ</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 108</small></div></div>
+<div class="libya-item" data-lname="أزم" data-rem="الشدة والضيق والكرب والألم والعض والقطع، وهي معانٍ مستكرهة، ونصّت القرارات على عدم التسمية بما يسيء إلى حاملها؛ ويقترح «أسامة» مثلاً (ومعناها الأسد)." onclick="toggleLibyaRem(this)"><span class="l-num">109</span><span class="l-name">أزم</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> الشدة والضيق والكرب والألم والعض والقطع، وهي معانٍ مستكرهة، ونصّت القرارات على عدم التسمية بما يسيء إلى حاملها؛ ويقترح «أسامة» مثلاً (ومعناها الأسد).<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 109</small></div></div>
+<div class="libya-item" data-lname="نيبال" data-rem="اسم بلد آسيوي، أم «نبال» جمع (نَبْل) و(نَبْلة) أي نشّاب؟ وهو اسم قبيح للأنثى غير مرغوب في التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">110</span><span class="l-name">نيبال</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم بلد آسيوي، أم «نبال» جمع (نَبْل) و(نَبْلة) أي نشّاب؟ وهو اسم قبيح للأنثى غير مرغوب في التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 110</small></div></div>
+<div class="libya-item" data-lname="مهيار" data-rem="اسم أعجمي فارسي." onclick="toggleLibyaRem(this)"><span class="l-num">111</span><span class="l-name">مهيار</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم أعجمي فارسي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 111</small></div></div>
+<div class="libya-item" data-lname="تايرت" data-rem="ليس عربياً ولا إسلامياً." onclick="toggleLibyaRem(this)"><span class="l-num">112</span><span class="l-name">تايرت</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليس عربياً ولا إسلامياً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 112</small></div></div>
+<div class="libya-item" data-lname="أكسل" data-rem="يقال: فلان أكسل من فلان أي أكثر منه كسلاً؛ لا تجوز التسمية به قانوناً." onclick="toggleLibyaRem(this)"><span class="l-num">113</span><span class="l-name">أكسل</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> يقال: فلان أكسل من فلان أي أكثر منه كسلاً؛ لا تجوز التسمية به قانوناً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 113</small></div></div>
+<div class="libya-item" data-lname="كركودة" data-rem="ليس من العربية في شيء." onclick="toggleLibyaRem(this)"><span class="l-num">114</span><span class="l-name">كركودة</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليس من العربية في شيء.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 114</small></div></div>
+<div class="libya-item" data-lname="تازيري" data-rem="لا يجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">115</span><span class="l-name">تازيري</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 115</small></div></div>
+<div class="libya-item" data-lname="ميسيلية" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">116</span><span class="l-name">ميسيلية</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 116</small></div></div>
+<div class="libya-item" data-lname="ديسم" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">117</span><span class="l-name">ديسم</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 117</small></div></div>
+<div class="libya-item" data-lname="مهيار" data-rem="اسم أعجمي فارسي." onclick="toggleLibyaRem(this)"><span class="l-num">118</span><span class="l-name">مهيار</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم أعجمي فارسي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 118</small></div></div>
+<div class="libya-item" data-lname="أنزو" data-rem="اسم غير عربي ولا إسلامي." onclick="toggleLibyaRem(this)"><span class="l-num">119</span><span class="l-name">أنزو</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي ولا إسلامي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 119</small></div></div>
+<div class="libya-item" data-lname="أسيف" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">120</span><span class="l-name">أسيف</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 120</small></div></div>
+<div class="libya-item" data-lname="نيروز" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">121</span><span class="l-name">نيروز</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 121</small></div></div>
+<div class="libya-item" data-lname="أرين" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">122</span><span class="l-name">أرين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 122</small></div></div>
+<div class="libya-item" data-lname="امسناو" data-rem="لا يجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">123</span><span class="l-name">امسناو</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 123</small></div></div>
+<div class="libya-item" data-lname="ديانا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">124</span><span class="l-name">ديانا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 124</small></div></div>
+<div class="libya-item" data-lname="فريال" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">125</span><span class="l-name">فريال</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 125</small></div></div>
+<div class="libya-item" data-lname="وتين" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">126</span><span class="l-name">وتين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 126</small></div></div>
+<div class="libya-item" data-lname="تولين" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">127</span><span class="l-name">تولين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 127</small></div></div>
+<div class="libya-item" data-lname="ناريج" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">128</span><span class="l-name">ناريج</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 128</small></div></div>
+<div class="libya-item" data-lname="ملكتينا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">129</span><span class="l-name">ملكتينا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 129</small></div></div>
+<div class="libya-item" data-lname="ملاك" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">130</span><span class="l-name">ملاك</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 130</small></div></div>
+<div class="libya-item" data-lname="لورين" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">131</span><span class="l-name">لورين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 131</small></div></div>
+<div class="libya-item" data-lname="ايلين" data-rem="غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">132</span><span class="l-name">ايلين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 132</small></div></div>
+<div class="libya-item" data-lname="بره" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">133</span><span class="l-name">بره</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 133</small></div></div>
+<div class="libya-item" data-lname="كارمن" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">134</span><span class="l-name">كارمن</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 134</small></div></div>
+<div class="libya-item" data-lname="تاينزت" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">135</span><span class="l-name">تاينزت</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 135</small></div></div>
+<div class="libya-item" data-lname="سيفكس" data-rem="غير عربي وغير إسلامي." onclick="toggleLibyaRem(this)"><span class="l-num">136</span><span class="l-name">سيفكس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> غير عربي وغير إسلامي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 136</small></div></div>
+<div class="libya-item" data-lname="فوزي" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">137</span><span class="l-name">فوزي</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 137</small></div></div>
+<div class="libya-item" data-lname="تانس" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">138</span><span class="l-name">تانس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 138</small></div></div>
+<div class="libya-item" data-lname="أنزو" data-rem="اسم غير عربي ولا إسلامي." onclick="toggleLibyaRem(this)"><span class="l-num">139</span><span class="l-name">أنزو</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي ولا إسلامي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 139</small></div></div>
+<div class="libya-item" data-lname="مسنيسا" data-rem="الصيغة اللاتينية لاسم ملك نوميديا (الجزائر الآن) في القرن الثالث قبل ميلاد المسيح عليه السلام، تعاون مع الرومان ضد الحركة الوطنية بقيادة «سيفاكس»، وكان عميلاً للمستعمر الروماني؛ الاسم ليس عربياً ولا إسلامياً." onclick="toggleLibyaRem(this)"><span class="l-num">140</span><span class="l-name">مسنيسا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> الصيغة اللاتينية لاسم ملك نوميديا (الجزائر الآن) في القرن الثالث قبل ميلاد المسيح عليه السلام، تعاون مع الرومان ضد الحركة الوطنية بقيادة «سيفاكس»، وكان عميلاً للمستعمر الروماني؛ الاسم ليس عربياً ولا إسلامياً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 140</small></div></div>
+<div class="libya-item" data-lname="تاملولت" data-rem="كلمة ليست ذات صيغة عربية ولا تجوز التسمية بها." onclick="toggleLibyaRem(this)"><span class="l-num">141</span><span class="l-name">تاملولت</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> كلمة ليست ذات صيغة عربية ولا تجوز التسمية بها.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 141</small></div></div>
+<div class="libya-item" data-lname="بوكيل" data-rem="غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">142</span><span class="l-name">بوكيل</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 142</small></div></div>
+<div class="libya-item" data-lname="ماكس" data-rem="لا يجوز التسمية به." onclick="toggleLibyaRem(this)"><span class="l-num">143</span><span class="l-name">ماكس</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يجوز التسمية به.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 143</small></div></div>
+<div class="libya-item" data-lname="ميار" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">144</span><span class="l-name">ميار</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 144</small></div></div>
+<div class="libya-item" data-lname="لارا" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">145</span><span class="l-name">لارا</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 145</small></div></div>
+<div class="libya-item" data-lname="جودي" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">146</span><span class="l-name">جودي</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 146</small></div></div>
+<div class="libya-item" data-lname="دفيدة" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">147</span><span class="l-name">دفيدة</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 147</small></div></div>
+<div class="libya-item" data-lname="توجان" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">148</span><span class="l-name">توجان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 148</small></div></div>
+<div class="libya-item" data-lname="هندوان" data-rem="لا يوجد في العربية «هندوان» و«هندواني» تسمية للسيف المصنوع في بلاد الهند؛ أما اسم «هند» فهو عربي صحيح، فلماذا لا يسمّي «هند» أو «هنيدة» بدلاً من «هندوان»." onclick="toggleLibyaRem(this)"><span class="l-num">149</span><span class="l-name">هندوان</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يوجد في العربية «هندوان» و«هندواني» تسمية للسيف المصنوع في بلاد الهند؛ أما اسم «هند» فهو عربي صحيح، فلماذا لا يسمّي «هند» أو «هنيدة» بدلاً من «هندوان».<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 149</small></div></div>
+<div class="libya-item" data-lname="سالي" data-rem="اسم إنجليزي / أمريكي / أسترالي / كندي، ليس عربياً." onclick="toggleLibyaRem(this)"><span class="l-num">150</span><span class="l-name">سالي</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم إنجليزي / أمريكي / أسترالي / كندي، ليس عربياً.<br><small>المصدر: قائمة الأحوال المدنية · جدول مجمع اللغة العربية · رقم 150</small></div></div>
+<div class="libya-item" data-lname="قندهار" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">151</span><span class="l-name">قندهار</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 151</small></div></div>
+<div class="libya-item" data-lname="انجي" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">152</span><span class="l-name">انجي</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 152</small></div></div>
+<div class="libya-item" data-lname="راما" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">153</span><span class="l-name">راما</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · كتاب دار الإفتاء إلى الأحوال المدنية · رقم 153</small></div></div>
+<div class="libya-item" data-lname="هنوف" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">154</span><span class="l-name">هنوف</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 154</small></div></div>
+<div class="libya-item" data-lname="نردين" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">155</span><span class="l-name">نردين</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 155</small></div></div>
+<div class="libya-item" data-lname="نانسي" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">156</span><span class="l-name">نانسي</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">لم ترد ملاحظة لغوية على هذا الاسم في صفحات الملف المرفقة.<br><small>المصدر: قائمة الأحوال المدنية · رقم 156</small></div></div>
+<div class="libya-item l-new" data-lname="دانة" data-rem="كلمة مستعملة في منطقة الخليج العربي قد تكون هندية أو فارسية الأصل؛ وفي العربي «دنية» يمكن استعمالها." onclick="toggleLibyaRem(this)"><span class="l-num">157</span><span class="l-name">دانة</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> كلمة مستعملة في منطقة الخليج العربي قد تكون هندية أو فارسية الأصل؛ وفي العربي «دنية» يمكن استعمالها.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 157</small></div></div>
+<div class="libya-item l-new" data-lname="راوند" data-rem="اسم مدينة فارسية غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">158</span><span class="l-name">راوند</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم مدينة فارسية غير عربي.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 158</small></div></div>
+<div class="libya-item l-new" data-lname="ميرهان" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">159</span><span class="l-name">ميرهان</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 159</small></div></div>
+<div class="libya-item l-new" data-lname="شهد ليبيا" data-rem="اسم مركب غير مستساغ؛ للمواطن أن يختار اسم «شهد» وهو عربي صحيح، أو اسم «ليبيا» الذي أجازته اللجنة." onclick="toggleLibyaRem(this)"><span class="l-num">160</span><span class="l-name">شهد ليبيا</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم مركب غير مستساغ؛ للمواطن أن يختار اسم «شهد» وهو عربي صحيح، أو اسم «ليبيا» الذي أجازته اللجنة.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 160</small></div></div>
+<div class="libya-item l-new" data-lname="ناردين" data-rem="اسم أعجمي." onclick="toggleLibyaRem(this)"><span class="l-num">161</span><span class="l-name">ناردين</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم أعجمي.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 161</small></div></div>
+<div class="libya-item l-new" data-lname="تانميرت" data-rem="اسم غير عربي." onclick="toggleLibyaRem(this)"><span class="l-num">162</span><span class="l-name">تانميرت</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم غير عربي.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 162</small></div></div>
+<div class="libya-item l-new" data-lname="سنادي" data-rem="لا يعرف المُراجع «سنادي»، وهي مولّدة من «سند» و«سناد»، والأخيرة يمكن أن تُتخذ اسماً للذكر والأنثى." onclick="toggleLibyaRem(this)"><span class="l-num">163</span><span class="l-name">سنادي</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يعرف المُراجع «سنادي»، وهي مولّدة من «سند» و«سناد»، والأخيرة يمكن أن تُتخذ اسماً للذكر والأنثى.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 163</small></div></div>
+<div class="libya-item l-new" data-lname="مآذن" data-rem="الاسم غير مناسب، وقد اختار المواطن الكريم اسم «نورة» لكريمته وهو عربي صحيح." onclick="toggleLibyaRem(this)"><span class="l-num">164</span><span class="l-name">مآذن</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> الاسم غير مناسب، وقد اختار المواطن الكريم اسم «نورة» لكريمته وهو عربي صحيح.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 164</small></div></div>
+<div class="libya-item l-new" data-lname="أيّان" data-rem="معناها «متى»؟ للسؤال عن الزمان، ولا تصلح اسماً فهي ظرف زمان؛ واسم «آلاء» عربي صحيح." onclick="toggleLibyaRem(this)"><span class="l-num">165</span><span class="l-name">أيّان</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> معناها «متى»؟ للسؤال عن الزمان، ولا تصلح اسماً فهي ظرف زمان؛ واسم «آلاء» عربي صحيح.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 165</small></div></div>
+<div class="libya-item l-new" data-lname="روزنية" data-rem="ليس وزناً لاسم عربي؛ ويمكن تسمية «رزان» أو «رويزية» (تصغير مؤنث رزان)." onclick="toggleLibyaRem(this)"><span class="l-num">166</span><span class="l-name">روزنية</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> ليس وزناً لاسم عربي؛ ويمكن تسمية «رزان» أو «رويزية» (تصغير مؤنث رزان).<br><small>المصدر: جدول مجمع اللغة العربية · رقم 166</small></div></div>
+<div class="libya-item l-new" data-lname="سبابل" data-rem="لا يعرف المُراجع «سبابل» في العربية؛ ويقترح اسم «هديل» وهو عربي صحيح." onclick="toggleLibyaRem(this)"><span class="l-num">167</span><span class="l-name">سبابل</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يعرف المُراجع «سبابل» في العربية؛ ويقترح اسم «هديل» وهو عربي صحيح.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 167</small></div></div>
+<div class="libya-item l-new" data-lname="أم المير" data-rem="«أم الأمير»؛ لا يراه المُراجع اسماً مناسباً." onclick="toggleLibyaRem(this)"><span class="l-num">168</span><span class="l-name">أم المير</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> «أم الأمير»؛ لا يراه المُراجع اسماً مناسباً.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 168</small></div></div>
+<div class="libya-item l-new" data-lname="أمر الله" data-rem="لا يراه المُراجع مناسباً، وفيه تطيّر أو عدم رضا." onclick="toggleLibyaRem(this)"><span class="l-num">169</span><span class="l-name">أمر الله</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يراه المُراجع مناسباً، وفيه تطيّر أو عدم رضا.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 169</small></div></div>
+<div class="libya-item l-new" data-lname="غيلاس" data-rem="اسم عدناني؛ فليكن الاسم «غر» وهو معنى «غيلاس» إذا شاء المواطن الكريم." onclick="toggleLibyaRem(this)"><span class="l-num">170</span><span class="l-name">غيلاس</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم عدناني؛ فليكن الاسم «غر» وهو معنى «غيلاس» إذا شاء المواطن الكريم.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 170</small></div></div>
+<div class="libya-item l-new" data-lname="فتوان" data-rem="لغة في «فتيان» جمع فتى، ولا يرى المُراجع تسمية الواحد باسم الجمع؛ فليختر المواطن اسماً مفرداً مناسباً مثل: صفوان، عدنان، غسان..." onclick="toggleLibyaRem(this)"><span class="l-num">171</span><span class="l-name">فتوان</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لغة في «فتيان» جمع فتى، ولا يرى المُراجع تسمية الواحد باسم الجمع؛ فليختر المواطن اسماً مفرداً مناسباً مثل: صفوان، عدنان، غسان...<br><small>المصدر: جدول مجمع اللغة العربية · رقم 171</small></div></div>
+<div class="libya-item l-new" data-lname="آصف" data-rem="اسم عبراني؛ فإن شاء المواطن تسمية ابنه «أصف» ومعناه: الغبار، وهذا عجيب!" onclick="toggleLibyaRem(this)"><span class="l-num">172</span><span class="l-name">آصف</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> اسم عبراني؛ فإن شاء المواطن تسمية ابنه «أصف» ومعناه: الغبار، وهذا عجيب!<br><small>المصدر: جدول مجمع اللغة العربية · رقم 172</small></div></div>
+<div class="libya-item l-new" data-lname="الفيّاء" data-rem="كثير الرجوع، من مادة (فيأ)؛ ويقترح «أفياء» بمعنى «ظلال» فذلك أضبط وأدل وأجمل من «فيّاء» رغم عربية الأخيرة." onclick="toggleLibyaRem(this)"><span class="l-num">173</span><span class="l-name">الفيّاء</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> كثير الرجوع، من مادة (فيأ)؛ ويقترح «أفياء» بمعنى «ظلال» فذلك أضبط وأدل وأجمل من «فيّاء» رغم عربية الأخيرة.<br><small>المصدر: جدول مجمع اللغة العربية · رقم 173</small></div></div>
+<div class="libya-item l-new" data-lname="ثايريت" data-rem="لا يتمشى مع القانون المعمول به حتى الآن (ذُكر مع «توماسين»)." onclick="toggleLibyaRem(this)"><span class="l-num">174</span><span class="l-name">ثايريت</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem"><b>المعنى / ملاحظة المجمع:</b> لا يتمشى مع القانون المعمول به حتى الآن (ذُكر مع «توماسين»).<br><small>المصدر: جدول مجمع اللغة العربية · رقم 174</small></div></div>
+<div class="libya-item l-new" data-lname="ملك" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">175</span><span class="l-name">ملك</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 175</small></div></div>
+<div class="libya-item l-new" data-lname="هنادة" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">176</span><span class="l-name">هنادة</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 176</small></div></div>
+<div class="libya-item l-new" data-lname="ريفانا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">177</span><span class="l-name">ريفانا</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 177</small></div></div>
+<div class="libya-item l-new" data-lname="ريتال" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">178</span><span class="l-name">ريتال</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 178</small></div></div>
+<div class="libya-item l-new" data-lname="دلال" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">179</span><span class="l-name">دلال</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 179</small></div></div>
+<div class="libya-item l-new" data-lname="تمارا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">180</span><span class="l-name">تمارا</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 180</small></div></div>
+<div class="libya-item l-new" data-lname="رتال" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">181</span><span class="l-name">رتال</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 181</small></div></div>
+<div class="libya-item l-new" data-lname="يزة" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">182</span><span class="l-name">يزة</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 182</small></div></div>
+<div class="libya-item l-new" data-lname="آرام" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">183</span><span class="l-name">آرام</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 183</small></div></div>
+<div class="libya-item l-new" data-lname="زولا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">184</span><span class="l-name">زولا</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 184</small></div></div>
+<div class="libya-item l-new" data-lname="ميليا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">185</span><span class="l-name">ميليا</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 185</small></div></div>
+<div class="libya-item l-new" data-lname="رسل الرحمن" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">186</span><span class="l-name">رسل الرحمن</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 186</small></div></div>
+<div class="libya-item l-new" data-lname="نمار" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">187</span><span class="l-name">نمار</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 187</small></div></div>
+<div class="libya-item l-new" data-lname="رانسي" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">188</span><span class="l-name">رانسي</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 188</small></div></div>
+<div class="libya-item l-new" data-lname="وصال" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">189</span><span class="l-name">وصال</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 189</small></div></div>
+<div class="libya-item l-new" data-lname="مياس" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">190</span><span class="l-name">مياس</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 190</small></div></div>
+<div class="libya-item l-new" data-lname="صوفيا" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">191</span><span class="l-name">صوفيا</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 191</small></div></div>
+<div class="libya-item l-new" data-lname="عبد النبي" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">192</span><span class="l-name">عبد النبي</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 192</small></div></div>
+<div class="libya-item l-new" data-lname="ألمى" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">193</span><span class="l-name">ألمى</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 193</small></div></div>
+<div class="libya-item l-new" data-lname="عبد العاطي" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">194</span><span class="l-name">عبد العاطي</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 194</small></div></div>
+<div class="libya-item l-new" data-lname="أيهم" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">195</span><span class="l-name">أيهم</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 195</small></div></div>
+<div class="libya-item l-new" data-lname="اسكندر" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">196</span><span class="l-name">اسكندر</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 196</small></div></div>
+<div class="libya-item l-new" data-lname="جمشيد" data-rem="" onclick="toggleLibyaRem(this)"><span class="l-num">197</span><span class="l-name">جمشيد</span><span class="l-newtag">جديد</span><span class="l-i" title="بيان المعنى">ⓘ</span><div class="l-rem">مدرج في كتاب دار الإفتاء الليبية إلى مصلحة الأحوال المدنية (أسماء صدرت فيها فتاوى بمنعها)، ولم ترد ملاحظة لغوية عليه في الجدول.<br><small>المصدر: كتاب دار الإفتاء إلى الأحوال المدنية · رقم 197</small></div></div>
           </div>
         </div>
       </details>
@@ -497,8 +545,6 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <button type="button" class="chip active" onclick="setFilter('leg','all',this)">الكل</button>
           <button type="button" class="chip" onclick="setFilter('leg','allowed',this)">✅ مسموح للتسجيل<span class="cnt" data-cnt="leg:allowed"></span></button>
           <button type="button" class="chip chip-libya" onclick="setFilter('leg','libya_ban',this)">🇱🇾 ممنوع في الأحوال المدنية بليبيا<span class="cnt" data-cnt="leg:libya_ban"></span></button>
-          <button type="button" class="chip" style="border-color:#ffa94d;color:#e8590c" onclick="setFilter('leg','fatwa',this)">⚠️ منقول عن فتوى (بانتظار التوثيق)<span class="cnt" data-cnt="leg:fatwa"></span></button>
-          <button type="button" class="chip" style="border-color:#74c0fc;color:#1971c2" onclick="setFilter('leg','fatwa_doc',this)">📜 فتوى دار الإفتاء الليبية (موثقة)<span class="cnt" data-cnt="leg:fatwa_doc"></span></button>
         </div>
         <div class="filter-group" id="genderChips">
           <span class="filter-label">الجنس:</span>
@@ -2252,14 +2298,14 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">اسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 87). وشرعاً: صيغة المبالغة «علّام» وردت وصفاً لله تعالى في القرآن، فالأحوط تجنبها، والبديل «عالم» أو «عليم» أو التعبيد (عبد العليم).</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">اسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 87). وشرعاً: صيغة المبالغة «علّام» وردت وصفاً لله تعالى في القرآن، فالأحوط تجنبها، والبديل «عالم» أو «عليم» أو التعبيد (عبد العليم). ملاحظة مجمع اللغة العربية على الاسم: «من صفات الله ولا يجوز التسمية به.»</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ عالم</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ عليم</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ عبد العليم</span></div></div>
           <div><h4>الدليل والأثر</h4><p>«إنك أنت علّام الغيوب» (المائدة: 109).</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('علام')">🎉 تصميم بطاقة بشارة باسم (عَلَّام)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('علام')">✨ فحص تناسق اسم (عَلَّام)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: القرآن الكريم وقائمة الأحوال المدنية الليبية</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: القرآن الكريم وقائمة الأحوال المدنية الليبية وجدول مجمع اللغة العربية</div>
         </div>
       </details>
 
@@ -4615,7 +4661,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
         </div>
       </details>
 
-      <details class="name-card" style="--tone:var(--bad);--b-bg:var(--bad-bg);--b-fg:var(--bad)" data-name="عبد النبي" data-v="عَبْدُ النَّبِيّ" data-meaning="عبودية للنبي ﷺ — وهو تعبيد لغير الله" data-s="bad" data-g="m" data-c="أصالة" data-leg="allowed" data-search="عبد النبي عَبْدُ النَّبِيّ Abd al-Nabi عبودية للنبي ﷺ — وهو تعبيد لغير الله أصالة ممنوع عند الأكثر عربي عبد الرسول عبد الحسين تعبيد لغير الله ">
+      <details class="name-card" style="--tone:#c92a2a;--b-bg:var(--bad-bg);--b-fg:var(--bad)" data-name="عبد النبي" data-v="عَبْدُ النَّبِيّ" data-meaning="عبودية للنبي ﷺ — وهو تعبيد لغير الله" data-s="bad" data-g="m" data-c="أصالة" data-leg="libya_ban" data-search="عبد النبي عَبْدُ النَّبِيّ Abd al-Nabi عبودية للنبي ﷺ — وهو تعبيد لغير الله أصالة ممنوع عند الأكثر عربي عبد الرسول عبد الحسين تعبيد لغير الله ممنوع ليبيا ممنوع ليبيا ممنوع قانوناً">
         <summary class="card-summary">
           <div class="card-top">
             <p class="name">عَبْدُ النَّبِيّ</p>
@@ -4624,26 +4670,26 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <div class="meta-tags">
             <span class="latin">Abd al-Nabi</span>
             <span class="tag-mini">👦 مذكر</span>
-            <span class="tag-mini">أصالة</span>
+            <span class="tag-mini">أصالة</span><span class="tag-mini">ممنوع قانوناً</span>
             <span class="tag-mini">الأصل: عربي</span>
           </div>
           <p class="meaning">عبودية للنبي ﷺ — وهو تعبيد لغير الله</p>
           <div class="card-footer" style="flex-wrap:wrap">
             <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">ممنوع عند الأكثر</span><span class="tag-mini" style="color:var(--ok)">ℹ️ غير مدرج في قائمة المنع الليبية</span>
+              <span class="badge">ممنوع عند الأكثر</span><span class="badge" style="background:#ffe3e3;color:#c92a2a;border:1px solid #ffa8a8">🇱🇾 ممنوع في السجل المدني الليبي</span>
             </div>
             <span class="more-hint"></span>
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">التعبيد لغير الله تعالى محرّم؛ فلا يجوز «عبد النبي» ولا «عبد الرسول» ولا «عبد الحسين» ونحوها، وقد حكى ابن حزم الاتفاق على تحريم كل اسم معبّد لغير الله. والنبي ﷺ أولى من يُنزَّه عن ذلك؛ فهو عبد الله ورسوله.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 192)، فالمنع الإداري ثابت إضافةً إلى الحكم الشرعي. التعبيد لغير الله تعالى محرّم؛ فلا يجوز «عبد النبي» ولا «عبد الرسول» ولا «عبد الحسين» ونحوها، وقد حكى ابن حزم الاتفاق على تحريم كل اسم معبّد لغير الله. والنبي ﷺ أولى من يُنزَّه عن ذلك؛ فهو عبد الله ورسوله. وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ عبد الله</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ عبد الرحمن</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ محمد</span></div></div>
           <div><h4>الدليل والأثر</h4><p>قال ﷺ: «لا تُطروني كما أطرت النصارى ابن مريم، إنما أنا عبدٌ فقولوا: عبد الله ورسوله» (صحيح البخاري).</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('عبد النبي')">🎉 تصميم بطاقة بشارة باسم (عَبْدُ النَّبِيّ)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('عبد النبي')">✨ فحص تناسق اسم (عَبْدُ النَّبِيّ)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: صحيح البخاري ومراتب الإجماع لابن حزم</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: صحيح البخاري ومراتب الإجماع لابن حزم وكتاب دار الإفتاء</div>
         </div>
       </details>
 
@@ -4700,14 +4746,14 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">اسم لا محذور فيه شرعاً، لكنه مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 62).</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">اسم لا محذور فيه شرعاً، لكنه مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 62). ملاحظة مجمع اللغة العربية على الاسم: «اسم غير عربي وغير إسلامي.»</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ غدير</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رواء</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ نبع</span></div></div>
           <div><h4>الدليل والأثر</h4><p>اختلف في أصله بين العربية والفارسية.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('روان')">🎉 تصميم بطاقة بشارة باسم (رَوَان)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('روان')">✨ فحص تناسق اسم (رَوَان)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وجدول مجمع اللغة العربية</div>
         </div>
       </details>
 
@@ -4732,14 +4778,14 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">اسم لا محذور فيه شرعاً، لكنه مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 41).</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">اسم لا محذور فيه شرعاً، لكنه مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 41). ملاحظة مجمع اللغة العربية على الاسم: «لم يجد المُراجع في مادة (جور) صيغة «جورى» بأي معنى؛ ومادة (جور) متعددة الاشتقاقات والدلالات المتضادة أحياناً، وليس فيها (جورى)، وقد تكون توليداً مثلما وُلدت (شورى) من مادة (شور).»</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ورد</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ وردة</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ زهرة</span></div></div>
           <div><h4>الدليل والأثر</h4><p>نوع من الورد مشهور بجمال لونه وعطره.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('جوري')">🎉 تصميم بطاقة بشارة باسم (جُورِي)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('جوري')">✨ فحص تناسق اسم (جُورِي)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وجدول مجمع اللغة العربية</div>
         </div>
       </details>
 
@@ -4796,14 +4842,14 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">اسم لا محذور فيه شرعاً، لكنه مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 83).</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">اسم لا محذور فيه شرعاً، لكنه مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 83). ملاحظة مجمع اللغة العربية على الاسم: «اسم أعجمي.»</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ زهرة</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ نرجس</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ روضة</span></div></div>
           <div><h4>الدليل والأثر</h4><p>اسم زهرة، عُرّب عن الفارسية (جُل = زهر، نار = رمان).</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('جلنار')">🎉 تصميم بطاقة بشارة باسم (جُلَّنَار)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('جلنار')">✨ فحص تناسق اسم (جُلَّنَار)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وجدول مجمع اللغة العربية</div>
         </div>
       </details>
 
@@ -8540,14 +8586,14 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 29)، فالمنع الإداري ثابت بالقائمة الرسمية. كما ورد إلينا أن دار الإفتاء الليبية ذكرته في فتوى حديثة لم نقف على نصها، وهذا الجزء بانتظار التوثيق (والفتوى الوحيدة التي وقفنا عليها، رقم 2762 لسنة 2016م، تخص أسماء أخرى). تقدير المنظومة لمعنى الاسم: لا أصل عربي ثابت للاسم فيما اطلعت عليه، والأولى اختيار اسم واضح المعنى.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 29)، فالمنع الإداري ثابت. تقدير المنظومة لمعنى الاسم: لا أصل عربي ثابت للاسم فيما اطلعت عليه، والأولى اختيار اسم واضح المعنى. ملاحظة مجمع اللغة العربية على الاسم: ««لامار» أو «لمار» غير عربي فعلاً؛ أما «حلا» فهو عربي. — غير عربي.» وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ لمى</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ لجين</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رزان</span></div></div>
           <div><h4>الدليل والأثر</h4><p>لا نص شرعي خاص في الاسم؛ والمرجع في حكمه فتوى الجهة المختصة ومعنى الاسم وأصله.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('لمار')">🎉 تصميم بطاقة بشارة باسم (لَمَار)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('لمار')">✨ فحص تناسق اسم (لَمَار)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية (وفتوى لم تُوثَّق بعد)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وجدول مجمع اللغة العربية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
@@ -8572,18 +8618,18 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 2)، فالمنع الإداري ثابت بالقائمة الرسمية. كما ورد إلينا أن دار الإفتاء الليبية ذكرته في فتوى حديثة لم نقف على نصها، وهذا الجزء بانتظار التوثيق (والفتوى الوحيدة التي وقفنا عليها، رقم 2762 لسنة 2016م، تخص أسماء أخرى). تقدير المنظومة لمعنى الاسم: ذكر بعض أهل اللغة أن «الريماس» القبر، ولذلك تحفّظ بعضهم عليه؛ ويقابله «ريم» وهو الظبي الأبيض.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 2)، فالمنع الإداري ثابت. تقدير المنظومة لمعنى الاسم: ذكر بعض أهل اللغة أن «الريماس» القبر، ولذلك تحفّظ بعضهم عليه؛ ويقابله «ريم» وهو الظبي الأبيض. ملاحظة مجمع اللغة العربية على الاسم: «مشتق من «الرَّمْس» وهو تسوية التراب على القبر بما يحويه من ظلام ووحشة.» وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ريم</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رزان</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ جنى</span></div></div>
           <div><h4>الدليل والأثر</h4><p>لا نص شرعي خاص في الاسم؛ والمرجع في حكمه فتوى الجهة المختصة ومعنى الاسم وأصله.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('ريماس')">🎉 تصميم بطاقة بشارة باسم (رِيمَاس)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('ريماس')">✨ فحص تناسق اسم (رِيمَاس)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية (وفتوى لم تُوثَّق بعد)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وجدول مجمع اللغة العربية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
-      <details class="name-card" style="--tone:#e8590c;--b-bg:var(--dis-bg);--b-fg:var(--dis)" data-name="ملك" data-v="مَلَك" data-meaning="يُحتمل مَلَك (الملاك) أو مُلْك (السلطان)" data-s="dis" data-g="f" data-c="أصالة" data-leg="fatwa" data-search="ملك مَلَك Malak يُحتمل مَلَك (الملاك) أو مُلْك (السلطان) أصالة محل خلاف غير محدد الأصل Fatwa فتوى دار الافتاء الليبية بانتظار التوثيق Malak Malek فتوى دار الإفتاء الليبية منقول بانتظار التوثيق">
+      <details class="name-card" style="--tone:#c92a2a;--b-bg:var(--dis-bg);--b-fg:var(--dis)" data-name="ملك" data-v="مَلَك" data-meaning="يُحتمل مَلَك (الملاك) أو مُلْك (السلطان)" data-s="dis" data-g="f" data-c="أصالة" data-leg="libya_ban" data-search="ملك مَلَك Malak يُحتمل مَلَك (الملاك) أو مُلْك (السلطان) أصالة محل خلاف غير محدد الأصل ممنوع ليبيا فتوى Malak Malek ممنوع ليبيا ممنوع قانوناً">
         <summary class="card-summary">
           <div class="card-top">
             <p class="name">مَلَك</p>
@@ -8592,26 +8638,26 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <div class="meta-tags">
             <span class="latin">Malak</span>
             <span class="tag-mini">👧 مؤنث</span>
-            <span class="tag-mini">أصالة</span><span class="tag-mini">بانتظار التوثيق</span>
+            <span class="tag-mini">أصالة</span><span class="tag-mini">ممنوع قانوناً</span>
             <span class="tag-mini">الأصل: غير محدد الأصل</span>
           </div>
           <p class="meaning">يُحتمل مَلَك (الملاك) أو مُلْك (السلطان)</p>
           <div class="card-footer" style="flex-wrap:wrap">
             <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">محل خلاف</span><span class="badge" style="background:#fff4e6;color:#e8590c;border:1px solid #ffa94d">⚠️ منقول عن فتوى — بانتظار التوثيق</span>
+              <span class="badge">محل خلاف</span><span class="badge" style="background:#ffe3e3;color:#c92a2a;border:1px solid #ffa8a8">🇱🇾 ممنوع في السجل المدني الليبي</span>
             </div>
             <span class="more-hint"></span>
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">ورد إلينا أن دار الإفتاء الليبية أصدرت مؤخراً فتوى تمنع التسمية بهذا الاسم ضمن أسماء أخرى، ولم نقف على نص الفتوى ولا رقمها ولا تاريخها في مصدر منشور، فيُعرض الاسم بوسم «بانتظار التوثيق» ولا يُحتسب ضمن قائمة الـ156 الرسمية. والفتوى الوحيدة التي وقفنا عليها (رقم 2762 لسنة 2016م) تخص أسماء أخرى (ريفانا، ريتال، رتال) ولا تذكر هذا الاسم. يُرجى مراجعة الأحوال المدنية ودار الإفتاء قبل التسجيل. تقدير المنظومة لمعنى الاسم: اختلف أهل العلم في تسمية الإناث بأسماء الملائكة، واستدل المانعون بذمّ القرآن لمن جعل الملائكة إناثاً: «وجعلوا الملائكة الذين هم عباد الرحمن إناثاً» (الزخرف: 19)، ومن الأسماء المشابهة «ملاك» المدرج في قائمة المنع الرسمية (رقم 130)، ولم أقف على سبب إدراجه.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 175)، فالمنع الإداري ثابت. تقدير المنظومة لمعنى الاسم: اختلف أهل العلم في تسمية الإناث بأسماء الملائكة، واستدل المانعون بذمّ القرآن لمن جعل الملائكة إناثاً: «وجعلوا الملائكة الذين هم عباد الرحمن إناثاً» (الزخرف: 19)، ومن الأسماء المشابهة «ملاك» المدرج في قائمة المنع الرسمية (رقم 130)، ولم أقف على سبب إدراجه. وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ سلمى</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ جمانة</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رزان</span></div></div>
           <div><h4>الدليل والأثر</h4><p>لا نص شرعي خاص في الاسم؛ والمرجع في حكمه فتوى الجهة المختصة ومعنى الاسم وأصله.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('ملك')">🎉 تصميم بطاقة بشارة باسم (مَلَك)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('ملك')">✨ فحص تناسق اسم (مَلَك)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: منقول عن فتوى (لم يُوثَّق بعد)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
@@ -8636,14 +8682,14 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 153)، فالمنع الإداري ثابت بالقائمة الرسمية. كما ورد إلينا أن دار الإفتاء الليبية ذكرته في فتوى حديثة لم نقف على نصها، وهذا الجزء بانتظار التوثيق (والفتوى الوحيدة التي وقفنا عليها، رقم 2762 لسنة 2016م، تخص أسماء أخرى). تقدير المنظومة لمعنى الاسم: الاسم مشهور عند الهندوس اسماً لإله، فيُتجنب لما فيه من التشبه بغير المسلمين وإحياء اسم معبود.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 153)، فالمنع الإداري ثابت. تقدير المنظومة لمعنى الاسم: الاسم مشهور عند الهندوس اسماً لإله، فيُتجنب لما فيه من التشبه بغير المسلمين وإحياء اسم معبود. وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رحمة</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رزان</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ هدى</span></div></div>
           <div><h4>الدليل والأثر</h4><p>لا نص شرعي خاص في الاسم؛ والمرجع في حكمه فتوى الجهة المختصة ومعنى الاسم وأصله.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('راما')">🎉 تصميم بطاقة بشارة باسم (رَامَا)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('راما')">✨ فحص تناسق اسم (رَامَا)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية (وفتوى لم تُوثَّق بعد)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
@@ -8668,14 +8714,14 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 63)، فالمنع الإداري ثابت بالقائمة الرسمية. كما ورد إلينا أن دار الإفتاء الليبية ذكرته في فتوى حديثة لم نقف على نصها، وهذا الجزء بانتظار التوثيق (والفتوى الوحيدة التي وقفنا عليها، رقم 2762 لسنة 2016م، تخص أسماء أخرى). تقدير المنظومة لمعنى الاسم: اسم أعجمي لا أصل عربياً له، والأولى لمن أراد معنى قريباً أن يختار «ندى».</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 63)، فالمنع الإداري ثابت. تقدير المنظومة لمعنى الاسم: اسم أعجمي لا أصل عربياً له، والأولى لمن أراد معنى قريباً أن يختار «ندى». ملاحظة مجمع اللغة العربية على الاسم: «اسم غير عربي.» وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ندى</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ نبيلة</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ هدى</span></div></div>
           <div><h4>الدليل والأثر</h4><p>لا نص شرعي خاص في الاسم؛ والمرجع في حكمه فتوى الجهة المختصة ومعنى الاسم وأصله.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('نادين')">🎉 تصميم بطاقة بشارة باسم (نَادِين)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('نادين')">✨ فحص تناسق اسم (نَادِين)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية (وفتوى لم تُوثَّق بعد)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وجدول مجمع اللغة العربية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
@@ -8700,14 +8746,14 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 38)، فالمنع الإداري ثابت بالقائمة الرسمية. كما ورد إلينا أن دار الإفتاء الليبية ذكرته في فتوى حديثة لم نقف على نصها، وهذا الجزء بانتظار التوثيق (والفتوى الوحيدة التي وقفنا عليها، رقم 2762 لسنة 2016م، تخص أسماء أخرى). تقدير المنظومة لمعنى الاسم: اسم أعجمي دخيل ولا معنى عربي له، والأولى اختيار اسم عربي أو شرعي.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 38)، فالمنع الإداري ثابت. تقدير المنظومة لمعنى الاسم: اسم أعجمي دخيل ولا معنى عربي له، والأولى اختيار اسم عربي أو شرعي. ملاحظة مجمع اللغة العربية على الاسم: «تعني حجراً من الأحجار الكريمة أحمر اللون؛ وفي العربية «عقيق»؛ ليس اسماً عربياً ولا إسلامياً.» وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ريّان</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رشاد</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ راشد</span></div></div>
           <div><h4>الدليل والأثر</h4><p>لا نص شرعي خاص في الاسم؛ والمرجع في حكمه فتوى الجهة المختصة ومعنى الاسم وأصله.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('روبين')">🎉 تصميم بطاقة بشارة باسم (رُوبِين)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('روبين')">✨ فحص تناسق اسم (رُوبِين)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية (وفتوى لم تُوثَّق بعد)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وجدول مجمع اللغة العربية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
@@ -8732,18 +8778,18 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 36)، فالمنع الإداري ثابت بالقائمة الرسمية. كما ورد إلينا أن دار الإفتاء الليبية ذكرته في فتوى حديثة لم نقف على نصها، وهذا الجزء بانتظار التوثيق (والفتوى الوحيدة التي وقفنا عليها، رقم 2762 لسنة 2016م، تخص أسماء أخرى). تقدير المنظومة لمعنى الاسم: تعدّدت أصوله بين الفارسية وأساطير أمريكا الجنوبية، فالأولى تحرّي معنى واضح.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 36)، فالمنع الإداري ثابت. تقدير المنظومة لمعنى الاسم: تعدّدت أصوله بين الفارسية وأساطير أمريكا الجنوبية، فالأولى تحرّي معنى واضح. ملاحظة مجمع اللغة العربية على الاسم: «اسم غير عربي. — الأسماء غير عربية (يارا - يارة - ياره).» وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ريم</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رزان</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ندى</span></div></div>
           <div><h4>الدليل والأثر</h4><p>لا نص شرعي خاص في الاسم؛ والمرجع في حكمه فتوى الجهة المختصة ومعنى الاسم وأصله.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('يارا')">🎉 تصميم بطاقة بشارة باسم (يَارَا)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('يارا')">✨ فحص تناسق اسم (يَارَا)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية (وفتوى لم تُوثَّق بعد)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وجدول مجمع اللغة العربية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
-      <details class="name-card" style="--tone:#e8590c;--b-bg:var(--mub-bg);--b-fg:var(--mub)" data-name="آرام" data-v="آرَام" data-meaning="في العربية: العلامات من الحجارة؛ وقيل الظباء البيض؛ وهو اسم قوم الآراميين" data-s="mub" data-g="u" data-c="أصالة" data-leg="fatwa" data-search="آرام آرَام Aram في العربية: العلامات من الحجارة؛ وقيل الظباء البيض؛ وهو اسم قوم الآراميين أصالة مباح شرعاً غير محدد الأصل Fatwa فتوى دار الافتاء الليبية بانتظار التوثيق Aram Aaram فتوى دار الإفتاء الليبية منقول بانتظار التوثيق">
+      <details class="name-card" style="--tone:#c92a2a;--b-bg:var(--mub-bg);--b-fg:var(--mub)" data-name="آرام" data-v="آرَام" data-meaning="في العربية: العلامات من الحجارة؛ وقيل الظباء البيض؛ وهو اسم قوم الآراميين" data-s="mub" data-g="u" data-c="أصالة" data-leg="libya_ban" data-search="آرام آرَام Aram في العربية: العلامات من الحجارة؛ وقيل الظباء البيض؛ وهو اسم قوم الآراميين أصالة مباح شرعاً غير محدد الأصل ممنوع ليبيا فتوى Aram Aaram ممنوع ليبيا ممنوع قانوناً">
         <summary class="card-summary">
           <div class="card-top">
             <p class="name">آرَام</p>
@@ -8752,26 +8798,26 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <div class="meta-tags">
             <span class="latin">Aram</span>
             <span class="tag-mini">✨ مشترك</span>
-            <span class="tag-mini">أصالة</span><span class="tag-mini">بانتظار التوثيق</span>
+            <span class="tag-mini">أصالة</span><span class="tag-mini">ممنوع قانوناً</span>
             <span class="tag-mini">الأصل: غير محدد الأصل</span>
           </div>
           <p class="meaning">في العربية: العلامات من الحجارة؛ وقيل الظباء البيض؛ وهو اسم قوم الآراميين</p>
           <div class="card-footer" style="flex-wrap:wrap">
             <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مباح شرعاً</span><span class="badge" style="background:#fff4e6;color:#e8590c;border:1px solid #ffa94d">⚠️ منقول عن فتوى — بانتظار التوثيق</span>
+              <span class="badge">مباح شرعاً</span><span class="badge" style="background:#ffe3e3;color:#c92a2a;border:1px solid #ffa8a8">🇱🇾 ممنوع في السجل المدني الليبي</span>
             </div>
             <span class="more-hint"></span>
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">ورد إلينا أن دار الإفتاء الليبية أصدرت مؤخراً فتوى تمنع التسمية بهذا الاسم ضمن أسماء أخرى، ولم نقف على نص الفتوى ولا رقمها ولا تاريخها في مصدر منشور، فيُعرض الاسم بوسم «بانتظار التوثيق» ولا يُحتسب ضمن قائمة الـ156 الرسمية. والفتوى الوحيدة التي وقفنا عليها (رقم 2762 لسنة 2016م) تخص أسماء أخرى (ريفانا، ريتال، رتال) ولا تذكر هذا الاسم. يُرجى مراجعة الأحوال المدنية ودار الإفتاء قبل التسجيل. تقدير المنظومة لمعنى الاسم: للاسم معنى في اللغة، لكنه اسم لجدّ قوم وأمة قديمة، فلا يُجزم بأصله.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 183)، فالمنع الإداري ثابت. تقدير المنظومة لمعنى الاسم: للاسم معنى في اللغة، لكنه اسم لجدّ قوم وأمة قديمة، فلا يُجزم بأصله. وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رشاد</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ راشد</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ريّان</span></div></div>
           <div><h4>الدليل والأثر</h4><p>لا نص شرعي خاص في الاسم؛ والمرجع في حكمه فتوى الجهة المختصة ومعنى الاسم وأصله.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('آرام')">🎉 تصميم بطاقة بشارة باسم (آرَام)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('آرام')">✨ فحص تناسق اسم (آرَام)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: منقول عن فتوى (لم يُوثَّق بعد)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
@@ -8796,18 +8842,18 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 53)، فالمنع الإداري ثابت بالقائمة الرسمية. كما ورد إلينا أن دار الإفتاء الليبية ذكرته في فتوى حديثة لم نقف على نصها، وهذا الجزء بانتظار التوثيق (والفتوى الوحيدة التي وقفنا عليها، رقم 2762 لسنة 2016م، تخص أسماء أخرى). تقدير المنظومة لمعنى الاسم: لا أصل معروفاً للاسم فيما اطلعت عليه.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 53)، فالمنع الإداري ثابت. تقدير المنظومة لمعنى الاسم: لا أصل معروفاً للاسم فيما اطلعت عليه. ملاحظة مجمع اللغة العربية على الاسم: «لا وجود لهذه اللفظة في المعاجم (القواميس) العربية القديمة الموثوقة، ولا وجود حتى لما يقاربها في المعنى؛ والشيء المجهول الأصل لا يُسمّى به.» وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رهف</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رزان</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ريم</span></div></div>
           <div><h4>الدليل والأثر</h4><p>لا نص شرعي خاص في الاسم؛ والمرجع في حكمه فتوى الجهة المختصة ومعنى الاسم وأصله.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('رناد')">🎉 تصميم بطاقة بشارة باسم (رِنَاد)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('رناد')">✨ فحص تناسق اسم (رِنَاد)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية (وفتوى لم تُوثَّق بعد)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وجدول مجمع اللغة العربية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
-      <details class="name-card" style="--tone:#e8590c;--b-bg:var(--mub-bg);--b-fg:var(--mub)" data-name="وصال" data-v="وِصَال" data-meaning="الاتصال والقرب والمودة؛ والوصال في الصيام مواصلته من غير فطر" data-s="mub" data-g="f" data-c="أصالة" data-leg="fatwa" data-search="وصال وِصَال Wisal الاتصال والقرب والمودة؛ والوصال في الصيام مواصلته من غير فطر أصالة مباح شرعاً غير محدد الأصل Fatwa فتوى دار الافتاء الليبية بانتظار التوثيق Wisal Wissal فتوى دار الإفتاء الليبية منقول بانتظار التوثيق">
+      <details class="name-card" style="--tone:#c92a2a;--b-bg:var(--mub-bg);--b-fg:var(--mub)" data-name="وصال" data-v="وِصَال" data-meaning="الاتصال والقرب والمودة؛ والوصال في الصيام مواصلته من غير فطر" data-s="mub" data-g="f" data-c="أصالة" data-leg="libya_ban" data-search="وصال وِصَال Wisal الاتصال والقرب والمودة؛ والوصال في الصيام مواصلته من غير فطر أصالة مباح شرعاً غير محدد الأصل ممنوع ليبيا فتوى Wisal Wissal ممنوع ليبيا ممنوع قانوناً">
         <summary class="card-summary">
           <div class="card-top">
             <p class="name">وِصَال</p>
@@ -8816,30 +8862,30 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <div class="meta-tags">
             <span class="latin">Wisal</span>
             <span class="tag-mini">👧 مؤنث</span>
-            <span class="tag-mini">أصالة</span><span class="tag-mini">بانتظار التوثيق</span>
+            <span class="tag-mini">أصالة</span><span class="tag-mini">ممنوع قانوناً</span>
             <span class="tag-mini">الأصل: غير محدد الأصل</span>
           </div>
           <p class="meaning">الاتصال والقرب والمودة؛ والوصال في الصيام مواصلته من غير فطر</p>
           <div class="card-footer" style="flex-wrap:wrap">
             <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مباح شرعاً</span><span class="badge" style="background:#fff4e6;color:#e8590c;border:1px solid #ffa94d">⚠️ منقول عن فتوى — بانتظار التوثيق</span>
+              <span class="badge">مباح شرعاً</span><span class="badge" style="background:#ffe3e3;color:#c92a2a;border:1px solid #ffa8a8">🇱🇾 ممنوع في السجل المدني الليبي</span>
             </div>
             <span class="more-hint"></span>
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">ورد إلينا أن دار الإفتاء الليبية أصدرت مؤخراً فتوى تمنع التسمية بهذا الاسم ضمن أسماء أخرى، ولم نقف على نص الفتوى ولا رقمها ولا تاريخها في مصدر منشور، فيُعرض الاسم بوسم «بانتظار التوثيق» ولا يُحتسب ضمن قائمة الـ156 الرسمية. والفتوى الوحيدة التي وقفنا عليها (رقم 2762 لسنة 2016م) تخص أسماء أخرى (ريفانا، ريتال، رتال) ولا تذكر هذا الاسم. يُرجى مراجعة الأحوال المدنية ودار الإفتاء قبل التسجيل. تقدير المنظومة لمعنى الاسم: معناه اللغوي حسن (وصل الأرحام والقرب)، لكن الوصال في الصيام منهيّ عنه، ويكره بعضهم الاسم لما فيه من إيحاء غزلي.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 189)، فالمنع الإداري ثابت. تقدير المنظومة لمعنى الاسم: معناه اللغوي حسن (وصل الأرحام والقرب)، لكن الوصال في الصيام منهيّ عنه، ويكره بعضهم الاسم لما فيه من إيحاء غزلي. وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رحمة</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ سكينة</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ هدى</span></div></div>
           <div><h4>الدليل والأثر</h4><p>لا نص شرعي خاص في الاسم؛ والمرجع في حكمه فتوى الجهة المختصة ومعنى الاسم وأصله.</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('وصال')">🎉 تصميم بطاقة بشارة باسم (وِصَال)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('وصال')">✨ فحص تناسق اسم (وِصَال)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: منقول عن فتوى (لم يُوثَّق بعد)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: قائمة الأحوال المدنية الليبية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
-      <details class="name-card" style="--tone:#e8590c;--b-bg:var(--warn-bg);--b-fg:var(--warn)" data-name="رتال" data-v="رَتَال" data-meaning="اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء" data-s="warn" data-g="f" data-c="أصالة" data-leg="fatwa_doc" data-search="رتال رَتَال Ratal اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء أصالة مكروه / منهي عنه غير عربي (لا يُعرف معناه) فتوى 2762 دار الافتاء الليبية Ratal فتوى دار الإفتاء الليبية رقم 2762 موثقة">
+      <details class="name-card" style="--tone:#c92a2a;--b-bg:var(--warn-bg);--b-fg:var(--warn)" data-name="رتال" data-v="رَتَال" data-meaning="اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء" data-s="warn" data-g="f" data-c="أصالة" data-leg="libya_ban" data-search="رتال رَتَال Ratal اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء أصالة مكروه / منهي عنه غير عربي (لا يُعرف معناه) فتوى 2762 دار الافتاء الليبية Ratal ممنوع ليبيا ممنوع قانوناً">
         <summary class="card-summary">
           <div class="card-top">
             <p class="name">رَتَال</p>
@@ -8848,30 +8894,30 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <div class="meta-tags">
             <span class="latin">Ratal</span>
             <span class="tag-mini">👧 مؤنث</span>
-            <span class="tag-mini">أصالة</span><span class="tag-mini">فتوى موثقة</span>
+            <span class="tag-mini">أصالة</span><span class="tag-mini">ممنوع قانوناً</span>
             <span class="tag-mini">الأصل: غير عربي (لا يُعرف معناه)</span>
           </div>
           <p class="meaning">اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء</p>
           <div class="card-footer" style="flex-wrap:wrap">
             <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مكروه / منهي عنه</span><span class="badge" style="background:#e7f5ff;color:#1971c2;border:1px solid #74c0fc">📜 فتوى دار الإفتاء الليبية رقم 2762</span>
+              <span class="badge">مكروه / منهي عنه</span><span class="badge" style="background:#ffe3e3;color:#c92a2a;border:1px solid #ffa8a8">🇱🇾 ممنوع في السجل المدني الليبي</span>
             </div>
             <span class="more-hint"></span>
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">سُئلت دار الإفتاء الليبية عن التسمي بـ(ريفانا) و(ريتال) و(رتال) فأجابت في الفتوى رقم (2762) بتاريخ 1 ربيع الآخر 1437هـ الموافق 11 يناير 2016م (لجنة الفتوى، ونائب مفتي عام ليبيا الشيخ غيث بن محمود الفاخري) بأن هذه الأسماء «ليست أسماءً عربية، ولا يُعرف ما تدلُّ عليه، ولا ينبغي للمسلم أن يسمِّي ولده باسمٍ لا يعرف معناه، لمجردِ التقليدِ لغيره؛ لاحتمال أن يكون معناه دالًّا على كفرٍ، أو على مستقبحٍ شرعًا أو عرفًا، وهو لا يدري. وفي الأسماء الحسنة - البعيدة عن الاشتباه - غُنْية». والصيغة «لا ينبغي» نهي إرشادي معلَّل بجهل المعنى، ولم تصرّح الفتوى بالتحريم، وهي ليست منعاً إدارياً في السجل المدني.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 181). سُئلت دار الإفتاء الليبية عن التسمي بـ(ريفانا) و(ريتال) و(رتال) فأجابت في الفتوى رقم (2762) بتاريخ 1 ربيع الآخر 1437هـ الموافق 11 يناير 2016م (لجنة الفتوى، ونائب مفتي عام ليبيا الشيخ غيث بن محمود الفاخري) بأن هذه الأسماء «ليست أسماءً عربية، ولا يُعرف ما تدلُّ عليه، ولا ينبغي للمسلم أن يسمِّي ولده باسمٍ لا يعرف معناه، لمجردِ التقليدِ لغيره؛ لاحتمال أن يكون معناه دالًّا على كفرٍ، أو على مستقبحٍ شرعًا أو عرفًا، وهو لا يدري. وفي الأسماء الحسنة - البعيدة عن الاشتباه - غُنْية». والصيغة «لا ينبغي» نهي إرشادي معلَّل بجهل المعنى، ولم تصرّح الفتوى بالتحريم، أما المنع الإداري فبحسب قائمة الأحوال المدنية. وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ تقى</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ هدى</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ بيان</span></div></div>
           <div><h4>الدليل والأثر</h4><p>جاء في الفتوى: «من حق المولود على والده أن يحسن اسمه... وقد غير رسولُ الله ﷺ اسم حرب إلى سِلْم [أبو داود: 4956]، واسم عاصية إلى جميلة [مسلم: 1239]».</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('رتال')">🎉 تصميم بطاقة بشارة باسم (رَتَال)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('رتال')">✨ فحص تناسق اسم (رَتَال)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: فتوى دار الإفتاء الليبية رقم 2762 (11 يناير 2016م)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: فتوى دار الإفتاء الليبية رقم 2762 وقائمة الأحوال المدنية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
-      <details class="name-card" style="--tone:#e8590c;--b-bg:var(--warn-bg);--b-fg:var(--warn)" data-name="ريتال" data-v="رِيتَال" data-meaning="اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء" data-s="warn" data-g="f" data-c="أصالة" data-leg="fatwa_doc" data-search="ريتال رِيتَال Rital اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء أصالة مكروه / منهي عنه غير عربي (لا يُعرف معناه) فتوى 2762 دار الافتاء الليبية Rital فتوى دار الإفتاء الليبية رقم 2762 موثقة">
+      <details class="name-card" style="--tone:#c92a2a;--b-bg:var(--warn-bg);--b-fg:var(--warn)" data-name="ريتال" data-v="رِيتَال" data-meaning="اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء" data-s="warn" data-g="f" data-c="أصالة" data-leg="libya_ban" data-search="ريتال رِيتَال Rital اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء أصالة مكروه / منهي عنه غير عربي (لا يُعرف معناه) فتوى 2762 دار الافتاء الليبية Rital ممنوع ليبيا ممنوع قانوناً">
         <summary class="card-summary">
           <div class="card-top">
             <p class="name">رِيتَال</p>
@@ -8880,30 +8926,30 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <div class="meta-tags">
             <span class="latin">Rital</span>
             <span class="tag-mini">👧 مؤنث</span>
-            <span class="tag-mini">أصالة</span><span class="tag-mini">فتوى موثقة</span>
+            <span class="tag-mini">أصالة</span><span class="tag-mini">ممنوع قانوناً</span>
             <span class="tag-mini">الأصل: غير عربي (لا يُعرف معناه)</span>
           </div>
           <p class="meaning">اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء</p>
           <div class="card-footer" style="flex-wrap:wrap">
             <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مكروه / منهي عنه</span><span class="badge" style="background:#e7f5ff;color:#1971c2;border:1px solid #74c0fc">📜 فتوى دار الإفتاء الليبية رقم 2762</span>
+              <span class="badge">مكروه / منهي عنه</span><span class="badge" style="background:#ffe3e3;color:#c92a2a;border:1px solid #ffa8a8">🇱🇾 ممنوع في السجل المدني الليبي</span>
             </div>
             <span class="more-hint"></span>
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">سُئلت دار الإفتاء الليبية عن التسمي بـ(ريفانا) و(ريتال) و(رتال) فأجابت في الفتوى رقم (2762) بتاريخ 1 ربيع الآخر 1437هـ الموافق 11 يناير 2016م (لجنة الفتوى، ونائب مفتي عام ليبيا الشيخ غيث بن محمود الفاخري) بأن هذه الأسماء «ليست أسماءً عربية، ولا يُعرف ما تدلُّ عليه، ولا ينبغي للمسلم أن يسمِّي ولده باسمٍ لا يعرف معناه، لمجردِ التقليدِ لغيره؛ لاحتمال أن يكون معناه دالًّا على كفرٍ، أو على مستقبحٍ شرعًا أو عرفًا، وهو لا يدري. وفي الأسماء الحسنة - البعيدة عن الاشتباه - غُنْية». والصيغة «لا ينبغي» نهي إرشادي معلَّل بجهل المعنى، ولم تصرّح الفتوى بالتحريم، وهي ليست منعاً إدارياً في السجل المدني.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 178). سُئلت دار الإفتاء الليبية عن التسمي بـ(ريفانا) و(ريتال) و(رتال) فأجابت في الفتوى رقم (2762) بتاريخ 1 ربيع الآخر 1437هـ الموافق 11 يناير 2016م (لجنة الفتوى، ونائب مفتي عام ليبيا الشيخ غيث بن محمود الفاخري) بأن هذه الأسماء «ليست أسماءً عربية، ولا يُعرف ما تدلُّ عليه، ولا ينبغي للمسلم أن يسمِّي ولده باسمٍ لا يعرف معناه، لمجردِ التقليدِ لغيره؛ لاحتمال أن يكون معناه دالًّا على كفرٍ، أو على مستقبحٍ شرعًا أو عرفًا، وهو لا يدري. وفي الأسماء الحسنة - البعيدة عن الاشتباه - غُنْية». والصيغة «لا ينبغي» نهي إرشادي معلَّل بجهل المعنى، ولم تصرّح الفتوى بالتحريم، أما المنع الإداري فبحسب قائمة الأحوال المدنية. وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ريم</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رزان</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رحمة</span></div></div>
           <div><h4>الدليل والأثر</h4><p>جاء في الفتوى: «من حق المولود على والده أن يحسن اسمه... وقد غير رسولُ الله ﷺ اسم حرب إلى سِلْم [أبو داود: 4956]، واسم عاصية إلى جميلة [مسلم: 1239]».</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('ريتال')">🎉 تصميم بطاقة بشارة باسم (رِيتَال)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('ريتال')">✨ فحص تناسق اسم (رِيتَال)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: فتوى دار الإفتاء الليبية رقم 2762 (11 يناير 2016م)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: فتوى دار الإفتاء الليبية رقم 2762 وقائمة الأحوال المدنية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
-      <details class="name-card" style="--tone:#e8590c;--b-bg:var(--warn-bg);--b-fg:var(--warn)" data-name="ريفانا" data-v="رِيفَانَا" data-meaning="اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء" data-s="warn" data-g="f" data-c="أصالة" data-leg="fatwa_doc" data-search="ريفانا رِيفَانَا Rifana اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء أصالة مكروه / منهي عنه غير عربي (لا يُعرف معناه) فتوى 2762 دار الافتاء الليبية Rifana فتوى دار الإفتاء الليبية رقم 2762 موثقة">
+      <details class="name-card" style="--tone:#c92a2a;--b-bg:var(--warn-bg);--b-fg:var(--warn)" data-name="ريفانا" data-v="رِيفَانَا" data-meaning="اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء" data-s="warn" data-g="f" data-c="أصالة" data-leg="libya_ban" data-search="ريفانا رِيفَانَا Rifana اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء أصالة مكروه / منهي عنه غير عربي (لا يُعرف معناه) فتوى 2762 دار الافتاء الليبية Rifana ممنوع ليبيا ممنوع قانوناً">
         <summary class="card-summary">
           <div class="card-top">
             <p class="name">رِيفَانَا</p>
@@ -8912,26 +8958,26 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
           <div class="meta-tags">
             <span class="latin">Rifana</span>
             <span class="tag-mini">👧 مؤنث</span>
-            <span class="tag-mini">أصالة</span><span class="tag-mini">فتوى موثقة</span>
+            <span class="tag-mini">أصالة</span><span class="tag-mini">ممنوع قانوناً</span>
             <span class="tag-mini">الأصل: غير عربي (لا يُعرف معناه)</span>
           </div>
           <p class="meaning">اسم غير عربي، ولا يُعرف معناه عند دار الإفتاء</p>
           <div class="card-footer" style="flex-wrap:wrap">
             <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-              <span class="badge">مكروه / منهي عنه</span><span class="badge" style="background:#e7f5ff;color:#1971c2;border:1px solid #74c0fc">📜 فتوى دار الإفتاء الليبية رقم 2762</span>
+              <span class="badge">مكروه / منهي عنه</span><span class="badge" style="background:#ffe3e3;color:#c92a2a;border:1px solid #ffa8a8">🇱🇾 ممنوع في السجل المدني الليبي</span>
             </div>
             <span class="more-hint"></span>
           </div>
         </summary>
         <div class="card-details">
-          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">سُئلت دار الإفتاء الليبية عن التسمي بـ(ريفانا) و(ريتال) و(رتال) فأجابت في الفتوى رقم (2762) بتاريخ 1 ربيع الآخر 1437هـ الموافق 11 يناير 2016م (لجنة الفتوى، ونائب مفتي عام ليبيا الشيخ غيث بن محمود الفاخري) بأن هذه الأسماء «ليست أسماءً عربية، ولا يُعرف ما تدلُّ عليه، ولا ينبغي للمسلم أن يسمِّي ولده باسمٍ لا يعرف معناه، لمجردِ التقليدِ لغيره؛ لاحتمال أن يكون معناه دالًّا على كفرٍ، أو على مستقبحٍ شرعًا أو عرفًا، وهو لا يدري. وفي الأسماء الحسنة - البعيدة عن الاشتباه - غُنْية». والصيغة «لا ينبغي» نهي إرشادي معلَّل بجهل المعنى، ولم تصرّح الفتوى بالتحريم، وهي ليست منعاً إدارياً في السجل المدني.</div></div>
+          <div><h4>التوجيه الشرعي والوضع القانوني</h4><div class="note-box">الاسم مدرج في قائمة الأسماء الممنوعة بالسجل المدني الليبي (رقم 177). سُئلت دار الإفتاء الليبية عن التسمي بـ(ريفانا) و(ريتال) و(رتال) فأجابت في الفتوى رقم (2762) بتاريخ 1 ربيع الآخر 1437هـ الموافق 11 يناير 2016م (لجنة الفتوى، ونائب مفتي عام ليبيا الشيخ غيث بن محمود الفاخري) بأن هذه الأسماء «ليست أسماءً عربية، ولا يُعرف ما تدلُّ عليه، ولا ينبغي للمسلم أن يسمِّي ولده باسمٍ لا يعرف معناه، لمجردِ التقليدِ لغيره؛ لاحتمال أن يكون معناه دالًّا على كفرٍ، أو على مستقبحٍ شرعًا أو عرفًا، وهو لا يدري. وفي الأسماء الحسنة - البعيدة عن الاشتباه - غُنْية». والصيغة «لا ينبغي» نهي إرشادي معلَّل بجهل المعنى، ولم تصرّح الفتوى بالتحريم، أما المنع الإداري فبحسب قائمة الأحوال المدنية. وقد ورد هذا الاسم في كتاب دار الإفتاء الليبية الموجّه إلى مصلحة الأحوال المدنية (قائمة الأسماء التي صدرت فيها فتاوى بمنعها لما لها من معانٍ سيئة أو لكونها أسماء أعجمية لا يُعرف معناها، مع طلب تعميمها على فروع السجل المدني).</div></div>
           <div class="alt-box"><h5>💡 بدائل مقترحة (غير مدرجة في قائمة المنع الليبية):</h5><div class="alt-chips"><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ ريم</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رزان</span><span class="tag-mini" style="background:#fff;border:1px solid var(--ok);color:var(--ok);font-weight:700">✨ رهف</span></div></div>
           <div><h4>الدليل والأثر</h4><p>جاء في الفتوى: «من حق المولود على والده أن يحسن اسمه... وقد غير رسولُ الله ﷺ اسم حرب إلى سِلْم [أبو داود: 4956]، واسم عاصية إلى جميلة [مسلم: 1239]».</p></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
             <button type="button" class="chip" style="border-color:var(--gold);font-weight:700" onclick="selectNameInBishaara('ريفانا')">🎉 تصميم بطاقة بشارة باسم (رِيفَانَا)</button>
             <button type="button" class="chip" onclick="selectNameInHarmony('ريفانا')">✨ فحص تناسق اسم (رِيفَانَا)</button>
           </div>
-          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: فتوى دار الإفتاء الليبية رقم 2762 (11 يناير 2016م)</div>
+          <div class="src-line">📌 فكرة وتصميم: د. حسن الشيباني · المصدر: فتوى دار الإفتاء الليبية رقم 2762 وقائمة الأحوال المدنية وكتاب دار الإفتاء</div>
         </div>
       </details>
 
@@ -10681,11 +10727,11 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 10px
       <div class="lg" style="--tone:var(--mub)"><b>مباح شرعاً</b><span>لا نص فيه ولا معنى مخالف، ومعناه حسن أو محايد.</span></div>
       <div class="lg" style="--tone:var(--warn)"><b>مكروه / منهي عنه</b><span>ورد فيه نهي أو تغيير من النبي ﷺ، أو معناه يُستقبح.</span></div>
       <div class="lg" style="--tone:var(--dis)"><b>محل خلاف</b><span>تتعارض فيه أقوال العلماء أو الأعراف، فيُعرض الدليلان.</span></div>
-      <div class="lg" style="--tone:#c92a2a"><b>🇱🇾 ممنوع في السجل المدني الليبي</b><span>ورد في قائمة الـ 156 اسماً الممنوعة الصادرة عن مصلحة الأحوال المدنية بوزارة الداخلية الليبية.</span></div>
+      <div class="lg" style="--tone:#c92a2a"><b>🇱🇾 ممنوع في السجل المدني الليبي</b><span>ورد في قائمة الـ 197 اسماً الممنوعة الصادرة عن مصلحة الأحوال المدنية بوزارة الداخلية الليبية (بما فيها ما ورد في كتاب دار الإفتاء إلى المصلحة).</span></div>
     </div>
 
     <h2 class="sec">ملاحظة منهجية وقانونية</h2>
-    <p style="color:var(--muted);font-size:.95rem;max-width:860px">تفرّق هذه المنظومة بدقة بين <strong>الحكم الشرعي الفقهي</strong> وبين <strong>المنع الإداري القانوني</strong> في دولة ليبيا، وتوثّق ما ورد في فتاوى دار الإفتاء الليبية برقم الفتوى وتاريخها، وتميّز المنقول عن فتاوى لم يُتحقق منها بوسم «بانتظار التوثيق»، ولا تحتسب أياً منهما ضمن القائمة الرسمية (156 اسماً). كافة الحقوق محفوظة للمنظومة، فكرة وتصميم: <strong>د. حسن الشيباني</strong>.</p>
+    <p style="color:var(--muted);font-size:.95rem;max-width:860px">تفرّق هذه المنظومة بدقة بين <strong>الحكم الشرعي الفقهي</strong> وبين <strong>المنع الإداري القانوني</strong> في دولة ليبيا، وتعتمد في المنع الإداري على ملفات مصلحة الأحوال المدنية (197 اسماً، منها كتاب دار الإفتاء الليبية وجدول مجمع اللغة العربية)، وتوثّق ما ورد في فتاوى دار الإفتاء برقمها وتاريخها متى توفّر. كافة الحقوق محفوظة للمنظومة، فكرة وتصميم: <strong>د. حسن الشيباني</strong>.</p>
   </main>
 
   <footer>منظومة اختيار الأسماء ومعانيها · 📌 فكرة وتصميم: د. حسن الشيباني · منظومة خدمية وقانونية متكاملة</footer>
@@ -10790,6 +10836,8 @@ function filterCards() {
   document.getElementById('countText').textContent = shown ? ('عرض ' + shown + ' من أصل ' + cards.length + ' بطاقة تفصيلية') : (filtersOn ? 'لا توجد نتائج ضمن الفلاتر المحددة — ألغِ بعض الفلاتر أو اضغط «عرض الكل وإعادة الضبط».' : 'لا توجد نتائج مطابقة — جرّب كتابة جزء من الاسم.');
 }
 
+function toggleLibyaRem(el) { el.classList.toggle('open'); }
+
 function filterLibyaOfficialList() {
   var q = normAr(document.getElementById('libyaSearchInput').value.trim());
   var items = document.querySelectorAll('#libyaOfficialGrid .libya-item');
@@ -10799,9 +10847,12 @@ function filterLibyaOfficialList() {
   for (var i = 0; i < items.length; i++) {
     var it = items[i];
     var lname = it.getAttribute('data-lname');
-    if (!q || normAr(lname).indexOf(q) > -1) {
+    if (!q || normAr(lname).indexOf(q) > -1 || normAr(it.getAttribute('data-lalt') || '').indexOf(q) > -1) {
       it.style.display = 'flex';
-      if (q) matches.push(it.querySelector('.l-num').textContent + ' - ' + lname);
+      if (q) {
+        it.classList.add('open');
+        matches.push(it.querySelector('.l-num').textContent + ' - ' + lname + (it.getAttribute('data-rem') ? ' [' + it.getAttribute('data-rem') + ']' : ''));
+      } else { it.classList.remove('open'); }
     } else {
       it.style.display = 'none';
     }
@@ -10816,7 +10867,7 @@ function filterLibyaOfficialList() {
       statusBox.innerHTML = '🚫 <strong>تنبيه قانوني:</strong> الاسم مطابق لقائمة الأسماء الممنوعة في مصلحة الأحوال المدنية بليبيا: (' + matches.join(' ، ') + '). ننصح باختيار بديل مسموح من البطاقات أدناه.';
     } else {
       statusBox.style.borderRightColor = 'var(--ok)';
-      statusBox.innerHTML = '✅ <strong>النتيجة:</strong> هذا الاسم غير مدرج في قائمة الـ 156 اسماً الممنوعة في الجدول المرفق لمصلحة الأحوال المدنية الليبية.';
+      statusBox.innerHTML = '✅ <strong>النتيجة:</strong> هذا الاسم غير مدرج في قائمة الـ 197 اسماً الممنوعة بحسب الملفات المرفقة لمصلحة الأحوال المدنية الليبية (وهي لا تشمل إلا ما وصلنا من صفحات).';
     }
   }
 }
@@ -10835,19 +10886,19 @@ function checkHarmony() {
 
   var items = document.querySelectorAll('#libyaOfficialGrid .libya-item');
   var isBannedLibya = false;
-  var banNum = '';
+  var banNum = ''; var banRem = '';
   for (var i = 0; i < items.length; i++) {
-    if (normAr(items[i].getAttribute('data-lname')) === normAr(c)) {
+    if (normAr(items[i].getAttribute('data-lname')) === normAr(c) || (' ' + normAr(items[i].getAttribute('data-lalt') || '') + ' ').indexOf(' ' + normAr(c) + ' ') > -1) {
       isBannedLibya = true;
-      banNum = items[i].querySelector('.l-num').textContent;
+      banNum = items[i].querySelector('.l-num').textContent; banRem = items[i].getAttribute('data-rem') || '';
       break;
     }
   }
 
   if (isBannedLibya) {
-    notes.push('🚫 <strong>تنبيه السجل المدني الليبي:</strong> اسم (' + c + ') مدرج في قائمة المنع الرسمية بمصلحة الأحوال المدنية (رقم ' + banNum + ').');
+    notes.push('🚫 <strong>تنبيه السجل المدني الليبي:</strong> اسم (' + c + ') مدرج في قائمة المنع الرسمية بمصلحة الأحوال المدنية (رقم ' + banNum + ').' + (banRem ? ' ملاحظة: ' + banRem : ''));
   } else {
-    notes.push('✅ الاسم غير مدرج في قائمة المنع الـ 156 بمصلحة الأحوال المدنية الليبية.');
+    notes.push('✅ الاسم غير مدرج في قائمة المنع الـ 197 بمصلحة الأحوال المدنية الليبية.');
   }
 
   if (c === f) notes.push('🔸 تكرار اسم المولود مع اسم الأب مباشرة قد يسبب ثقلاً في النداء.');
@@ -11038,11 +11089,11 @@ function makeBishaara(mode) {
 
   var items = document.querySelectorAll('#libyaOfficialGrid .libya-item');
   var isBannedLibya = false;
-  var banNum = '';
+  var banNum = ''; var banRem = '';
   for (var i = 0; i < items.length; i++) {
-    if (normAr(items[i].getAttribute('data-lname')) === normKey) {
+    if (normAr(items[i].getAttribute('data-lname')) === normKey || (' ' + normAr(items[i].getAttribute('data-lalt') || '') + ' ').indexOf(' ' + normKey + ' ') > -1) {
       isBannedLibya = true;
-      banNum = items[i].querySelector('.l-num').textContent;
+      banNum = items[i].querySelector('.l-num').textContent; banRem = items[i].getAttribute('data-rem') || '';
       break;
     }
   }
